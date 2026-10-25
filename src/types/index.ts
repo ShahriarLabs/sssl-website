@@ -16,37 +16,38 @@ export interface ServiceItem {
   fullDesc: string;
   features: string[];
   icon: string;
-  isDraft: boolean; // Flag to indicate unverified/suggested category
+  isDraft: boolean;
   badge?: string;
 }
 
 export type ProjectCategory = 
   | 'All Projects'
-  | 'Corporate'
-  | 'Industrial'
-  | 'Commercial'
-  | 'Residential'
-  | 'Event'
-  | 'Access Control';
+  | 'Industrial & RMG'
+  | 'EPZ & Special Zones'
+  | 'Packaging & Accessories'
+  | 'Agro & Food'
+  | 'Engineering & Heavy'
+  | 'Commercial & Estates';
 
 export interface ProjectItem {
   id: string;
-  title: string;
+  serialNumber: number;
+  clientName: string;
   category: Exclude<ProjectCategory, 'All Projects'>;
   location: string;
-  client: string;
-  completionYear: string;
+  clientLiaison: string;
+  serviceType: string;
   description: string;
   fullDetails?: {
-    challenge?: string;
-    deploymentScale?: string;
-    solutionHighlights?: string[];
-    result?: string;
+    liaisonName: string;
+    deploymentScope?: string;
+    verifiedLocation: string;
+    terms?: string[];
   };
   image: string;
   tags: string[];
-  isDemo: boolean; // Clearly distinguishes demo entries from verified projects
-  verifiedDate?: string;
+  isVerified: boolean;
+  officialRef: string;
 }
 
 export interface LeadershipMember {
@@ -56,7 +57,7 @@ export interface LeadershipMember {
   roleDescription: string;
   bio: string;
   portrait: string;
-  credentialsNotes: string; // Transparent note about verified vs placeholder info
+  credentialsNotes: string;
   isPlaceholderBio: boolean;
 }
 
@@ -98,7 +99,7 @@ export interface TrustCredentialItem {
   issuer: string;
   year: string;
   licenseNumber?: string;
-  status: 'Pending Official Upload' | 'Verified' | 'Under Review';
+  status: 'Verified' | 'Pending Official Upload' | 'Under Review';
   isVerified: boolean;
   description: string;
 }
@@ -111,9 +112,9 @@ export interface ContactChannel {
     isVerified: boolean;
   };
   whatsapp: {
-    number: string; // +8801707059684
+    number: string;
     chatUrl: string;
-    isVerified: boolean; // Pending live verification
+    isVerified: boolean;
     note: string;
   };
   facebook: {
@@ -137,6 +138,8 @@ export interface ContactChannel {
     registered: string;
     city: string;
     country: string;
+    registrationNo: string;
+    dateOfRegistration: string;
     isVerified: boolean;
     verificationNote: string;
   };
@@ -158,4 +161,6 @@ export interface SiteMeta {
   vision: string;
   coreValues: { title: string; desc: string; icon: string }[];
   operationalApproach: { step: string; title: string; desc: string }[];
+  pdfProfileUrl: string;
+  pdfDownloadFilename: string;
 }

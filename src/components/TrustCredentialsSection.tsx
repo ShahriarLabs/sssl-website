@@ -1,16 +1,14 @@
-import React, { useState } from 'react';
 import { 
   FileText, 
   Download, 
   AlertCircle, 
   CheckCircle,
-  X
+  FileCheck2
 } from 'lucide-react';
-import { trustCredentials } from '../data/siteConfig';
+import { trustCredentials, siteMeta } from '../data/siteConfig';
 import { MagneticButton } from './MagneticButton';
 
 export const TrustCredentialsSection: React.FC = () => {
-  const [brochureModalOpen, setBrochureModalOpen] = useState(false);
 
   return (
     <section id="credentials" className="py-20 bg-navy-900/40 border-t border-slate-800 relative">
@@ -81,74 +79,34 @@ export const TrustCredentialsSection: React.FC = () => {
         {/* Corporate Brochure & Direct Verification Box */}
         <div className="bg-gradient-to-r from-navy-950 to-navy-900 border border-slate-800 rounded-lg p-6 sm:p-8 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6">
           <div className="max-w-xl">
+            <div className="flex items-center gap-2 text-xs font-semibold text-amber-400 mb-1.5">
+              <FileCheck2 className="w-4 h-4" />
+              <span>Official 6-Page Profile Document Ready</span>
+            </div>
             <h3 className="text-lg font-bold text-white mb-2">
               Official SSSL Corporate Profile & Standard Operating Procedures
             </h3>
             <p className="text-xs sm:text-sm text-slate-300">
-              Download our institutional briefing deck covering training syllabi, night inspection protocols, and corporate SLA parameters.
+              Download our institutional briefing deck covering official registration (C-96185/11), terms of guard engagement, and verified 58-client portfolio.
             </p>
           </div>
 
           <div className="flex flex-wrap items-center gap-3">
             <MagneticButton
-              type="button"
-              onClick={() => setBrochureModalOpen(true)}
+              as="a"
+              href={siteMeta.pdfProfileUrl}
+              download={siteMeta.pdfDownloadFilename}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-5 py-3 text-xs font-bold uppercase tracking-wider text-navy-950 bg-amber-400 hover:bg-amber-300 rounded transition-all shadow focus:outline-none focus:ring-2 focus:ring-amber-500"
             >
               <Download className="w-4 h-4" />
-              <span>Download Corporate Profile</span>
+              <span>Download Official Profile (PDF)</span>
             </MagneticButton>
           </div>
         </div>
 
       </div>
-
-      {/* Brochure Request / Draft Modal */}
-      {brochureModalOpen && (
-        <div 
-          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm"
-          role="dialog"
-          aria-modal="true"
-        >
-          <div className="bg-navy-900 border border-slate-700 rounded-lg max-w-md w-full p-6 relative shadow-2xl">
-            <button
-              onClick={() => setBrochureModalOpen(false)}
-              className="absolute top-4 right-4 p-1 rounded-full text-slate-400 hover:text-white"
-            >
-              <X className="w-5 h-5" />
-            </button>
-
-            <div className="w-12 h-12 rounded bg-navy-800 border border-slate-700 flex items-center justify-center mb-4 text-amber-400">
-              <Download className="w-6 h-6" />
-            </div>
-
-            <h3 className="text-lg font-bold text-white mb-2">
-              Corporate Profile Deck
-            </h3>
-
-            <p className="text-xs sm:text-sm text-slate-300 mb-6">
-              The updated 2026 Soldier Security Services Ltd. comprehensive profile PDF is currently in official publication. You can request a personalized digital copy directly from our operations desk via Phone or WhatsApp.
-            </p>
-
-            <div className="flex flex-col gap-2.5">
-              <a
-                href="#contact"
-                onClick={() => setBrochureModalOpen(false)}
-                className="w-full py-2.5 px-4 text-xs font-bold uppercase tracking-wider text-center text-navy-950 bg-amber-400 hover:bg-amber-300 rounded"
-              >
-                Request Profile via Contact Form
-              </a>
-              <button
-                type="button"
-                onClick={() => setBrochureModalOpen(false)}
-                className="w-full py-2 px-4 text-xs font-semibold text-slate-400 hover:text-white"
-              >
-                Close
-              </button>
-            </div>
-          </div>
-        </div>
-      )}
     </section>
   );
 };

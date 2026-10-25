@@ -5,7 +5,8 @@ import {
   MessageSquare, 
   ArrowUp, 
   X, 
-  FileText 
+  FileText,
+  FileDown
 } from 'lucide-react';
 import { siteMeta, contactDetails } from '../data/siteConfig';
 
@@ -113,6 +114,18 @@ export const Footer: React.FC = () => {
                   </a>
                 </li>
               ))}
+              <li className="pt-2">
+                <a
+                  href={siteMeta.pdfProfileUrl}
+                  download={siteMeta.pdfDownloadFilename}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 text-amber-400 hover:text-amber-300 font-bold transition-colors py-0.5"
+                >
+                  <FileDown className="w-3.5 h-3.5" />
+                  <span>Download Company Profile (PDF)</span>
+                </a>
+              </li>
             </ul>
           </div>
 

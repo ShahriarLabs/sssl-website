@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { ShieldCheck, ChevronRight, PhoneCall, Award, Clock } from 'lucide-react';
+import { ShieldCheck, ChevronRight, PhoneCall, Award, Clock, FileDown } from 'lucide-react';
 import { siteMeta } from '../data/siteConfig';
 import { MagneticButton } from './MagneticButton';
 
@@ -140,11 +140,11 @@ export const Hero: React.FC = () => {
           </p>
 
           {/* Magnetic Primary CTA Buttons */}
-          <div className="flex flex-wrap items-center gap-4 pt-2">
+          <div className="flex flex-wrap items-center gap-3.5 pt-2">
             <MagneticButton
               as="a"
               href="#services"
-              className="inline-flex items-center gap-2 px-6 py-3.5 text-xs sm:text-sm font-bold uppercase tracking-wider text-navy-950 bg-gradient-to-r from-amber-400 to-amber-500 hover:from-amber-300 hover:to-amber-400 rounded transition-all shadow-lg shadow-amber-500/15 focus:outline-none focus:ring-2 focus:ring-amber-500"
+              className="inline-flex items-center gap-2 px-5 py-3.5 text-xs sm:text-sm font-bold uppercase tracking-wider text-navy-950 bg-gradient-to-r from-amber-400 to-amber-500 hover:from-amber-300 hover:to-amber-400 rounded transition-all shadow-lg shadow-amber-500/15 focus:outline-none focus:ring-2 focus:ring-amber-500"
             >
               <span>Explore Our Services</span>
               <ChevronRight className="w-4 h-4" />
@@ -153,11 +153,23 @@ export const Hero: React.FC = () => {
             <MagneticButton
               as="a"
               href="#contact"
-              className="inline-flex items-center gap-2 px-6 py-3.5 text-xs sm:text-sm font-semibold uppercase tracking-wider text-slate-200 bg-navy-900/90 hover:bg-slate-800 border border-slate-700/80 hover:border-slate-500 rounded transition-all focus:outline-none focus:ring-2 focus:ring-slate-400"
+              className="inline-flex items-center gap-2 px-5 py-3.5 text-xs sm:text-sm font-semibold uppercase tracking-wider text-slate-200 bg-navy-900/90 hover:bg-slate-800 border border-slate-700/80 hover:border-slate-500 rounded transition-all focus:outline-none focus:ring-2 focus:ring-slate-400"
             >
               <PhoneCall className="w-4 h-4 text-amber-400" />
-              <span>Contact Our Team</span>
+              <span>Get Quotation</span>
             </MagneticButton>
+
+            <a
+              href={siteMeta.pdfProfileUrl}
+              download={siteMeta.pdfDownloadFilename}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-5 py-3.5 text-xs sm:text-sm font-semibold uppercase tracking-wider text-amber-300 bg-amber-500/10 hover:bg-amber-500/20 border border-amber-500/40 hover:border-amber-400 rounded transition-all focus:outline-none focus:ring-2 focus:ring-amber-500 shadow-sm"
+              title="Download Official Soldier Security Services Ltd. Profile PDF"
+            >
+              <FileDown className="w-4 h-4 text-amber-400" />
+              <span>Download Profile (PDF)</span>
+            </a>
           </div>
 
           {/* Verified Trust Anchors Grid */}

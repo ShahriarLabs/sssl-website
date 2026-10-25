@@ -21,19 +21,21 @@ export const siteMeta: SiteMeta = {
     'Certified Security Personnel Across Bangladesh',
     'Round-the-Clock Rapid Emergency Response'
   ],
-  heroSubheadline: 'Soldier Security Services Ltd. delivers disciplined, reliable, and rigorously trained security personnel for corporate headquarters, industrial complexes, commercial premises, and private residences.',
-  aboutOverview: 'Soldier Security Services Ltd. is a dedicated private security solutions provider established in Bangladesh. Built upon the principles of unwavering integrity, tactical discipline, and prompt operational oversight, SSSL provides comprehensive asset protection and personnel security tailored to modern commercial and institutional requirements.',
+  heroSubheadline: 'Soldier Security Services Ltd. (Reg. No. C-96185/11) delivers disciplined, reliable, and rigorously trained security personnel for factories, commercial establishments, apartments, and corporate offices across Bangladesh.',
+  aboutOverview: 'Soldier Security Services Ltd. is a duly registered private security service provider established under the laws of Bangladesh (Incorporation Reg. No: C-96185/11, Registered: 16.10.2011). Built on uncompromising discipline, operational oversight, and tactical vigilance, SSSL protects 58+ esteemed corporate, industrial, and commercial facilities nationwide.',
   mission: 'To deliver steadfast, professional, and vigilant security services that empower organizations and communities to operate safely, confidently, and without compromise.',
-  vision: 'To emerge as Bangladesh\'s benchmark private security agency, recognized for disciplined personnel, uncompromising ethical standards, and technology-augmented physical security.',
+  vision: 'To emerge as Bangladesh benchmark private security agency, recognized for disciplined personnel, uncompromising ethical standards, and technology-augmented physical security.',
+  pdfProfileUrl: '/documents/soldier-security-services-profile.pdf',
+  pdfDownloadFilename: 'Soldier-Security-Services-Ltd-Company-Profile.pdf',
   coreValues: [
     {
       title: 'Tactical Discipline',
-      desc: 'Our personnel undergo rigorous training adhering to established operational standards, ensuring professional conduct at every post.',
+      desc: 'Our personnel undergo rigorous training adhering to established operational standards and firefighting procedures.',
       icon: 'ShieldCheck'
     },
     {
       title: 'Uncompromised Integrity',
-      desc: 'Trust is our paramount asset. We uphold absolute honesty, transparency, and accountability in every client engagement.',
+      desc: 'Trust is our paramount asset. We uphold absolute honesty, transparency, and formal contractual accountability.',
       icon: 'Lock'
     },
     {
@@ -42,8 +44,8 @@ export const siteMeta: SiteMeta = {
       icon: 'Eye'
     },
     {
-      title: 'Client-Centric Protection',
-      desc: 'Customized security blueprints engineered around your facility’s unique traffic, perimeter, and operational risks.',
+      title: 'Loss Compensation Protocol',
+      desc: 'Clear contractual commitment to conduct joint inquiries and resolve security concerns in accordance with agreement deeds.',
       icon: 'UserCheck'
     }
   ],
@@ -61,7 +63,7 @@ export const siteMeta: SiteMeta = {
     {
       step: '03',
       title: 'Personnel Selection & Briefing',
-      desc: 'Deployment of vetted, physically fit, and site-specifically briefed security guards and team leaders.'
+      desc: 'Deployment of vetted, physically fit, and site-specifically briefed security guards equipped with uniforms and essential equipment.'
     },
     {
       step: '04',
@@ -80,9 +82,9 @@ export const contactDetails: ContactChannel = {
   },
   whatsapp: {
     number: '+8801707059684',
-    chatUrl: 'https://wa.me/8801707059684?text=Hello%20Soldier%20Security%20Services%20Ltd.%2C%20I%20would%20like%20to%20inquire%20about%20your%20security%20services.',
-    isVerified: true, // Configured with the supplied number
-    note: 'Initial WhatsApp configuration mapped to verified company phone line. Verification pending final message test.'
+    chatUrl: 'https://wa.me/8801707059684?text=Hello%20Soldier%20Security%20Services%20Ltd.%2C%20I%20would%20like%20to%20inquire%20about%20your%20security%20guard%20services.',
+    isVerified: true,
+    note: 'Initial WhatsApp configuration mapped to verified company phone line. Verification pending final live message test.'
   },
   facebook: {
     url: 'https://www.facebook.com/3SLtdDhaka/',
@@ -94,19 +96,21 @@ export const contactDetails: ContactChannel = {
     isConfigured: false
   },
   email: {
-    address: undefined, // Explicitly not provided yet
+    address: undefined,
     isConfigured: false
   },
   messenger: {
-    url: undefined, // Subject to Facebook page messaging configuration
+    url: undefined,
     isConfigured: false
   },
   officeAddress: {
     registered: '18/8, Zalasor, Aricha Road, Shimultala',
     city: 'Savar, Dhaka-1340',
     country: 'Bangladesh',
-    isVerified: true, // Confirmed via commercial directory registry
-    verificationNote: 'Commercial registry address on record. Client can update or supplement branch office addresses at any time.'
+    registrationNo: 'C-96185/11',
+    dateOfRegistration: '16.10.2011',
+    isVerified: true,
+    verificationNote: 'Official Registered Office & Company Registration Record: C-96185/11 (Registered: 16.10.2011).'
   },
   businessHours: {
     ops: '24 Hours / 7 Days a Week (Security Control & Dispatch)',
@@ -120,9 +124,9 @@ export const leadershipProfiles: LeadershipMember[] = [
     name: 'Sabina Yasmin',
     designation: 'Chairman',
     roleDescription: 'Governance, Strategic Vision & Corporate Oversight',
-    bio: 'As Chairman of Soldier Security Services Ltd., Sabina Yasmin steers the company\'s strategic direction, corporate governance, and long-term organizational ethos. Committed to establishing ethical security standards and sustainable operational growth, she ensures the organization remains anchored in institutional credibility and responsive client stewardship.',
+    bio: 'As Chairman of Soldier Security Services Ltd., Sabina Yasmin steers the company strategic direction, corporate governance, and long-term organizational ethos. Committed to establishing ethical security standards and sustainable operational growth, she ensures the organization remains anchored in institutional credibility and responsive client stewardship.',
     portrait: '/images/leadership-placeholder-chairman.svg',
-    credentialsNotes: 'Official executive profile. Detailed personal biography and honorary credentials will be updated upon official submission.',
+    credentialsNotes: 'Official executive profile. Detailed personal biography will be updated upon official submission.',
     isPlaceholderBio: true
   },
   {
@@ -130,10 +134,10 @@ export const leadershipProfiles: LeadershipMember[] = [
     name: 'Md Kamal Hossain',
     designation: 'Managing Director',
     roleDescription: 'Operational Command, Deployment Excellence & Client Relations',
-    bio: 'Md Kamal Hossain provides active executive leadership as the Managing Director of Soldier Security Services Ltd. Focusing on personnel discipline, tactical deployment standards, and rigorous supervisor field inspections, he drives day-to-day operational excellence to guarantee that every client asset is protected by vigilant, dependable professionals.',
+    bio: 'Md Kamal Hossain provides active executive leadership as Director / Managing Director of Soldier Security Services Ltd. Focusing on personnel discipline, tactical deployment standards, and rigorous supervisor field inspections, he drives day-to-day operational excellence to guarantee that every client asset is protected by vigilant, dependable professionals.',
     portrait: '/images/leadership-placeholder-md.svg',
-    credentialsNotes: 'Official executive profile. Detailed service background and career credentials will be updated upon official submission.',
-    isPlaceholderBio: true
+    credentialsNotes: 'Official company director signatory on record for Soldier Security Services Ltd. (Reg: C-96185/11).',
+    isPlaceholderBio: false
   }
 ];
 
@@ -143,7 +147,7 @@ export const servicesData: ServiceItem[] = [
     title: 'Manned Guarding Services',
     category: 'Manned Guarding',
     shortDesc: 'Disciplined, uniformed security personnel trained for access control, perimeter watch, and crowd discipline.',
-    fullDesc: 'Our manned guarding solutions provide a visible, disciplined deterrent at entrances, gates, and internal security posts. Guards undergo background vetting and customer-service orientation.',
+    fullDesc: 'Our manned guarding solutions provide a visible, disciplined deterrent at entrances, gates, and internal security posts. Guards undergo background vetting, drill discipline, and firefighting orientation.',
     features: [
       'Uniformed static guards & entry sentries',
       'Visitor register & ID badge verification',
@@ -266,512 +270,1710 @@ export const servicesData: ServiceItem[] = [
   }
 ];
 
-// 20+ Detailed Project Entries across diverse sectors
+// All 58 Verified Client Deployments from Official Profile
 export const projectData: ProjectItem[] = [
   {
-    id: 'proj-01',
-    title: 'Savar Industrial Garment Hub Security Deployment',
-    category: 'Industrial',
-    location: 'Savar Industrial Zone, Dhaka',
-    client: 'Approved RMG Manufacturing Complex (Confidential)',
-    completionYear: '2025',
-    description: 'Round-the-clock perimeter guarding, shift-change transit security, and vehicular logistics gate control for a 4,000-worker apparel plant.',
-    fullDetails: {
-      challenge: 'Managing peak morning and evening shift entry of over 4,000 workers while ensuring zero unauthorized item ingress or export loss.',
-      deploymentScale: '24 Security Guards, 2 Supervisors, 2 Metal Detector Screening Lanes',
-      solutionHighlights: [
-        'Dual-lane biometric and bag screening checkpoint',
-        'Loading bay dispatch seal verification protocol',
-        'Night thermal perimeter sweeps along boundary wall'
-      ],
-      result: 'Maintained 100% zero-incident record over 18 consecutive operational months.'
+    "id": "client-01",
+    "serialNumber": 1,
+    "clientName": "Aqua Garden",
+    "category": "Commercial & Estates",
+    "location": "226, Bottola Mor, South Paikpara, Mirpur, Dhaka.",
+    "clientLiaison": "Mr. Linkon, Account Manager",
+    "serviceType": "Unarmed Manned Guarding & Perimeter Security",
+    "description": "Official verified security guarding assignment deployed at Aqua Garden, situated at 226, Bottola Mor, South Paikpara, Mirpur, Dhaka.. Operational coordination managed through Mr. Linkon, Account Manager.",
+    "fullDetails": {
+      "liaisonName": "Mr. Linkon, Account Manager",
+      "deploymentScope": "24/7 static guard sentry, shift gate attendance, perimeter patrol & emergency firefighting compliance.",
+      "verifiedLocation": "226, Bottola Mor, South Paikpara, Mirpur, Dhaka.",
+      "terms": [
+        "Unarmed security guard services with proper security & firefighting training",
+        "Full uniform equipment: batons, whistles, torches, transport & umbrellas",
+        "Formal Deed of Agreement governance with joint inquiry loss protocol",
+        "30 days standard written notice operational protocol"
+      ]
     },
-    image: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80',
-    tags: ['Industrial', 'Manned Guarding', 'Gate Control'],
-    isDemo: true
+    "image": "/images/sssl-guard-squad-1.jpg",
+    "tags": [
+      "Commercial",
+      "Verified Client",
+      "Manned Guarding"
+    ],
+    "isVerified": true,
+    "officialRef": "SSSL Official Profile Entry #01"
   },
   {
-    id: 'proj-02',
-    title: 'Corporate Headquarters Access Management',
-    category: 'Corporate',
-    location: 'Gulshan-2 Commercial District, Dhaka',
-    client: 'Multinational Financial Advisory Firm',
-    completionYear: '2025',
-    description: 'Premium front-desk concierge security, executive floor visitor vetting, and after-hours keycard surveillance management.',
-    fullDetails: {
-      challenge: 'High-profile corporate clientele requiring courteous customer service combined with strict anti-tailgating floor access.',
-      deploymentScale: '8 Executive Security Officers, 1 Concierge Liaison',
-      solutionHighlights: [
-        'Digital visitor photo-badging integration',
-        'Server room biometric dual-custody escort',
-        'Executive parking bay reservation security'
-      ],
-      result: 'Seamless visitor clearance averaging under 45 seconds with complete audit trails.'
+    "id": "client-02",
+    "serialNumber": 2,
+    "clientName": "Arunima Group",
+    "category": "Industrial & RMG",
+    "location": "Dewan Idris Road, Kathgora, Zirabo, Ashulia, Dhaka.",
+    "clientLiaison": "Major Siraj (Rtd), Director",
+    "serviceType": "Unarmed Manned Guarding & Perimeter Security",
+    "description": "Official verified security guarding assignment deployed at Arunima Group, situated at Dewan Idris Road, Kathgora, Zirabo, Ashulia, Dhaka.. Operational coordination managed through Major Siraj (Rtd), Director.",
+    "fullDetails": {
+      "liaisonName": "Major Siraj (Rtd), Director",
+      "deploymentScope": "24/7 static guard sentry, shift gate attendance, perimeter patrol & emergency firefighting compliance.",
+      "verifiedLocation": "Dewan Idris Road, Kathgora, Zirabo, Ashulia, Dhaka.",
+      "terms": [
+        "Unarmed security guard services with proper security & firefighting training",
+        "Full uniform equipment: batons, whistles, torches, transport & umbrellas",
+        "Formal Deed of Agreement governance with joint inquiry loss protocol",
+        "30 days standard written notice operational protocol"
+      ]
     },
-    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80',
-    tags: ['Corporate', 'Concierge', 'Access Control'],
-    isDemo: true
+    "image": "/images/sssl-guard-parade.jpg",
+    "tags": [
+      "Industrial",
+      "Verified Client",
+      "Manned Guarding"
+    ],
+    "isVerified": true,
+    "officialRef": "SSSL Official Profile Entry #02"
   },
   {
-    id: 'proj-03',
-    title: 'Ashulia Textile & Dyeing Facility Protection',
-    category: 'Industrial',
-    location: 'Ashulia, Dhaka',
-    client: 'Textile Composite Unit',
-    completionYear: '2024',
-    description: 'Comprehensive static guarding, raw material stock protection, and chemical store hazard access protocols.',
-    fullDetails: {
-      challenge: 'Preventing hazardous material exposure and securing valuable yarn and chemical stores across a 15-acre campus.',
-      deploymentScale: '18 Security Personnel across 3 rotational shifts',
-      solutionHighlights: [
-        'Hazardous chemical storage isolation post',
-        'Truck weighbridge verification logging',
-        'Perimeter infrared motion sensor coordination'
-      ],
-      result: 'Eliminated stock discrepancies and elevated fire-safety emergency compliance.'
+    "id": "client-03",
+    "serialNumber": 3,
+    "clientName": "Aladin’s Park Resort",
+    "category": "Commercial & Estates",
+    "location": "Sithi, Kulla, Joypura, Dhamrai, Dhaka",
+    "clientLiaison": "Mr. Rifat, Director",
+    "serviceType": "Unarmed Manned Guarding & Perimeter Security",
+    "description": "Official verified security guarding assignment deployed at Aladin’s Park Resort, situated at Sithi, Kulla, Joypura, Dhamrai, Dhaka. Operational coordination managed through Mr. Rifat, Director.",
+    "fullDetails": {
+      "liaisonName": "Mr. Rifat, Director",
+      "deploymentScope": "24/7 static guard sentry, shift gate attendance, perimeter patrol & emergency firefighting compliance.",
+      "verifiedLocation": "Sithi, Kulla, Joypura, Dhamrai, Dhaka",
+      "terms": [
+        "Unarmed security guard services with proper security & firefighting training",
+        "Full uniform equipment: batons, whistles, torches, transport & umbrellas",
+        "Formal Deed of Agreement governance with joint inquiry loss protocol",
+        "30 days standard written notice operational protocol"
+      ]
     },
-    image: 'https://images.unsplash.com/photo-1504917599217-d4dc5ebe6122?auto=format&fit=crop&w=800&q=80',
-    tags: ['Industrial', 'Perimeter Watch', 'Material Safety'],
-    isDemo: true
+    "image": "/images/sssl-female-guards-drill.jpg",
+    "tags": [
+      "Commercial",
+      "Verified Client",
+      "Manned Guarding"
+    ],
+    "isVerified": true,
+    "officialRef": "SSSL Official Profile Entry #03"
   },
   {
-    id: 'proj-04',
-    title: 'Commercial Tower Multi-Tenant Security System',
-    category: 'Commercial',
-    location: 'Motijheel Commercial Area, Dhaka',
-    client: 'Premier Commercial Plaza',
-    completionYear: '2024',
-    description: 'Centralized 14-story building security command, turnstile supervision, underground parking traffic flow, and night patrol logs.',
-    fullDetails: {
-      challenge: 'High-density daily foot traffic spanning banking branches, corporate chambers, and retail ground-floor spaces.',
-      deploymentScale: '16 Personnel, 1 Control Room Master Operator',
-      solutionHighlights: [
-        'Central CCTV monitor desk monitoring 64 cameras',
-        'Basement parking token and valet clearance order',
-        'Nightly floor-by-floor lockdown checklist verification'
-      ],
-      result: 'Zero unauthorized breaches and streamlined parking ingress during peak hours.'
+    "id": "client-04",
+    "serialNumber": 4,
+    "clientName": "BSCIC Industrial Estate",
+    "category": "Commercial & Estates",
+    "location": "BSCIC Industrial Estate, Dhamrai, Dhaka",
+    "clientLiaison": "Major Nurul Islam, Chairman",
+    "serviceType": "Unarmed Manned Guarding & Perimeter Security",
+    "description": "Official verified security guarding assignment deployed at BSCIC Industrial Estate, situated at BSCIC Industrial Estate, Dhamrai, Dhaka. Operational coordination managed through Major Nurul Islam, Chairman.",
+    "fullDetails": {
+      "liaisonName": "Major Nurul Islam, Chairman",
+      "deploymentScope": "24/7 static guard sentry, shift gate attendance, perimeter patrol & emergency firefighting compliance.",
+      "verifiedLocation": "BSCIC Industrial Estate, Dhamrai, Dhaka",
+      "terms": [
+        "Unarmed security guard services with proper security & firefighting training",
+        "Full uniform equipment: batons, whistles, torches, transport & umbrellas",
+        "Formal Deed of Agreement governance with joint inquiry loss protocol",
+        "30 days standard written notice operational protocol"
+      ]
     },
-    image: 'https://images.unsplash.com/photo-1577495508048-b635879837f1?auto=format&fit=crop&w=800&q=80',
-    tags: ['Commercial', 'Multi-Tenant', 'CCTV Monitoring'],
-    isDemo: true
+    "image": "/images/sssl-officer-walkie.jpg",
+    "tags": [
+      "Commercial",
+      "Verified Client",
+      "Manned Guarding"
+    ],
+    "isVerified": true,
+    "officialRef": "SSSL Official Profile Entry #04"
   },
   {
-    id: 'proj-05',
-    title: 'Luxury Residential Gated Enclave Security',
-    category: 'Residential',
-    location: 'Baridhara Diplomatic Enclave / DOHS',
-    client: 'Gated Residential Society Committee',
-    completionYear: '2025',
-    description: '24/7 boom barrier vehicle inspection, resident RFID tag clearance, domestic helper registration, and quiet neighborhood patrols.',
-    fullDetails: {
-      challenge: 'High privacy expectations, low noise tolerance, and meticulous courier delivery management for 120 luxury residences.',
-      deploymentScale: '12 Residential Guards, 2 Night Mobile Bicycles',
-      solutionHighlights: [
-        'Intercom pre-clearance for guest vehicle entrance',
-        'Pedestrian domestic staff biometric check-in',
-        'Silent hourly perimeter foot patrols'
-      ],
-      result: 'Ranked top residential security satisfaction among neighborhood associations.'
+    "id": "client-05",
+    "serialNumber": 5,
+    "clientName": "Bath Care Ltd.",
+    "category": "Engineering & Heavy",
+    "location": "BSCIC Industrial Estate, Dhamrai, Dhaka.",
+    "clientLiaison": "Md. Anowar Hossen, Managing Director",
+    "serviceType": "Unarmed Manned Guarding & Perimeter Security",
+    "description": "Official verified security guarding assignment deployed at Bath Care Ltd., situated at BSCIC Industrial Estate, Dhamrai, Dhaka.. Operational coordination managed through Md. Anowar Hossen, Managing Director.",
+    "fullDetails": {
+      "liaisonName": "Md. Anowar Hossen, Managing Director",
+      "deploymentScope": "24/7 static guard sentry, shift gate attendance, perimeter patrol & emergency firefighting compliance.",
+      "verifiedLocation": "BSCIC Industrial Estate, Dhamrai, Dhaka.",
+      "terms": [
+        "Unarmed security guard services with proper security & firefighting training",
+        "Full uniform equipment: batons, whistles, torches, transport & umbrellas",
+        "Formal Deed of Agreement governance with joint inquiry loss protocol",
+        "30 days standard written notice operational protocol"
+      ]
     },
-    image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80',
-    tags: ['Residential', 'Gated Community', 'Access Screening'],
-    isDemo: true
+    "image": "/images/sssl-guard-squad-1.jpg",
+    "tags": [
+      "Engineering",
+      "Verified Client",
+      "Manned Guarding"
+    ],
+    "isVerified": true,
+    "officialRef": "SSSL Official Profile Entry #05"
   },
   {
-    id: 'proj-06',
-    title: 'International Trade Exhibition & Summit Security',
-    category: 'Event',
-    location: 'BICC / International Convention City, Dhaka',
-    client: 'Chamber of Commerce Expo Committee',
-    completionYear: '2024',
-    description: '3-day rapid deployment for 15,000 daily visitors, metal detector archways, VIP escort, and rapid crowd dispatch.',
-    fullDetails: {
-      challenge: 'Surge crowds, dignitary motorcade arrivals, and emergency evacuation clearance in a crowded exhibition hall.',
-      deploymentScale: '40 Event Security Officers, 4 Supervisors, 6 Metal Arches',
-      solutionHighlights: [
-        'Baggage X-ray flow management and physical frisking',
-        'VIP Green Room dedicated sentry detachment',
-        'Medical emergency evacuation corridor preservation'
-      ],
-      result: 'Flawless 3-day exhibition without a single security stoppage or overcrowding incident.'
+    "id": "client-06",
+    "serialNumber": 6,
+    "clientName": "Biswas Fabrics Ltd.",
+    "category": "Industrial & RMG",
+    "location": "Rajfulbaria, Savar, Dhaka.",
+    "clientLiaison": "Md. Mafiz Uddin, Factory Manager",
+    "serviceType": "Unarmed Manned Guarding & Perimeter Security",
+    "description": "Official verified security guarding assignment deployed at Biswas Fabrics Ltd., situated at Rajfulbaria, Savar, Dhaka.. Operational coordination managed through Md. Mafiz Uddin, Factory Manager.",
+    "fullDetails": {
+      "liaisonName": "Md. Mafiz Uddin, Factory Manager",
+      "deploymentScope": "24/7 static guard sentry, shift gate attendance, perimeter patrol & emergency firefighting compliance.",
+      "verifiedLocation": "Rajfulbaria, Savar, Dhaka.",
+      "terms": [
+        "Unarmed security guard services with proper security & firefighting training",
+        "Full uniform equipment: batons, whistles, torches, transport & umbrellas",
+        "Formal Deed of Agreement governance with joint inquiry loss protocol",
+        "30 days standard written notice operational protocol"
+      ]
     },
-    image: 'https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=800&q=80',
-    tags: ['Event', 'Crowd Management', 'VIP Escort'],
-    isDemo: true
+    "image": "/images/sssl-guard-parade.jpg",
+    "tags": [
+      "Industrial",
+      "Verified Client",
+      "Manned Guarding"
+    ],
+    "isVerified": true,
+    "officialRef": "SSSL Official Profile Entry #06"
   },
   {
-    id: 'proj-07',
-    title: 'Pharmaceutical Warehouse & Cold Chain Sentry',
-    category: 'Industrial',
-    location: 'Tongi Industrial Area, Gazipur',
-    client: 'National Pharmaceutical Distributor',
-    completionYear: '2025',
-    description: 'Temperature-sensitive storage perimeter guarding, sealed container dispatch oversight, and zero-tolerance pilferage control.',
-    fullDetails: {
-      challenge: 'Securing life-saving high-value medications and validating seal numbers on refrigerated transport containers.',
-      deploymentScale: '10 Trained Guards with logistics background check',
-      solutionHighlights: [
-        'Reefer truck dispatch sealing double-signoff',
-        'Strict unauthorized personnel entry prevention',
-        '24/7 generator backup post watch'
-      ],
-      result: '100% consignment delivery integrity with verifiable dispatch logs.'
+    "id": "client-07",
+    "serialNumber": 7,
+    "clientName": "Bright Packaging Industry",
+    "category": "Packaging & Accessories",
+    "location": "Sreekhondia, Ashulia, Turag, Dhaka.",
+    "clientLiaison": "Md. Mosharof Hossain, Managing Director",
+    "serviceType": "Unarmed Manned Guarding & Perimeter Security",
+    "description": "Official verified security guarding assignment deployed at Bright Packaging Industry, situated at Sreekhondia, Ashulia, Turag, Dhaka.. Operational coordination managed through Md. Mosharof Hossain, Managing Director.",
+    "fullDetails": {
+      "liaisonName": "Md. Mosharof Hossain, Managing Director",
+      "deploymentScope": "24/7 static guard sentry, shift gate attendance, perimeter patrol & emergency firefighting compliance.",
+      "verifiedLocation": "Sreekhondia, Ashulia, Turag, Dhaka.",
+      "terms": [
+        "Unarmed security guard services with proper security & firefighting training",
+        "Full uniform equipment: batons, whistles, torches, transport & umbrellas",
+        "Formal Deed of Agreement governance with joint inquiry loss protocol",
+        "30 days standard written notice operational protocol"
+      ]
     },
-    image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80',
-    tags: ['Industrial', 'Logistics', 'Asset Integrity'],
-    isDemo: true
+    "image": "/images/sssl-female-guards-drill.jpg",
+    "tags": [
+      "Packaging",
+      "Verified Client",
+      "Manned Guarding"
+    ],
+    "isVerified": true,
+    "officialRef": "SSSL Official Profile Entry #07"
   },
   {
-    id: 'proj-08',
-    title: 'Banking Branch Network Static Guarding',
-    category: 'Commercial',
-    location: 'Dhaka Metropolitan (Multiple Branches)',
-    client: 'Commercial Private Bank',
-    completionYear: '2024',
-    description: 'Armed/unarmed sentries at banking halls, cash-counter perimeter security, and ATM booth customer safety vigilance.',
-    fullDetails: {
-      challenge: 'Maintaining calm customer ambiance while sustaining instantaneous readiness for armed robbery or unruly crowd threats.',
-      deploymentScale: '30 Security Guards deployed across 10 branches',
-      solutionHighlights: [
-        'Silent panic alarm integration knowledge',
-        'ATM lobby occupancy limitation enforcement',
-        'Cash-in-transit (CIT) van arrival escort'
-      ],
-      result: 'Zero security incidents during high cash-volume festival seasons.'
+    "id": "client-08",
+    "serialNumber": 8,
+    "clientName": "Bengal Plaza",
+    "category": "Commercial & Estates",
+    "location": "Plot-195, Bengal Plaza-5, Jamgora, Ashulia, Dhaka.",
+    "clientLiaison": "Md. Hasan, Admin Manager",
+    "serviceType": "Unarmed Manned Guarding & Perimeter Security",
+    "description": "Official verified security guarding assignment deployed at Bengal Plaza, situated at Plot-195, Bengal Plaza-5, Jamgora, Ashulia, Dhaka.. Operational coordination managed through Md. Hasan, Admin Manager.",
+    "fullDetails": {
+      "liaisonName": "Md. Hasan, Admin Manager",
+      "deploymentScope": "24/7 static guard sentry, shift gate attendance, perimeter patrol & emergency firefighting compliance.",
+      "verifiedLocation": "Plot-195, Bengal Plaza-5, Jamgora, Ashulia, Dhaka.",
+      "terms": [
+        "Unarmed security guard services with proper security & firefighting training",
+        "Full uniform equipment: batons, whistles, torches, transport & umbrellas",
+        "Formal Deed of Agreement governance with joint inquiry loss protocol",
+        "30 days standard written notice operational protocol"
+      ]
     },
-    image: 'https://images.unsplash.com/photo-1541354329998-f4d9a9f9297f?auto=format&fit=crop&w=800&q=80',
-    tags: ['Commercial', 'Financial', 'Manned Guarding'],
-    isDemo: true
+    "image": "/images/sssl-officer-walkie.jpg",
+    "tags": [
+      "Commercial",
+      "Verified Client",
+      "Manned Guarding"
+    ],
+    "isVerified": true,
+    "officialRef": "SSSL Official Profile Entry #08"
   },
   {
-    id: 'proj-09',
-    title: 'Tech Park Server Facility Access Lockdown',
-    category: 'Access Control',
-    location: 'Kaliakoir Hi-Tech City, Gazipur',
-    client: 'Cloud Infrastructure & Data Center',
-    completionYear: '2025',
-    description: 'Biometric airlock supervision, strict NDA entry logging, anti-camera hardware tagging, and clean-room security standards.',
-    fullDetails: {
-      challenge: 'Rigorous tier-3 data center compliance where personal electronics and unauthorized bags are strictly forbidden.',
-      deploymentScale: '6 High-Security Clearance Guards',
-      solutionHighlights: [
-        'Airlock mantrap entry protocol enforcement',
-        'Visitor electronics storage lockers & seal inspection',
-        'Continuous surveillance correlation logging'
-      ],
-      result: 'Complied with ISO 27001 physical security guidelines with zero audit observations.'
+    "id": "client-09",
+    "serialNumber": 9,
+    "clientName": "Bangladesh Agricultural Industries",
+    "category": "Agro & Food",
+    "location": "Plot# S-17-18, BSCIC Industrial Estate, Dhamrai, Dhaka",
+    "clientLiaison": "Md. Abdullah Al-Masud, Logistic Officer",
+    "serviceType": "Unarmed Manned Guarding & Perimeter Security",
+    "description": "Official verified security guarding assignment deployed at Bangladesh Agricultural Industries, situated at Plot# S-17-18, BSCIC Industrial Estate, Dhamrai, Dhaka. Operational coordination managed through Md. Abdullah Al-Masud, Logistic Officer.",
+    "fullDetails": {
+      "liaisonName": "Md. Abdullah Al-Masud, Logistic Officer",
+      "deploymentScope": "24/7 static guard sentry, shift gate attendance, perimeter patrol & emergency firefighting compliance.",
+      "verifiedLocation": "Plot# S-17-18, BSCIC Industrial Estate, Dhamrai, Dhaka",
+      "terms": [
+        "Unarmed security guard services with proper security & firefighting training",
+        "Full uniform equipment: batons, whistles, torches, transport & umbrellas",
+        "Formal Deed of Agreement governance with joint inquiry loss protocol",
+        "30 days standard written notice operational protocol"
+      ]
     },
-    image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80',
-    tags: ['Access Control', 'Data Center', 'High Security'],
-    isDemo: true
+    "image": "/images/sssl-guard-squad-1.jpg",
+    "tags": [
+      "Agro",
+      "Verified Client",
+      "Manned Guarding"
+    ],
+    "isVerified": true,
+    "officialRef": "SSSL Official Profile Entry #09"
   },
   {
-    id: 'proj-10',
-    title: 'Foreign Mission Residential Compound Protection',
-    category: 'Residential',
-    location: 'Gulshan Diplomatic Zone, Dhaka',
-    client: 'Diplomatic Mission Staff Residences',
-    completionYear: '2025',
-    description: 'Under-vehicle inspection mirrors, diplomatic guest protocols, perimeter fence alarms, and 24/7 supervisor check-ins.',
-    fullDetails: {
-      challenge: 'Stringent diplomatic security guidelines, emergency protocol integration, and discreet English-speaking personnel.',
-      deploymentScale: '14 Vetted Security Guards, 1 Liaison Officer',
-      solutionHighlights: [
-        'Under-carriage mirror inspection on all arriving cars',
-        'Strict delivery inspection at external guardhouse',
-        'Night patrol illumination checks'
-      ],
-      result: 'Commended by embassy security regional officer for discipline and punctuality.'
+    "id": "client-10",
+    "serialNumber": 10,
+    "clientName": "Biswas Knitwear",
+    "category": "Industrial & RMG",
+    "location": "Zirabo, Ashulia, Savar, Dhaka.",
+    "clientLiaison": "Md. Mohsin Hossain, Managing Director",
+    "serviceType": "Unarmed Manned Guarding & Perimeter Security",
+    "description": "Official verified security guarding assignment deployed at Biswas Knitwear, situated at Zirabo, Ashulia, Savar, Dhaka.. Operational coordination managed through Md. Mohsin Hossain, Managing Director.",
+    "fullDetails": {
+      "liaisonName": "Md. Mohsin Hossain, Managing Director",
+      "deploymentScope": "24/7 static guard sentry, shift gate attendance, perimeter patrol & emergency firefighting compliance.",
+      "verifiedLocation": "Zirabo, Ashulia, Savar, Dhaka.",
+      "terms": [
+        "Unarmed security guard services with proper security & firefighting training",
+        "Full uniform equipment: batons, whistles, torches, transport & umbrellas",
+        "Formal Deed of Agreement governance with joint inquiry loss protocol",
+        "30 days standard written notice operational protocol"
+      ]
     },
-    image: 'https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=800&q=80',
-    tags: ['Residential', 'Diplomatic', 'Perimeter Watch'],
-    isDemo: true
+    "image": "/images/sssl-guard-parade.jpg",
+    "tags": [
+      "Industrial",
+      "Verified Client",
+      "Manned Guarding"
+    ],
+    "isVerified": true,
+    "officialRef": "SSSL Official Profile Entry #10"
   },
   {
-    id: 'proj-11',
-    title: 'Automotive Distribution Center & Showroom Guarding',
-    category: 'Commercial',
-    location: 'Tejgaon Industrial Area, Dhaka',
-    client: 'Flagship Automobile Dealership',
-    completionYear: '2024',
-    description: 'Showroom vehicle inventory protection, customer vehicle intake tracking, and after-hours glass perimeter surveillance.',
-    fullDetails: {
-      challenge: 'Protecting crores worth of luxury display vehicles without obstructing customer walk-ins or test drive dispatch.',
-      deploymentScale: '8 Guards, 1 Head Sentry',
-      solutionHighlights: [
-        'Key custody logbook management for inventory units',
-        'Service bay visitor pass clearance',
-        'Floodlit night showroom guarding'
-      ],
-      result: '100% asset safeguarding with zero vehicle transit damage.'
+    "id": "client-11",
+    "serialNumber": 11,
+    "clientName": "Corp Protection & Care Center",
+    "category": "Engineering & Heavy",
+    "location": "BSCIC Industrial Estate, Dhamrai, Dhaka",
+    "clientLiaison": "Mr. Toufiqul, Managing Director",
+    "serviceType": "Unarmed Manned Guarding & Perimeter Security",
+    "description": "Official verified security guarding assignment deployed at Corp Protection & Care Center, situated at BSCIC Industrial Estate, Dhamrai, Dhaka. Operational coordination managed through Mr. Toufiqul, Managing Director.",
+    "fullDetails": {
+      "liaisonName": "Mr. Toufiqul, Managing Director",
+      "deploymentScope": "24/7 static guard sentry, shift gate attendance, perimeter patrol & emergency firefighting compliance.",
+      "verifiedLocation": "BSCIC Industrial Estate, Dhamrai, Dhaka",
+      "terms": [
+        "Unarmed security guard services with proper security & firefighting training",
+        "Full uniform equipment: batons, whistles, torches, transport & umbrellas",
+        "Formal Deed of Agreement governance with joint inquiry loss protocol",
+        "30 days standard written notice operational protocol"
+      ]
     },
-    image: 'https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=800&q=80',
-    tags: ['Commercial', 'Showroom', 'Asset Integrity'],
-    isDemo: true
+    "image": "/images/sssl-female-guards-drill.jpg",
+    "tags": [
+      "Engineering",
+      "Verified Client",
+      "Manned Guarding"
+    ],
+    "isVerified": true,
+    "officialRef": "SSSL Official Profile Entry #11"
   },
   {
-    id: 'proj-12',
-    title: 'Annual General Meeting & Corporate Shareholder Assembly',
-    category: 'Event',
-    location: 'Radisson Blu Water Garden, Dhaka',
-    client: 'Publicly Listed Conglomerate',
-    completionYear: '2025',
-    description: 'Stage security cordon, shareholder registration queue control, ballot room guard post, and executive motorcade handling.',
-    fullDetails: {
-      challenge: 'Ensuring orderly conduct among 2,500 shareholders during voting sessions and sensitive agenda presentations.',
-      deploymentScale: '28 Event Officers, 2 Chief Marshals',
-      solutionHighlights: [
-        'Queue segregation for registered voting delegates',
-        'Podium and board table perimeter demarcation',
-        'Swift de-escalation of vocal grievances'
-      ],
-      result: 'AGM concluded seamlessly within scheduled timeframe in full order.'
+    "id": "client-12",
+    "serialNumber": 12,
+    "clientName": "Clothing Carnivals Ltd.",
+    "category": "Industrial & RMG",
+    "location": "North Gazirchat, Aliya Madrasha Road, Ashulia, Dhaka.",
+    "clientLiaison": "Md. Arifuzzaman, Director",
+    "serviceType": "Unarmed Manned Guarding & Perimeter Security",
+    "description": "Official verified security guarding assignment deployed at Clothing Carnivals Ltd., situated at North Gazirchat, Aliya Madrasha Road, Ashulia, Dhaka.. Operational coordination managed through Md. Arifuzzaman, Director.",
+    "fullDetails": {
+      "liaisonName": "Md. Arifuzzaman, Director",
+      "deploymentScope": "24/7 static guard sentry, shift gate attendance, perimeter patrol & emergency firefighting compliance.",
+      "verifiedLocation": "North Gazirchat, Aliya Madrasha Road, Ashulia, Dhaka.",
+      "terms": [
+        "Unarmed security guard services with proper security & firefighting training",
+        "Full uniform equipment: batons, whistles, torches, transport & umbrellas",
+        "Formal Deed of Agreement governance with joint inquiry loss protocol",
+        "30 days standard written notice operational protocol"
+      ]
     },
-    image: 'https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&w=800&q=80',
-    tags: ['Event', 'Corporate AGM', 'Crowd Control'],
-    isDemo: true
+    "image": "/images/sssl-officer-walkie.jpg",
+    "tags": [
+      "Industrial",
+      "Verified Client",
+      "Manned Guarding"
+    ],
+    "isVerified": true,
+    "officialRef": "SSSL Official Profile Entry #12"
   },
   {
-    id: 'proj-13',
-    title: 'Ashulia Inland Container Depot (ICD) Gate Sentry',
-    category: 'Industrial',
-    location: 'DEPZ / Ashulia Logistics Belt, Dhaka',
-    client: 'Inland Logistics & Freight Station',
-    completionYear: '2024',
-    description: 'Heavy container vehicle entry pass inspection, container lock inspection, and night yard perimeter surveillance.',
-    fullDetails: {
-      challenge: 'High-volume 40ft container truck maneuvers and securing open freight storage across 20 acres against night intrusion.',
-      deploymentScale: '20 Industrial Watchmen, 2 Roving Motorbike Patrols',
-      solutionHighlights: [
-        'Container seal integrity visual check and log verification',
-        'Reflective high-visibility traffic guiding uniforms',
-        'Perimeter solar floodlight line monitoring'
-      ],
-      result: 'Zero container seal tampering instances over 2 years of deployment.'
+    "id": "client-13",
+    "serialNumber": 13,
+    "clientName": "Euro Printing Industries (pvt.) Ltd.",
+    "category": "Packaging & Accessories",
+    "location": "Baipail, Ashulia, Savar, Dhaka.",
+    "clientLiaison": "Md. A.Salam, Manager",
+    "serviceType": "Unarmed Manned Guarding & Perimeter Security",
+    "description": "Official verified security guarding assignment deployed at Euro Printing Industries (pvt.) Ltd., situated at Baipail, Ashulia, Savar, Dhaka.. Operational coordination managed through Md. A.Salam, Manager.",
+    "fullDetails": {
+      "liaisonName": "Md. A.Salam, Manager",
+      "deploymentScope": "24/7 static guard sentry, shift gate attendance, perimeter patrol & emergency firefighting compliance.",
+      "verifiedLocation": "Baipail, Ashulia, Savar, Dhaka.",
+      "terms": [
+        "Unarmed security guard services with proper security & firefighting training",
+        "Full uniform equipment: batons, whistles, torches, transport & umbrellas",
+        "Formal Deed of Agreement governance with joint inquiry loss protocol",
+        "30 days standard written notice operational protocol"
+      ]
     },
-    image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80',
-    tags: ['Industrial', 'Freight Depot', 'Logistics Guarding'],
-    isDemo: true
+    "image": "/images/sssl-guard-squad-1.jpg",
+    "tags": [
+      "Packaging",
+      "Verified Client",
+      "Manned Guarding"
+    ],
+    "isVerified": true,
+    "officialRef": "SSSL Official Profile Entry #13"
   },
   {
-    id: 'proj-14',
-    title: 'International School & Campus Child Safety Security',
-    category: 'Commercial',
-    location: 'Uttara Model Town, Dhaka',
-    client: 'Private International English Medium School',
-    completionYear: '2025',
-    description: 'Student arrival and drop-off traffic control, authorized guardian pickup card verification, and visitor background checks.',
-    fullDetails: {
-      challenge: 'High emotional sensitivity and strict prohibition against unauthorized adult contact with school children.',
-      deploymentScale: '10 School Security Guards, 2 Female Attendant Sentries',
-      solutionHighlights: [
-        'Guardian pickup RFID card cross-match',
-        'Peak hour school bus queue traffic management',
-        'Campus playground perimeter observation'
-      ],
-      result: '100% child release accuracy with zero parent disputes.'
+    "id": "client-14",
+    "serialNumber": 14,
+    "clientName": "Everrich Industries Ltd.",
+    "category": "Industrial & RMG",
+    "location": "Altaf Nagar, Durgapur, Zirabo, Ashulia, Dhaka.",
+    "clientLiaison": "Chiu Chia Chi, Director",
+    "serviceType": "Unarmed Manned Guarding & Perimeter Security",
+    "description": "Official verified security guarding assignment deployed at Everrich Industries Ltd., situated at Altaf Nagar, Durgapur, Zirabo, Ashulia, Dhaka.. Operational coordination managed through Chiu Chia Chi, Director.",
+    "fullDetails": {
+      "liaisonName": "Chiu Chia Chi, Director",
+      "deploymentScope": "24/7 static guard sentry, shift gate attendance, perimeter patrol & emergency firefighting compliance.",
+      "verifiedLocation": "Altaf Nagar, Durgapur, Zirabo, Ashulia, Dhaka.",
+      "terms": [
+        "Unarmed security guard services with proper security & firefighting training",
+        "Full uniform equipment: batons, whistles, torches, transport & umbrellas",
+        "Formal Deed of Agreement governance with joint inquiry loss protocol",
+        "30 days standard written notice operational protocol"
+      ]
     },
-    image: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=800&q=80',
-    tags: ['Commercial', 'Campus Safety', 'Access Control'],
-    isDemo: true
+    "image": "/images/sssl-guard-parade.jpg",
+    "tags": [
+      "Industrial",
+      "Verified Client",
+      "Manned Guarding"
+    ],
+    "isVerified": true,
+    "officialRef": "SSSL Official Profile Entry #14"
   },
   {
-    id: 'proj-15',
-    title: 'Steel Mill & Heavy Fabrication Plant Perimeter Guarding',
-    category: 'Industrial',
-    location: 'Narayanganj Industrial Corridor',
-    client: 'Heavy Steel Re-rolling Mills',
-    completionYear: '2024',
-    description: 'High-temperature industrial environment protection, scrap metal weighbridge audit, and worker PPE compliance enforcement at gates.',
-    fullDetails: {
-      challenge: 'Harsh industrial conditions with scrap metal pilferage risks and heavy vehicle movement.',
-      deploymentScale: '16 Heavy-Duty Security Guards',
-      solutionHighlights: [
-        'Gross and tare weight scale verification slips',
-        'Driver safety helmet and boot compliance check',
-        'Perimeter scrap yard night patrol'
-      ],
-      result: 'Reduced scrap losses to negligible levels and improved plant gate safety compliance.'
+    "id": "client-15",
+    "serialNumber": 15,
+    "clientName": "Excellent Sweaters Ltd.",
+    "category": "Industrial & RMG",
+    "location": "Plot-195, Bengal Plaza-5, Jamgora, Ashulia, Dhaka.",
+    "clientLiaison": "Mr. Tipu, Director",
+    "serviceType": "Unarmed Manned Guarding & Perimeter Security",
+    "description": "Official verified security guarding assignment deployed at Excellent Sweaters Ltd., situated at Plot-195, Bengal Plaza-5, Jamgora, Ashulia, Dhaka.. Operational coordination managed through Mr. Tipu, Director.",
+    "fullDetails": {
+      "liaisonName": "Mr. Tipu, Director",
+      "deploymentScope": "24/7 static guard sentry, shift gate attendance, perimeter patrol & emergency firefighting compliance.",
+      "verifiedLocation": "Plot-195, Bengal Plaza-5, Jamgora, Ashulia, Dhaka.",
+      "terms": [
+        "Unarmed security guard services with proper security & firefighting training",
+        "Full uniform equipment: batons, whistles, torches, transport & umbrellas",
+        "Formal Deed of Agreement governance with joint inquiry loss protocol",
+        "30 days standard written notice operational protocol"
+      ]
     },
-    image: 'https://images.unsplash.com/photo-1504917599217-d4dc5ebe6122?auto=format&fit=crop&w=800&q=80',
-    tags: ['Industrial', 'Heavy Industry', 'Perimeter Watch'],
-    isDemo: true
+    "image": "/images/sssl-female-guards-drill.jpg",
+    "tags": [
+      "Industrial",
+      "Verified Client",
+      "Manned Guarding"
+    ],
+    "isVerified": true,
+    "officialRef": "SSSL Official Profile Entry #15"
   },
   {
-    id: 'proj-16',
-    title: 'Private Hospital & Emergency Wing Security',
-    category: 'Commercial',
-    location: 'Dhanmondi, Dhaka',
-    client: 'Specialized 200-Bed Hospital',
-    completionYear: '2025',
-    description: 'Emergency ward conflict de-escalation, visitor crowd limits, doctor protection, and ambulance bay clearance.',
-    fullDetails: {
-      challenge: 'Emotionally charged emergency situations where aggressive family reactions must be defused respectfully without violence.',
-      deploymentScale: '18 Trained Hospital Sentries',
-      solutionHighlights: [
-        'De-escalation trained security personnel',
-        'Ambulance ramp immediate clearance protocol',
-        'ICU visiting pass strict 1-visitor limitation'
-      ],
-      result: 'Zero disruption of emergency medical procedures and protection of attending doctors.'
+    "id": "client-16",
+    "serialNumber": 16,
+    "clientName": "Global Premium Accessories Ltd.",
+    "category": "Packaging & Accessories",
+    "location": "BSCIC Industrial Estate, Dhamrai, Dhaka.",
+    "clientLiaison": "Managing Director",
+    "serviceType": "Unarmed Manned Guarding & Perimeter Security",
+    "description": "Official verified security guarding assignment deployed at Global Premium Accessories Ltd., situated at BSCIC Industrial Estate, Dhamrai, Dhaka.. Operational coordination managed through Managing Director.",
+    "fullDetails": {
+      "liaisonName": "Managing Director",
+      "deploymentScope": "24/7 static guard sentry, shift gate attendance, perimeter patrol & emergency firefighting compliance.",
+      "verifiedLocation": "BSCIC Industrial Estate, Dhamrai, Dhaka.",
+      "terms": [
+        "Unarmed security guard services with proper security & firefighting training",
+        "Full uniform equipment: batons, whistles, torches, transport & umbrellas",
+        "Formal Deed of Agreement governance with joint inquiry loss protocol",
+        "30 days standard written notice operational protocol"
+      ]
     },
-    image: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=800&q=80',
-    tags: ['Commercial', 'Healthcare', 'Crisis De-escalation'],
-    isDemo: true
+    "image": "/images/sssl-officer-walkie.jpg",
+    "tags": [
+      "Packaging",
+      "Verified Client",
+      "Manned Guarding"
+    ],
+    "isVerified": true,
+    "officialRef": "SSSL Official Profile Entry #16"
   },
   {
-    id: 'proj-17',
-    title: 'Luxury Apartment Complex (180 Units) Security Guarding',
-    category: 'Residential',
-    location: 'Bashundhara R/A, Dhaka',
-    client: 'Residential Condominium Owners Association',
-    completionYear: '2025',
-    description: 'Biometric gate entry, 3-level basement parking security, rooftop leisure zone surveillance, and night perimeter watch.',
-    fullDetails: {
-      challenge: 'Providing tight security while ensuring effortless entry for 180 resident families, their vehicles, and service staff.',
-      deploymentScale: '14 Residential Guards, 1 Facility Security Supervisor',
-      solutionHighlights: [
-        'Automated vehicle barrier linked to license recognition',
-        'Guest parking voucher system',
-        'Children playground security monitoring'
-      ],
-      result: 'Community recognized for zero reported thefts over 24 consecutive months.'
+    "id": "client-17",
+    "serialNumber": 17,
+    "clientName": "Golden Union Leather Products Ltd.",
+    "category": "Industrial & RMG",
+    "location": "Alanur Tower, North Gazirchat, Ashulia, Savar, Dhaka-1349",
+    "clientLiaison": "Md. Nazmul Islam, Accounts Manager",
+    "serviceType": "Unarmed Manned Guarding & Perimeter Security",
+    "description": "Official verified security guarding assignment deployed at Golden Union Leather Products Ltd., situated at Alanur Tower, North Gazirchat, Ashulia, Savar, Dhaka-1349. Operational coordination managed through Md. Nazmul Islam, Accounts Manager.",
+    "fullDetails": {
+      "liaisonName": "Md. Nazmul Islam, Accounts Manager",
+      "deploymentScope": "24/7 static guard sentry, shift gate attendance, perimeter patrol & emergency firefighting compliance.",
+      "verifiedLocation": "Alanur Tower, North Gazirchat, Ashulia, Savar, Dhaka-1349",
+      "terms": [
+        "Unarmed security guard services with proper security & firefighting training",
+        "Full uniform equipment: batons, whistles, torches, transport & umbrellas",
+        "Formal Deed of Agreement governance with joint inquiry loss protocol",
+        "30 days standard written notice operational protocol"
+      ]
     },
-    image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=800&q=80',
-    tags: ['Residential', 'Condominium', 'Access Control'],
-    isDemo: true
+    "image": "/images/sssl-guard-squad-1.jpg",
+    "tags": [
+      "Industrial",
+      "Verified Client",
+      "Manned Guarding"
+    ],
+    "isVerified": true,
+    "officialRef": "SSSL Official Profile Entry #17"
   },
   {
-    id: 'proj-18',
-    title: 'Telecom Tower & Remote BTS Station Vigilance',
-    category: 'Access Control',
-    location: 'Manikganj & Greater Dhaka Suburbs',
-    client: 'National Cellular Network Operator',
-    completionYear: '2024',
-    description: 'Protection of high-value battery banks, diesel generators, and transmission equipment at 25 unmanned cellular towers.',
-    fullDetails: {
-      challenge: 'Vandalism and battery theft attempts at isolated rural and suburban telecommunication relay sites.',
-      deploymentScale: 'Mobile Quick Response Team (QRT) + Local Caretakers',
-      solutionHighlights: [
-        'Intrusion alarm sensor relay to central SSSL desk',
-        'Rapid response motorcycle patrol response',
-        'Diesel generator fueling supervision logs'
-      ],
-      result: 'Zero network downtime caused by physical intrusion across 25 sites.'
+    "id": "client-18",
+    "serialNumber": 18,
+    "clientName": "Hyun Apparels Ltd.",
+    "category": "Industrial & RMG",
+    "location": "Bengal Plaza-5, Jamgora, Ashulia, Dhaka.",
+    "clientLiaison": "Md. Hasan, Admin Manager",
+    "serviceType": "Unarmed Manned Guarding & Perimeter Security",
+    "description": "Official verified security guarding assignment deployed at Hyun Apparels Ltd., situated at Bengal Plaza-5, Jamgora, Ashulia, Dhaka.. Operational coordination managed through Md. Hasan, Admin Manager.",
+    "fullDetails": {
+      "liaisonName": "Md. Hasan, Admin Manager",
+      "deploymentScope": "24/7 static guard sentry, shift gate attendance, perimeter patrol & emergency firefighting compliance.",
+      "verifiedLocation": "Bengal Plaza-5, Jamgora, Ashulia, Dhaka.",
+      "terms": [
+        "Unarmed security guard services with proper security & firefighting training",
+        "Full uniform equipment: batons, whistles, torches, transport & umbrellas",
+        "Formal Deed of Agreement governance with joint inquiry loss protocol",
+        "30 days standard written notice operational protocol"
+      ]
     },
-    image: 'https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=800&q=80',
-    tags: ['Access Control', 'Telecom BTS', 'Rapid Response'],
-    isDemo: true
+    "image": "/images/sssl-guard-parade.jpg",
+    "tags": [
+      "Industrial",
+      "Verified Client",
+      "Manned Guarding"
+    ],
+    "isVerified": true,
+    "officialRef": "SSSL Official Profile Entry #18"
   },
   {
-    id: 'proj-19',
-    title: 'Embassy Cultural Week & Film Festival Protection',
-    category: 'Event',
-    location: 'National Museum Auditorium, Dhaka',
-    client: 'Cultural Exchange Commission',
-    completionYear: '2024',
-    description: 'Crowd screening, bag inspection with hand-held metal detectors, foreign delegate escort, and ticket queue order.',
-    fullDetails: {
-      challenge: 'High profile diplomatic visitors mingling with public cultural crowds over a 5-day celebration.',
-      deploymentScale: '22 Event Sentries, 2 Female Inspection Officers',
-      solutionHighlights: [
-        'Double-cordon entry verification checkpoint',
-        'Auditorium interior aisle fire-exit supervision',
-        'Vetted parking escort for diplomatic vehicles'
-      ],
-      result: 'Peaceful cultural exchange without safety incidents or queue delays.'
+    "id": "client-19",
+    "serialNumber": 19,
+    "clientName": "HopYick (BD) Ltd.",
+    "category": "EPZ & Special Zones",
+    "location": "44-46, Dhaka EPZ (West), Ganakbari, Savar, Dhaka.",
+    "clientLiaison": "Md. Shofiqur Rahman, Admin Manager",
+    "serviceType": "Unarmed Manned Guarding & Perimeter Security",
+    "description": "Official verified security guarding assignment deployed at HopYick (BD) Ltd., situated at 44-46, Dhaka EPZ (West), Ganakbari, Savar, Dhaka.. Operational coordination managed through Md. Shofiqur Rahman, Admin Manager.",
+    "fullDetails": {
+      "liaisonName": "Md. Shofiqur Rahman, Admin Manager",
+      "deploymentScope": "24/7 static guard sentry, shift gate attendance, perimeter patrol & emergency firefighting compliance.",
+      "verifiedLocation": "44-46, Dhaka EPZ (West), Ganakbari, Savar, Dhaka.",
+      "terms": [
+        "Unarmed security guard services with proper security & firefighting training",
+        "Full uniform equipment: batons, whistles, torches, transport & umbrellas",
+        "Formal Deed of Agreement governance with joint inquiry loss protocol",
+        "30 days standard written notice operational protocol"
+      ]
     },
-    image: 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=800&q=80',
-    tags: ['Event', 'Cultural Festival', 'VIP Security'],
-    isDemo: true
+    "image": "/images/sssl-female-guards-drill.jpg",
+    "tags": [
+      "EPZ",
+      "Verified Client",
+      "Manned Guarding"
+    ],
+    "isVerified": true,
+    "officialRef": "SSSL Official Profile Entry #19"
   },
   {
-    id: 'proj-20',
-    title: 'Corporate Bank Tower Night Surveillance & Lockout Sweep',
-    category: 'Corporate',
-    location: 'Karwan Bazar Commercial Hub, Dhaka',
-    client: 'Financial Services Headquarters',
-    completionYear: '2025',
-    description: 'After-hours internal sweeps, data room lock verification, clean desk audit enforcement, and overnight external sentry watch.',
-    fullDetails: {
-      challenge: 'Protecting sensitive client dossiers, currency counting rooms, and preventing unauthorized overnight stay.',
-      deploymentScale: '8 Night Security Officers, 1 Shift Captain',
-      solutionHighlights: [
-        'Hourly barcode checkpoint scanning at all emergency stairwells',
-        'Server room thermal and water leakage observation',
-        'Executive office door seal inspections'
-      ],
-      result: 'Total peace of mind for management with detailed morning patrol logs.'
+    "id": "client-20",
+    "serialNumber": 20,
+    "clientName": "Hyopshin Company Ltd.",
+    "category": "EPZ & Special Zones",
+    "location": "Plot# 88-92, DEPZ, Ganakbari, Savar, Dhaka-1349.",
+    "clientLiaison": "Gun Suck Park, Director",
+    "serviceType": "Unarmed Manned Guarding & Perimeter Security",
+    "description": "Official verified security guarding assignment deployed at Hyopshin Company Ltd., situated at Plot# 88-92, DEPZ, Ganakbari, Savar, Dhaka-1349.. Operational coordination managed through Gun Suck Park, Director.",
+    "fullDetails": {
+      "liaisonName": "Gun Suck Park, Director",
+      "deploymentScope": "24/7 static guard sentry, shift gate attendance, perimeter patrol & emergency firefighting compliance.",
+      "verifiedLocation": "Plot# 88-92, DEPZ, Ganakbari, Savar, Dhaka-1349.",
+      "terms": [
+        "Unarmed security guard services with proper security & firefighting training",
+        "Full uniform equipment: batons, whistles, torches, transport & umbrellas",
+        "Formal Deed of Agreement governance with joint inquiry loss protocol",
+        "30 days standard written notice operational protocol"
+      ]
     },
-    image: 'https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=800&q=80',
-    tags: ['Corporate', 'Night Surveillance', 'Floor Lockdown'],
-    isDemo: true
+    "image": "/images/sssl-officer-walkie.jpg",
+    "tags": [
+      "EPZ",
+      "Verified Client",
+      "Manned Guarding"
+    ],
+    "isVerified": true,
+    "officialRef": "SSSL Official Profile Entry #20"
   },
   {
-    id: 'proj-21',
-    title: 'Food & Beverage Processing Facility Gate Operations',
-    category: 'Industrial',
-    location: 'Dhamrai Agro-Industrial Area, Dhaka',
-    client: 'FMCG Food Processing Plant',
-    completionYear: '2025',
-    description: 'Hygiene gate check, raw material vegetable and grain delivery inspection, and perimeter surveillance.',
-    fullDetails: {
-      challenge: 'Enforcing strict sanitary head-cover and hand sanitation rules at all factory worker entrance gates.',
-      deploymentScale: '12 Industrial Guards, 1 Quality Gatekeeper',
-      solutionHighlights: [
-        'Sanitation compliance checkpoint before locker room entry',
-        'Delivery truck temperature log recording',
-        'Perimeter bio-security perimeter check'
-      ],
-      result: 'Zero contamination incident and full adherence to international food processing audits.'
+    "id": "client-21",
+    "serialNumber": 21,
+    "clientName": "Hyopshin Company Ltd. (Unit-2)",
+    "category": "EPZ & Special Zones",
+    "location": "Plot# 21-24, DEPZ, Ganakbari, Savar, Dhaka-1349.",
+    "clientLiaison": "Gun Suck Park, Director",
+    "serviceType": "Unarmed Manned Guarding & Perimeter Security",
+    "description": "Official verified security guarding assignment deployed at Hyopshin Company Ltd. (Unit-2), situated at Plot# 21-24, DEPZ, Ganakbari, Savar, Dhaka-1349.. Operational coordination managed through Gun Suck Park, Director.",
+    "fullDetails": {
+      "liaisonName": "Gun Suck Park, Director",
+      "deploymentScope": "24/7 static guard sentry, shift gate attendance, perimeter patrol & emergency firefighting compliance.",
+      "verifiedLocation": "Plot# 21-24, DEPZ, Ganakbari, Savar, Dhaka-1349.",
+      "terms": [
+        "Unarmed security guard services with proper security & firefighting training",
+        "Full uniform equipment: batons, whistles, torches, transport & umbrellas",
+        "Formal Deed of Agreement governance with joint inquiry loss protocol",
+        "30 days standard written notice operational protocol"
+      ]
     },
-    image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80',
-    tags: ['Industrial', 'Food Processing', 'Hygiene Gate'],
-    isDemo: true
+    "image": "/images/sssl-guard-squad-1.jpg",
+    "tags": [
+      "EPZ",
+      "Verified Client",
+      "Manned Guarding"
+    ],
+    "isVerified": true,
+    "officialRef": "SSSL Official Profile Entry #21"
   },
   {
-    id: 'proj-22',
-    title: 'Mega Infrastructure Construction Material Depot',
-    category: 'Industrial',
-    location: 'Aricha Highway Corridor, Savar',
-    client: 'Civil Engineering Infrastructure Contractor',
-    completionYear: '2025',
-    description: 'Safeguarding heavy machinery, rebar rod stacks, fuel diesel storage, and 24/7 highway perimeter watch.',
-    fullDetails: {
-      challenge: 'Sprawling outdoor storage yard exposed to highway transit and potential nighttime fuel and metal theft.',
-      deploymentScale: '14 Heavy Yard Watchmen, Guard Dogs Liaison (where permitted)',
-      solutionHighlights: [
-        'Fuel bowser dip-stick and dispenser meter security logs',
-        'Perimeter high-intensity searchlight posts',
-        'Material gate-pass counterfoil verification'
-      ],
-      result: 'Zero unauthorized fuel draw and complete rebar material inventory reconciliation.'
+    "id": "client-22",
+    "serialNumber": 22,
+    "clientName": "I-mart Engineering Ltd.",
+    "category": "Engineering & Heavy",
+    "location": "Glora, Saturia, Manikgonj.",
+    "clientLiaison": "Md. Shamim, Manager",
+    "serviceType": "Unarmed Manned Guarding & Perimeter Security",
+    "description": "Official verified security guarding assignment deployed at I-mart Engineering Ltd., situated at Glora, Saturia, Manikgonj.. Operational coordination managed through Md. Shamim, Manager.",
+    "fullDetails": {
+      "liaisonName": "Md. Shamim, Manager",
+      "deploymentScope": "24/7 static guard sentry, shift gate attendance, perimeter patrol & emergency firefighting compliance.",
+      "verifiedLocation": "Glora, Saturia, Manikgonj.",
+      "terms": [
+        "Unarmed security guard services with proper security & firefighting training",
+        "Full uniform equipment: batons, whistles, torches, transport & umbrellas",
+        "Formal Deed of Agreement governance with joint inquiry loss protocol",
+        "30 days standard written notice operational protocol"
+      ]
     },
-    image: 'https://images.unsplash.com/photo-1541888946425-d0fbb18615f8?auto=format&fit=crop&w=800&q=80',
-    tags: ['Industrial', 'Construction Depot', 'Material Safeguard'],
-    isDemo: true
+    "image": "/images/sssl-guard-parade.jpg",
+    "tags": [
+      "Engineering",
+      "Verified Client",
+      "Manned Guarding"
+    ],
+    "isVerified": true,
+    "officialRef": "SSSL Official Profile Entry #22"
+  },
+  {
+    "id": "client-23",
+    "serialNumber": 23,
+    "clientName": "ISC Enterprise (BD) Ltd.",
+    "category": "Engineering & Heavy",
+    "location": "Plot# B-25, BSCIC Industrial Area, Dhamrai, Dhaka.",
+    "clientLiaison": "Mrs. Rabeya, Factory Manager",
+    "serviceType": "Unarmed Manned Guarding & Perimeter Security",
+    "description": "Official verified security guarding assignment deployed at ISC Enterprise (BD) Ltd., situated at Plot# B-25, BSCIC Industrial Area, Dhamrai, Dhaka.. Operational coordination managed through Mrs. Rabeya, Factory Manager.",
+    "fullDetails": {
+      "liaisonName": "Mrs. Rabeya, Factory Manager",
+      "deploymentScope": "24/7 static guard sentry, shift gate attendance, perimeter patrol & emergency firefighting compliance.",
+      "verifiedLocation": "Plot# B-25, BSCIC Industrial Area, Dhamrai, Dhaka.",
+      "terms": [
+        "Unarmed security guard services with proper security & firefighting training",
+        "Full uniform equipment: batons, whistles, torches, transport & umbrellas",
+        "Formal Deed of Agreement governance with joint inquiry loss protocol",
+        "30 days standard written notice operational protocol"
+      ]
+    },
+    "image": "/images/sssl-female-guards-drill.jpg",
+    "tags": [
+      "Engineering",
+      "Verified Client",
+      "Manned Guarding"
+    ],
+    "isVerified": true,
+    "officialRef": "SSSL Official Profile Entry #23"
+  },
+  {
+    "id": "client-24",
+    "serialNumber": 24,
+    "clientName": "Kaifeng Textile Ltd.",
+    "category": "Industrial & RMG",
+    "location": "Hemayetpur, Savar, Dhaka.",
+    "clientLiaison": "Md. Salauddin, General Manager",
+    "serviceType": "Unarmed Manned Guarding & Perimeter Security",
+    "description": "Official verified security guarding assignment deployed at Kaifeng Textile Ltd., situated at Hemayetpur, Savar, Dhaka.. Operational coordination managed through Md. Salauddin, General Manager.",
+    "fullDetails": {
+      "liaisonName": "Md. Salauddin, General Manager",
+      "deploymentScope": "24/7 static guard sentry, shift gate attendance, perimeter patrol & emergency firefighting compliance.",
+      "verifiedLocation": "Hemayetpur, Savar, Dhaka.",
+      "terms": [
+        "Unarmed security guard services with proper security & firefighting training",
+        "Full uniform equipment: batons, whistles, torches, transport & umbrellas",
+        "Formal Deed of Agreement governance with joint inquiry loss protocol",
+        "30 days standard written notice operational protocol"
+      ]
+    },
+    "image": "/images/sssl-officer-walkie.jpg",
+    "tags": [
+      "Industrial",
+      "Verified Client",
+      "Manned Guarding"
+    ],
+    "isVerified": true,
+    "officialRef": "SSSL Official Profile Entry #24"
+  },
+  {
+    "id": "client-25",
+    "serialNumber": 25,
+    "clientName": "Khadiza Knitting",
+    "category": "Industrial & RMG",
+    "location": "Bhabanipur, Kashimpur, Gazipur, Dhaka.",
+    "clientLiaison": "Md. Ratan Mia, Managing Partner",
+    "serviceType": "Unarmed Manned Guarding & Perimeter Security",
+    "description": "Official verified security guarding assignment deployed at Khadiza Knitting, situated at Bhabanipur, Kashimpur, Gazipur, Dhaka.. Operational coordination managed through Md. Ratan Mia, Managing Partner.",
+    "fullDetails": {
+      "liaisonName": "Md. Ratan Mia, Managing Partner",
+      "deploymentScope": "24/7 static guard sentry, shift gate attendance, perimeter patrol & emergency firefighting compliance.",
+      "verifiedLocation": "Bhabanipur, Kashimpur, Gazipur, Dhaka.",
+      "terms": [
+        "Unarmed security guard services with proper security & firefighting training",
+        "Full uniform equipment: batons, whistles, torches, transport & umbrellas",
+        "Formal Deed of Agreement governance with joint inquiry loss protocol",
+        "30 days standard written notice operational protocol"
+      ]
+    },
+    "image": "/images/sssl-guard-squad-1.jpg",
+    "tags": [
+      "Industrial",
+      "Verified Client",
+      "Manned Guarding"
+    ],
+    "isVerified": true,
+    "officialRef": "SSSL Official Profile Entry #25"
+  },
+  {
+    "id": "client-26",
+    "serialNumber": 26,
+    "clientName": "Khadiza Knitting (Unit-2)",
+    "category": "Industrial & RMG",
+    "location": "Kashimpur, Gazipur, Dhaka.",
+    "clientLiaison": "Md. Ratan Mia, Managing Partner",
+    "serviceType": "Unarmed Manned Guarding & Perimeter Security",
+    "description": "Official verified security guarding assignment deployed at Khadiza Knitting (Unit-2), situated at Kashimpur, Gazipur, Dhaka.. Operational coordination managed through Md. Ratan Mia, Managing Partner.",
+    "fullDetails": {
+      "liaisonName": "Md. Ratan Mia, Managing Partner",
+      "deploymentScope": "24/7 static guard sentry, shift gate attendance, perimeter patrol & emergency firefighting compliance.",
+      "verifiedLocation": "Kashimpur, Gazipur, Dhaka.",
+      "terms": [
+        "Unarmed security guard services with proper security & firefighting training",
+        "Full uniform equipment: batons, whistles, torches, transport & umbrellas",
+        "Formal Deed of Agreement governance with joint inquiry loss protocol",
+        "30 days standard written notice operational protocol"
+      ]
+    },
+    "image": "/images/sssl-guard-parade.jpg",
+    "tags": [
+      "Industrial",
+      "Verified Client",
+      "Manned Guarding"
+    ],
+    "isVerified": true,
+    "officialRef": "SSSL Official Profile Entry #26"
+  },
+  {
+    "id": "client-27",
+    "serialNumber": 27,
+    "clientName": "Legend Trims Ltd.",
+    "category": "Packaging & Accessories",
+    "location": "Ramjan Market, Bamnertek, Nishatnagar, Turag, Dhaka-1230.",
+    "clientLiaison": "Shuvo Mortuza, Managing Director",
+    "serviceType": "Unarmed Manned Guarding & Perimeter Security",
+    "description": "Official verified security guarding assignment deployed at Legend Trims Ltd., situated at Ramjan Market, Bamnertek, Nishatnagar, Turag, Dhaka-1230.. Operational coordination managed through Shuvo Mortuza, Managing Director.",
+    "fullDetails": {
+      "liaisonName": "Shuvo Mortuza, Managing Director",
+      "deploymentScope": "24/7 static guard sentry, shift gate attendance, perimeter patrol & emergency firefighting compliance.",
+      "verifiedLocation": "Ramjan Market, Bamnertek, Nishatnagar, Turag, Dhaka-1230.",
+      "terms": [
+        "Unarmed security guard services with proper security & firefighting training",
+        "Full uniform equipment: batons, whistles, torches, transport & umbrellas",
+        "Formal Deed of Agreement governance with joint inquiry loss protocol",
+        "30 days standard written notice operational protocol"
+      ]
+    },
+    "image": "/images/sssl-female-guards-drill.jpg",
+    "tags": [
+      "Packaging",
+      "Verified Client",
+      "Manned Guarding"
+    ],
+    "isVerified": true,
+    "officialRef": "SSSL Official Profile Entry #27"
+  },
+  {
+    "id": "client-28",
+    "serialNumber": 28,
+    "clientName": "Land Area",
+    "category": "Commercial & Estates",
+    "location": "Doshaid, Ashulia, Savar, Dhaka",
+    "clientLiaison": "Sufia Ahmed, Owner",
+    "serviceType": "Unarmed Manned Guarding & Perimeter Security",
+    "description": "Official verified security guarding assignment deployed at Land Area, situated at Doshaid, Ashulia, Savar, Dhaka. Operational coordination managed through Sufia Ahmed, Owner.",
+    "fullDetails": {
+      "liaisonName": "Sufia Ahmed, Owner",
+      "deploymentScope": "24/7 static guard sentry, shift gate attendance, perimeter patrol & emergency firefighting compliance.",
+      "verifiedLocation": "Doshaid, Ashulia, Savar, Dhaka",
+      "terms": [
+        "Unarmed security guard services with proper security & firefighting training",
+        "Full uniform equipment: batons, whistles, torches, transport & umbrellas",
+        "Formal Deed of Agreement governance with joint inquiry loss protocol",
+        "30 days standard written notice operational protocol"
+      ]
+    },
+    "image": "/images/sssl-officer-walkie.jpg",
+    "tags": [
+      "Commercial",
+      "Verified Client",
+      "Manned Guarding"
+    ],
+    "isVerified": true,
+    "officialRef": "SSSL Official Profile Entry #28"
+  },
+  {
+    "id": "client-29",
+    "serialNumber": 29,
+    "clientName": "Llano (BD) Ltd.",
+    "category": "Industrial & RMG",
+    "location": "Gorat, East Narshinghapur, Savar, Dhaka.",
+    "clientLiaison": "Md. Kalam, General Manager",
+    "serviceType": "Unarmed Manned Guarding & Perimeter Security",
+    "description": "Official verified security guarding assignment deployed at Llano (BD) Ltd., situated at Gorat, East Narshinghapur, Savar, Dhaka.. Operational coordination managed through Md. Kalam, General Manager.",
+    "fullDetails": {
+      "liaisonName": "Md. Kalam, General Manager",
+      "deploymentScope": "24/7 static guard sentry, shift gate attendance, perimeter patrol & emergency firefighting compliance.",
+      "verifiedLocation": "Gorat, East Narshinghapur, Savar, Dhaka.",
+      "terms": [
+        "Unarmed security guard services with proper security & firefighting training",
+        "Full uniform equipment: batons, whistles, torches, transport & umbrellas",
+        "Formal Deed of Agreement governance with joint inquiry loss protocol",
+        "30 days standard written notice operational protocol"
+      ]
+    },
+    "image": "/images/sssl-guard-squad-1.jpg",
+    "tags": [
+      "Industrial",
+      "Verified Client",
+      "Manned Guarding"
+    ],
+    "isVerified": true,
+    "officialRef": "SSSL Official Profile Entry #29"
+  },
+  {
+    "id": "client-30",
+    "serialNumber": 30,
+    "clientName": "Mark Packaging & Accessories Ltd.",
+    "category": "Packaging & Accessories",
+    "location": "Ramjan Market, Bamnertek, Nishatnagar, Turag, Dhaka-1230.",
+    "clientLiaison": "Shuvo Mortuza, Managing Director",
+    "serviceType": "Unarmed Manned Guarding & Perimeter Security",
+    "description": "Official verified security guarding assignment deployed at Mark Packaging & Accessories Ltd., situated at Ramjan Market, Bamnertek, Nishatnagar, Turag, Dhaka-1230.. Operational coordination managed through Shuvo Mortuza, Managing Director.",
+    "fullDetails": {
+      "liaisonName": "Shuvo Mortuza, Managing Director",
+      "deploymentScope": "24/7 static guard sentry, shift gate attendance, perimeter patrol & emergency firefighting compliance.",
+      "verifiedLocation": "Ramjan Market, Bamnertek, Nishatnagar, Turag, Dhaka-1230.",
+      "terms": [
+        "Unarmed security guard services with proper security & firefighting training",
+        "Full uniform equipment: batons, whistles, torches, transport & umbrellas",
+        "Formal Deed of Agreement governance with joint inquiry loss protocol",
+        "30 days standard written notice operational protocol"
+      ]
+    },
+    "image": "/images/sssl-guard-parade.jpg",
+    "tags": [
+      "Packaging",
+      "Verified Client",
+      "Manned Guarding"
+    ],
+    "isVerified": true,
+    "officialRef": "SSSL Official Profile Entry #30"
+  },
+  {
+    "id": "client-31",
+    "serialNumber": 31,
+    "clientName": "Mark Ice Cream",
+    "category": "Agro & Food",
+    "location": "BSCIC Industrial Estate, Dhamrai, Dhaka",
+    "clientLiaison": "Md. Kabir, Managing Director",
+    "serviceType": "Unarmed Manned Guarding & Perimeter Security",
+    "description": "Official verified security guarding assignment deployed at Mark Ice Cream, situated at BSCIC Industrial Estate, Dhamrai, Dhaka. Operational coordination managed through Md. Kabir, Managing Director.",
+    "fullDetails": {
+      "liaisonName": "Md. Kabir, Managing Director",
+      "deploymentScope": "24/7 static guard sentry, shift gate attendance, perimeter patrol & emergency firefighting compliance.",
+      "verifiedLocation": "BSCIC Industrial Estate, Dhamrai, Dhaka",
+      "terms": [
+        "Unarmed security guard services with proper security & firefighting training",
+        "Full uniform equipment: batons, whistles, torches, transport & umbrellas",
+        "Formal Deed of Agreement governance with joint inquiry loss protocol",
+        "30 days standard written notice operational protocol"
+      ]
+    },
+    "image": "/images/sssl-female-guards-drill.jpg",
+    "tags": [
+      "Agro",
+      "Verified Client",
+      "Manned Guarding"
+    ],
+    "isVerified": true,
+    "officialRef": "SSSL Official Profile Entry #31"
+  },
+  {
+    "id": "client-32",
+    "serialNumber": 32,
+    "clientName": "Mas Lace & Fabrics Ltd.",
+    "category": "Industrial & RMG",
+    "location": "Goalbatan, Kaliakoir, Gazipur.",
+    "clientLiaison": "Md. Washim Rana, Deputy Manager",
+    "serviceType": "Unarmed Manned Guarding & Perimeter Security",
+    "description": "Official verified security guarding assignment deployed at Mas Lace & Fabrics Ltd., situated at Goalbatan, Kaliakoir, Gazipur.. Operational coordination managed through Md. Washim Rana, Deputy Manager.",
+    "fullDetails": {
+      "liaisonName": "Md. Washim Rana, Deputy Manager",
+      "deploymentScope": "24/7 static guard sentry, shift gate attendance, perimeter patrol & emergency firefighting compliance.",
+      "verifiedLocation": "Goalbatan, Kaliakoir, Gazipur.",
+      "terms": [
+        "Unarmed security guard services with proper security & firefighting training",
+        "Full uniform equipment: batons, whistles, torches, transport & umbrellas",
+        "Formal Deed of Agreement governance with joint inquiry loss protocol",
+        "30 days standard written notice operational protocol"
+      ]
+    },
+    "image": "/images/sssl-officer-walkie.jpg",
+    "tags": [
+      "Industrial",
+      "Verified Client",
+      "Manned Guarding"
+    ],
+    "isVerified": true,
+    "officialRef": "SSSL Official Profile Entry #32"
+  },
+  {
+    "id": "client-33",
+    "serialNumber": 33,
+    "clientName": "Mac Printing and Garments Accessories Ltd.",
+    "category": "Packaging & Accessories",
+    "location": "Cantonment Road, Zirabo, Ashulia, Dhaka",
+    "clientLiaison": "Md. Salim-Al-Mamun, Managing Director",
+    "serviceType": "Unarmed Manned Guarding & Perimeter Security",
+    "description": "Official verified security guarding assignment deployed at Mac Printing and Garments Accessories Ltd., situated at Cantonment Road, Zirabo, Ashulia, Dhaka. Operational coordination managed through Md. Salim-Al-Mamun, Managing Director.",
+    "fullDetails": {
+      "liaisonName": "Md. Salim-Al-Mamun, Managing Director",
+      "deploymentScope": "24/7 static guard sentry, shift gate attendance, perimeter patrol & emergency firefighting compliance.",
+      "verifiedLocation": "Cantonment Road, Zirabo, Ashulia, Dhaka",
+      "terms": [
+        "Unarmed security guard services with proper security & firefighting training",
+        "Full uniform equipment: batons, whistles, torches, transport & umbrellas",
+        "Formal Deed of Agreement governance with joint inquiry loss protocol",
+        "30 days standard written notice operational protocol"
+      ]
+    },
+    "image": "/images/sssl-guard-squad-1.jpg",
+    "tags": [
+      "Packaging",
+      "Verified Client",
+      "Manned Guarding"
+    ],
+    "isVerified": true,
+    "officialRef": "SSSL Official Profile Entry #33"
+  },
+  {
+    "id": "client-34",
+    "serialNumber": 34,
+    "clientName": "Pack nd Package Ltd.",
+    "category": "Packaging & Accessories",
+    "location": "Baliakhola, Ghior, Manikgonj.",
+    "clientLiaison": "Alok Sen Gupta, Managing Director",
+    "serviceType": "Unarmed Manned Guarding & Perimeter Security",
+    "description": "Official verified security guarding assignment deployed at Pack nd Package Ltd., situated at Baliakhola, Ghior, Manikgonj.. Operational coordination managed through Alok Sen Gupta, Managing Director.",
+    "fullDetails": {
+      "liaisonName": "Alok Sen Gupta, Managing Director",
+      "deploymentScope": "24/7 static guard sentry, shift gate attendance, perimeter patrol & emergency firefighting compliance.",
+      "verifiedLocation": "Baliakhola, Ghior, Manikgonj.",
+      "terms": [
+        "Unarmed security guard services with proper security & firefighting training",
+        "Full uniform equipment: batons, whistles, torches, transport & umbrellas",
+        "Formal Deed of Agreement governance with joint inquiry loss protocol",
+        "30 days standard written notice operational protocol"
+      ]
+    },
+    "image": "/images/sssl-guard-parade.jpg",
+    "tags": [
+      "Packaging",
+      "Verified Client",
+      "Manned Guarding"
+    ],
+    "isVerified": true,
+    "officialRef": "SSSL Official Profile Entry #34"
+  },
+  {
+    "id": "client-35",
+    "serialNumber": 35,
+    "clientName": "Pullman Knitwear Ltd.",
+    "category": "Industrial & RMG",
+    "location": "Unique, Ashulia, Savar, Dhaka.",
+    "clientLiaison": "Md. Zobbar, Admin Manager",
+    "serviceType": "Unarmed Manned Guarding & Perimeter Security",
+    "description": "Official verified security guarding assignment deployed at Pullman Knitwear Ltd., situated at Unique, Ashulia, Savar, Dhaka.. Operational coordination managed through Md. Zobbar, Admin Manager.",
+    "fullDetails": {
+      "liaisonName": "Md. Zobbar, Admin Manager",
+      "deploymentScope": "24/7 static guard sentry, shift gate attendance, perimeter patrol & emergency firefighting compliance.",
+      "verifiedLocation": "Unique, Ashulia, Savar, Dhaka.",
+      "terms": [
+        "Unarmed security guard services with proper security & firefighting training",
+        "Full uniform equipment: batons, whistles, torches, transport & umbrellas",
+        "Formal Deed of Agreement governance with joint inquiry loss protocol",
+        "30 days standard written notice operational protocol"
+      ]
+    },
+    "image": "/images/sssl-female-guards-drill.jpg",
+    "tags": [
+      "Industrial",
+      "Verified Client",
+      "Manned Guarding"
+    ],
+    "isVerified": true,
+    "officialRef": "SSSL Official Profile Entry #35"
+  },
+  {
+    "id": "client-36",
+    "serialNumber": 36,
+    "clientName": "PLN Construction Ltd.",
+    "category": "Engineering & Heavy",
+    "location": "Cumilla BSCIC, Cumilla",
+    "clientLiaison": "Mr. Rajan, Project Planner",
+    "serviceType": "Unarmed Manned Guarding & Perimeter Security",
+    "description": "Official verified security guarding assignment deployed at PLN Construction Ltd., situated at Cumilla BSCIC, Cumilla. Operational coordination managed through Mr. Rajan, Project Planner.",
+    "fullDetails": {
+      "liaisonName": "Mr. Rajan, Project Planner",
+      "deploymentScope": "24/7 static guard sentry, shift gate attendance, perimeter patrol & emergency firefighting compliance.",
+      "verifiedLocation": "Cumilla BSCIC, Cumilla",
+      "terms": [
+        "Unarmed security guard services with proper security & firefighting training",
+        "Full uniform equipment: batons, whistles, torches, transport & umbrellas",
+        "Formal Deed of Agreement governance with joint inquiry loss protocol",
+        "30 days standard written notice operational protocol"
+      ]
+    },
+    "image": "/images/sssl-officer-walkie.jpg",
+    "tags": [
+      "Engineering",
+      "Verified Client",
+      "Manned Guarding"
+    ],
+    "isVerified": true,
+    "officialRef": "SSSL Official Profile Entry #36"
+  },
+  {
+    "id": "client-37",
+    "serialNumber": 37,
+    "clientName": "RAS Agro Industries Ltd.",
+    "category": "Agro & Food",
+    "location": "Plot-B/21, BSCIC Industrial Estate, Dhamrai, Dhaka.",
+    "clientLiaison": "Md. Abu Taleb, CEO",
+    "serviceType": "Unarmed Manned Guarding & Perimeter Security",
+    "description": "Official verified security guarding assignment deployed at RAS Agro Industries Ltd., situated at Plot-B/21, BSCIC Industrial Estate, Dhamrai, Dhaka.. Operational coordination managed through Md. Abu Taleb, CEO.",
+    "fullDetails": {
+      "liaisonName": "Md. Abu Taleb, CEO",
+      "deploymentScope": "24/7 static guard sentry, shift gate attendance, perimeter patrol & emergency firefighting compliance.",
+      "verifiedLocation": "Plot-B/21, BSCIC Industrial Estate, Dhamrai, Dhaka.",
+      "terms": [
+        "Unarmed security guard services with proper security & firefighting training",
+        "Full uniform equipment: batons, whistles, torches, transport & umbrellas",
+        "Formal Deed of Agreement governance with joint inquiry loss protocol",
+        "30 days standard written notice operational protocol"
+      ]
+    },
+    "image": "/images/sssl-guard-squad-1.jpg",
+    "tags": [
+      "Agro",
+      "Verified Client",
+      "Manned Guarding"
+    ],
+    "isVerified": true,
+    "officialRef": "SSSL Official Profile Entry #37"
+  },
+  {
+    "id": "client-38",
+    "serialNumber": 38,
+    "clientName": "Rapid Accessories Ltd.",
+    "category": "Packaging & Accessories",
+    "location": "A-49/6, Middle Ganda, Savar, Dhaka-1340.",
+    "clientLiaison": "Mr. Rafiqul Islam Rasel, Director",
+    "serviceType": "Unarmed Manned Guarding & Perimeter Security",
+    "description": "Official verified security guarding assignment deployed at Rapid Accessories Ltd., situated at A-49/6, Middle Ganda, Savar, Dhaka-1340.. Operational coordination managed through Mr. Rafiqul Islam Rasel, Director.",
+    "fullDetails": {
+      "liaisonName": "Mr. Rafiqul Islam Rasel, Director",
+      "deploymentScope": "24/7 static guard sentry, shift gate attendance, perimeter patrol & emergency firefighting compliance.",
+      "verifiedLocation": "A-49/6, Middle Ganda, Savar, Dhaka-1340.",
+      "terms": [
+        "Unarmed security guard services with proper security & firefighting training",
+        "Full uniform equipment: batons, whistles, torches, transport & umbrellas",
+        "Formal Deed of Agreement governance with joint inquiry loss protocol",
+        "30 days standard written notice operational protocol"
+      ]
+    },
+    "image": "/images/sssl-guard-parade.jpg",
+    "tags": [
+      "Packaging",
+      "Verified Client",
+      "Manned Guarding"
+    ],
+    "isVerified": true,
+    "officialRef": "SSSL Official Profile Entry #38"
+  },
+  {
+    "id": "client-39",
+    "serialNumber": 39,
+    "clientName": "Rupsha Tower",
+    "category": "Commercial & Estates",
+    "location": "Chayabithi, Amtolamor, Savar, Dhaka",
+    "clientLiaison": "Dr. Md. Ziaul Islam, Chairman",
+    "serviceType": "Unarmed Manned Guarding & Perimeter Security",
+    "description": "Official verified security guarding assignment deployed at Rupsha Tower, situated at Chayabithi, Amtolamor, Savar, Dhaka. Operational coordination managed through Dr. Md. Ziaul Islam, Chairman.",
+    "fullDetails": {
+      "liaisonName": "Dr. Md. Ziaul Islam, Chairman",
+      "deploymentScope": "24/7 static guard sentry, shift gate attendance, perimeter patrol & emergency firefighting compliance.",
+      "verifiedLocation": "Chayabithi, Amtolamor, Savar, Dhaka",
+      "terms": [
+        "Unarmed security guard services with proper security & firefighting training",
+        "Full uniform equipment: batons, whistles, torches, transport & umbrellas",
+        "Formal Deed of Agreement governance with joint inquiry loss protocol",
+        "30 days standard written notice operational protocol"
+      ]
+    },
+    "image": "/images/sssl-female-guards-drill.jpg",
+    "tags": [
+      "Commercial",
+      "Verified Client",
+      "Manned Guarding"
+    ],
+    "isVerified": true,
+    "officialRef": "SSSL Official Profile Entry #39"
+  },
+  {
+    "id": "client-40",
+    "serialNumber": 40,
+    "clientName": "Sailtex Fashion Ltd.",
+    "category": "Industrial & RMG",
+    "location": "Chowdhury Complex, Purbohati Road, Natunpar, Hemayetpur, Savar, Dhaka.",
+    "clientLiaison": "Managing Director",
+    "serviceType": "Unarmed Manned Guarding & Perimeter Security",
+    "description": "Official verified security guarding assignment deployed at Sailtex Fashion Ltd., situated at Chowdhury Complex, Purbohati Road, Natunpar, Hemayetpur, Savar, Dhaka.. Operational coordination managed through Managing Director.",
+    "fullDetails": {
+      "liaisonName": "Managing Director",
+      "deploymentScope": "24/7 static guard sentry, shift gate attendance, perimeter patrol & emergency firefighting compliance.",
+      "verifiedLocation": "Chowdhury Complex, Purbohati Road, Natunpar, Hemayetpur, Savar, Dhaka.",
+      "terms": [
+        "Unarmed security guard services with proper security & firefighting training",
+        "Full uniform equipment: batons, whistles, torches, transport & umbrellas",
+        "Formal Deed of Agreement governance with joint inquiry loss protocol",
+        "30 days standard written notice operational protocol"
+      ]
+    },
+    "image": "/images/sssl-officer-walkie.jpg",
+    "tags": [
+      "Industrial",
+      "Verified Client",
+      "Manned Guarding"
+    ],
+    "isVerified": true,
+    "officialRef": "SSSL Official Profile Entry #40"
+  },
+  {
+    "id": "client-41",
+    "serialNumber": 41,
+    "clientName": "SR Knit Fashion",
+    "category": "Industrial & RMG",
+    "location": "Bhabanipur, Kashimpur, Gazipur Sadar, Gazipur.",
+    "clientLiaison": "Md. Hamidur Rahman, Managing Director",
+    "serviceType": "Unarmed Manned Guarding & Perimeter Security",
+    "description": "Official verified security guarding assignment deployed at SR Knit Fashion, situated at Bhabanipur, Kashimpur, Gazipur Sadar, Gazipur.. Operational coordination managed through Md. Hamidur Rahman, Managing Director.",
+    "fullDetails": {
+      "liaisonName": "Md. Hamidur Rahman, Managing Director",
+      "deploymentScope": "24/7 static guard sentry, shift gate attendance, perimeter patrol & emergency firefighting compliance.",
+      "verifiedLocation": "Bhabanipur, Kashimpur, Gazipur Sadar, Gazipur.",
+      "terms": [
+        "Unarmed security guard services with proper security & firefighting training",
+        "Full uniform equipment: batons, whistles, torches, transport & umbrellas",
+        "Formal Deed of Agreement governance with joint inquiry loss protocol",
+        "30 days standard written notice operational protocol"
+      ]
+    },
+    "image": "/images/sssl-guard-squad-1.jpg",
+    "tags": [
+      "Industrial",
+      "Verified Client",
+      "Manned Guarding"
+    ],
+    "isVerified": true,
+    "officialRef": "SSSL Official Profile Entry #41"
+  },
+  {
+    "id": "client-42",
+    "serialNumber": 42,
+    "clientName": "Sweet Agro & Beverage Ltd.",
+    "category": "Agro & Food",
+    "location": "BSCIC Industrial Estate, Dhamrai, Dhaka.",
+    "clientLiaison": "Md: Akbar Hossin, Admin Manager",
+    "serviceType": "Unarmed Manned Guarding & Perimeter Security",
+    "description": "Official verified security guarding assignment deployed at Sweet Agro & Beverage Ltd., situated at BSCIC Industrial Estate, Dhamrai, Dhaka.. Operational coordination managed through Md: Akbar Hossin, Admin Manager.",
+    "fullDetails": {
+      "liaisonName": "Md: Akbar Hossin, Admin Manager",
+      "deploymentScope": "24/7 static guard sentry, shift gate attendance, perimeter patrol & emergency firefighting compliance.",
+      "verifiedLocation": "BSCIC Industrial Estate, Dhamrai, Dhaka.",
+      "terms": [
+        "Unarmed security guard services with proper security & firefighting training",
+        "Full uniform equipment: batons, whistles, torches, transport & umbrellas",
+        "Formal Deed of Agreement governance with joint inquiry loss protocol",
+        "30 days standard written notice operational protocol"
+      ]
+    },
+    "image": "/images/sssl-guard-parade.jpg",
+    "tags": [
+      "Agro",
+      "Verified Client",
+      "Manned Guarding"
+    ],
+    "isVerified": true,
+    "officialRef": "SSSL Official Profile Entry #42"
+  },
+  {
+    "id": "client-43",
+    "serialNumber": 43,
+    "clientName": "Sweet Agro & Beverage Ltd. (Unit-2)",
+    "category": "Agro & Food",
+    "location": "BSCIC Industrial Estate, Dhamrai, Dhaka.",
+    "clientLiaison": "Md: Akbar Hossin, Admin Manager",
+    "serviceType": "Unarmed Manned Guarding & Perimeter Security",
+    "description": "Official verified security guarding assignment deployed at Sweet Agro & Beverage Ltd. (Unit-2), situated at BSCIC Industrial Estate, Dhamrai, Dhaka.. Operational coordination managed through Md: Akbar Hossin, Admin Manager.",
+    "fullDetails": {
+      "liaisonName": "Md: Akbar Hossin, Admin Manager",
+      "deploymentScope": "24/7 static guard sentry, shift gate attendance, perimeter patrol & emergency firefighting compliance.",
+      "verifiedLocation": "BSCIC Industrial Estate, Dhamrai, Dhaka.",
+      "terms": [
+        "Unarmed security guard services with proper security & firefighting training",
+        "Full uniform equipment: batons, whistles, torches, transport & umbrellas",
+        "Formal Deed of Agreement governance with joint inquiry loss protocol",
+        "30 days standard written notice operational protocol"
+      ]
+    },
+    "image": "/images/sssl-female-guards-drill.jpg",
+    "tags": [
+      "Agro",
+      "Verified Client",
+      "Manned Guarding"
+    ],
+    "isVerified": true,
+    "officialRef": "SSSL Official Profile Entry #43"
+  },
+  {
+    "id": "client-44",
+    "serialNumber": 44,
+    "clientName": "Sweet Agro & Beverage Ltd. (Unit-3)",
+    "category": "Agro & Food",
+    "location": "BSCIC Industrial Estate, Dhamrai, Dhaka.",
+    "clientLiaison": "Md: Akbar Hossin, Admin Manager",
+    "serviceType": "Unarmed Manned Guarding & Perimeter Security",
+    "description": "Official verified security guarding assignment deployed at Sweet Agro & Beverage Ltd. (Unit-3), situated at BSCIC Industrial Estate, Dhamrai, Dhaka.. Operational coordination managed through Md: Akbar Hossin, Admin Manager.",
+    "fullDetails": {
+      "liaisonName": "Md: Akbar Hossin, Admin Manager",
+      "deploymentScope": "24/7 static guard sentry, shift gate attendance, perimeter patrol & emergency firefighting compliance.",
+      "verifiedLocation": "BSCIC Industrial Estate, Dhamrai, Dhaka.",
+      "terms": [
+        "Unarmed security guard services with proper security & firefighting training",
+        "Full uniform equipment: batons, whistles, torches, transport & umbrellas",
+        "Formal Deed of Agreement governance with joint inquiry loss protocol",
+        "30 days standard written notice operational protocol"
+      ]
+    },
+    "image": "/images/sssl-officer-walkie.jpg",
+    "tags": [
+      "Agro",
+      "Verified Client",
+      "Manned Guarding"
+    ],
+    "isVerified": true,
+    "officialRef": "SSSL Official Profile Entry #44"
+  },
+  {
+    "id": "client-45",
+    "serialNumber": 45,
+    "clientName": "Sweet Agro & Beverage Ltd. (Unit-4)",
+    "category": "Agro & Food",
+    "location": "BSCIC Industrial Estate, Dhamrai, Dhaka.",
+    "clientLiaison": "Md: Akbar Hossin, Admin Manager",
+    "serviceType": "Unarmed Manned Guarding & Perimeter Security",
+    "description": "Official verified security guarding assignment deployed at Sweet Agro & Beverage Ltd. (Unit-4), situated at BSCIC Industrial Estate, Dhamrai, Dhaka.. Operational coordination managed through Md: Akbar Hossin, Admin Manager.",
+    "fullDetails": {
+      "liaisonName": "Md: Akbar Hossin, Admin Manager",
+      "deploymentScope": "24/7 static guard sentry, shift gate attendance, perimeter patrol & emergency firefighting compliance.",
+      "verifiedLocation": "BSCIC Industrial Estate, Dhamrai, Dhaka.",
+      "terms": [
+        "Unarmed security guard services with proper security & firefighting training",
+        "Full uniform equipment: batons, whistles, torches, transport & umbrellas",
+        "Formal Deed of Agreement governance with joint inquiry loss protocol",
+        "30 days standard written notice operational protocol"
+      ]
+    },
+    "image": "/images/sssl-guard-squad-1.jpg",
+    "tags": [
+      "Agro",
+      "Verified Client",
+      "Manned Guarding"
+    ],
+    "isVerified": true,
+    "officialRef": "SSSL Official Profile Entry #45"
+  },
+  {
+    "id": "client-46",
+    "serialNumber": 46,
+    "clientName": "Snow Village Ltd.",
+    "category": "Agro & Food",
+    "location": "Plot# 05, Noyanogor Main Road, Turag, Dhaka-1230",
+    "clientLiaison": "Mrs. Zila, Managing Director",
+    "serviceType": "Unarmed Manned Guarding & Perimeter Security",
+    "description": "Official verified security guarding assignment deployed at Snow Village Ltd., situated at Plot# 05, Noyanogor Main Road, Turag, Dhaka-1230. Operational coordination managed through Mrs. Zila, Managing Director.",
+    "fullDetails": {
+      "liaisonName": "Mrs. Zila, Managing Director",
+      "deploymentScope": "24/7 static guard sentry, shift gate attendance, perimeter patrol & emergency firefighting compliance.",
+      "verifiedLocation": "Plot# 05, Noyanogor Main Road, Turag, Dhaka-1230",
+      "terms": [
+        "Unarmed security guard services with proper security & firefighting training",
+        "Full uniform equipment: batons, whistles, torches, transport & umbrellas",
+        "Formal Deed of Agreement governance with joint inquiry loss protocol",
+        "30 days standard written notice operational protocol"
+      ]
+    },
+    "image": "/images/sssl-guard-parade.jpg",
+    "tags": [
+      "Agro",
+      "Verified Client",
+      "Manned Guarding"
+    ],
+    "isVerified": true,
+    "officialRef": "SSSL Official Profile Entry #46"
+  },
+  {
+    "id": "client-47",
+    "serialNumber": 47,
+    "clientName": "Sustainable Silhouettes Ltd.",
+    "category": "Packaging & Accessories",
+    "location": "Plot#24, Road# 07, Noyanagar, Turag, Dhaka-1230.",
+    "clientLiaison": "Wahid Ahmed, Factory Manager",
+    "serviceType": "Unarmed Manned Guarding & Perimeter Security",
+    "description": "Official verified security guarding assignment deployed at Sustainable Silhouettes Ltd., situated at Plot#24, Road# 07, Noyanagar, Turag, Dhaka-1230.. Operational coordination managed through Wahid Ahmed, Factory Manager.",
+    "fullDetails": {
+      "liaisonName": "Wahid Ahmed, Factory Manager",
+      "deploymentScope": "24/7 static guard sentry, shift gate attendance, perimeter patrol & emergency firefighting compliance.",
+      "verifiedLocation": "Plot#24, Road# 07, Noyanagar, Turag, Dhaka-1230.",
+      "terms": [
+        "Unarmed security guard services with proper security & firefighting training",
+        "Full uniform equipment: batons, whistles, torches, transport & umbrellas",
+        "Formal Deed of Agreement governance with joint inquiry loss protocol",
+        "30 days standard written notice operational protocol"
+      ]
+    },
+    "image": "/images/sssl-female-guards-drill.jpg",
+    "tags": [
+      "Packaging",
+      "Verified Client",
+      "Manned Guarding"
+    ],
+    "isVerified": true,
+    "officialRef": "SSSL Official Profile Entry #47"
+  },
+  {
+    "id": "client-48",
+    "serialNumber": 48,
+    "clientName": "Total Gemini Flat Owner Somiti",
+    "category": "Commercial & Estates",
+    "location": "2/F/7, Mymensingh Road, Shahbagh, Dhaka",
+    "clientLiaison": "Nargis Mahmuda, Chairman",
+    "serviceType": "Unarmed Manned Guarding & Perimeter Security",
+    "description": "Official verified security guarding assignment deployed at Total Gemini Flat Owner Somiti, situated at 2/F/7, Mymensingh Road, Shahbagh, Dhaka. Operational coordination managed through Nargis Mahmuda, Chairman.",
+    "fullDetails": {
+      "liaisonName": "Nargis Mahmuda, Chairman",
+      "deploymentScope": "24/7 static guard sentry, shift gate attendance, perimeter patrol & emergency firefighting compliance.",
+      "verifiedLocation": "2/F/7, Mymensingh Road, Shahbagh, Dhaka",
+      "terms": [
+        "Unarmed security guard services with proper security & firefighting training",
+        "Full uniform equipment: batons, whistles, torches, transport & umbrellas",
+        "Formal Deed of Agreement governance with joint inquiry loss protocol",
+        "30 days standard written notice operational protocol"
+      ]
+    },
+    "image": "/images/sssl-officer-walkie.jpg",
+    "tags": [
+      "Commercial",
+      "Verified Client",
+      "Manned Guarding"
+    ],
+    "isVerified": true,
+    "officialRef": "SSSL Official Profile Entry #48"
+  },
+  {
+    "id": "client-49",
+    "serialNumber": 49,
+    "clientName": "Touchstone Apparels",
+    "category": "Industrial & RMG",
+    "location": "Shoildubi, Bagbari, Kashimpur, Gazipur.",
+    "clientLiaison": "Md. Ariful Islam, Managing Director",
+    "serviceType": "Unarmed Manned Guarding & Perimeter Security",
+    "description": "Official verified security guarding assignment deployed at Touchstone Apparels, situated at Shoildubi, Bagbari, Kashimpur, Gazipur.. Operational coordination managed through Md. Ariful Islam, Managing Director.",
+    "fullDetails": {
+      "liaisonName": "Md. Ariful Islam, Managing Director",
+      "deploymentScope": "24/7 static guard sentry, shift gate attendance, perimeter patrol & emergency firefighting compliance.",
+      "verifiedLocation": "Shoildubi, Bagbari, Kashimpur, Gazipur.",
+      "terms": [
+        "Unarmed security guard services with proper security & firefighting training",
+        "Full uniform equipment: batons, whistles, torches, transport & umbrellas",
+        "Formal Deed of Agreement governance with joint inquiry loss protocol",
+        "30 days standard written notice operational protocol"
+      ]
+    },
+    "image": "/images/sssl-guard-squad-1.jpg",
+    "tags": [
+      "Industrial",
+      "Verified Client",
+      "Manned Guarding"
+    ],
+    "isVerified": true,
+    "officialRef": "SSSL Official Profile Entry #49"
+  },
+  {
+    "id": "client-50",
+    "serialNumber": 50,
+    "clientName": "Ultra Green Power Industries Ltd.",
+    "category": "Engineering & Heavy",
+    "location": "92, Shorip Para, Matuail, Jatrabari, Dhaka.",
+    "clientLiaison": "Md. Tawhidul Islam, Managing Director",
+    "serviceType": "Unarmed Manned Guarding & Perimeter Security",
+    "description": "Official verified security guarding assignment deployed at Ultra Green Power Industries Ltd., situated at 92, Shorip Para, Matuail, Jatrabari, Dhaka.. Operational coordination managed through Md. Tawhidul Islam, Managing Director.",
+    "fullDetails": {
+      "liaisonName": "Md. Tawhidul Islam, Managing Director",
+      "deploymentScope": "24/7 static guard sentry, shift gate attendance, perimeter patrol & emergency firefighting compliance.",
+      "verifiedLocation": "92, Shorip Para, Matuail, Jatrabari, Dhaka.",
+      "terms": [
+        "Unarmed security guard services with proper security & firefighting training",
+        "Full uniform equipment: batons, whistles, torches, transport & umbrellas",
+        "Formal Deed of Agreement governance with joint inquiry loss protocol",
+        "30 days standard written notice operational protocol"
+      ]
+    },
+    "image": "/images/sssl-guard-parade.jpg",
+    "tags": [
+      "Engineering",
+      "Verified Client",
+      "Manned Guarding"
+    ],
+    "isVerified": true,
+    "officialRef": "SSSL Official Profile Entry #50"
+  },
+  {
+    "id": "client-51",
+    "serialNumber": 51,
+    "clientName": "Valent Tech Ltd.",
+    "category": "Engineering & Heavy",
+    "location": "Plot# S-5, BSCIC Industrial Estate, Dhamrai, Dhaka.",
+    "clientLiaison": "Mr. Toufiqul, Managing Director",
+    "serviceType": "Unarmed Manned Guarding & Perimeter Security",
+    "description": "Official verified security guarding assignment deployed at Valent Tech Ltd., situated at Plot# S-5, BSCIC Industrial Estate, Dhamrai, Dhaka.. Operational coordination managed through Mr. Toufiqul, Managing Director.",
+    "fullDetails": {
+      "liaisonName": "Mr. Toufiqul, Managing Director",
+      "deploymentScope": "24/7 static guard sentry, shift gate attendance, perimeter patrol & emergency firefighting compliance.",
+      "verifiedLocation": "Plot# S-5, BSCIC Industrial Estate, Dhamrai, Dhaka.",
+      "terms": [
+        "Unarmed security guard services with proper security & firefighting training",
+        "Full uniform equipment: batons, whistles, torches, transport & umbrellas",
+        "Formal Deed of Agreement governance with joint inquiry loss protocol",
+        "30 days standard written notice operational protocol"
+      ]
+    },
+    "image": "/images/sssl-female-guards-drill.jpg",
+    "tags": [
+      "Engineering",
+      "Verified Client",
+      "Manned Guarding"
+    ],
+    "isVerified": true,
+    "officialRef": "SSSL Official Profile Entry #51"
+  },
+  {
+    "id": "client-52",
+    "serialNumber": 52,
+    "clientName": "Valent Tech Ltd. (Unit-2)",
+    "category": "Engineering & Heavy",
+    "location": "Plot# S-5, BSCIC Industrial Estate, Dhamrai, Dhaka.",
+    "clientLiaison": "Mr. Toufiqul, Managing Director",
+    "serviceType": "Unarmed Manned Guarding & Perimeter Security",
+    "description": "Official verified security guarding assignment deployed at Valent Tech Ltd. (Unit-2), situated at Plot# S-5, BSCIC Industrial Estate, Dhamrai, Dhaka.. Operational coordination managed through Mr. Toufiqul, Managing Director.",
+    "fullDetails": {
+      "liaisonName": "Mr. Toufiqul, Managing Director",
+      "deploymentScope": "24/7 static guard sentry, shift gate attendance, perimeter patrol & emergency firefighting compliance.",
+      "verifiedLocation": "Plot# S-5, BSCIC Industrial Estate, Dhamrai, Dhaka.",
+      "terms": [
+        "Unarmed security guard services with proper security & firefighting training",
+        "Full uniform equipment: batons, whistles, torches, transport & umbrellas",
+        "Formal Deed of Agreement governance with joint inquiry loss protocol",
+        "30 days standard written notice operational protocol"
+      ]
+    },
+    "image": "/images/sssl-officer-walkie.jpg",
+    "tags": [
+      "Engineering",
+      "Verified Client",
+      "Manned Guarding"
+    ],
+    "isVerified": true,
+    "officialRef": "SSSL Official Profile Entry #52"
+  },
+  {
+    "id": "client-53",
+    "serialNumber": 53,
+    "clientName": "Valent Tech Ltd. (Unit-3)",
+    "category": "Engineering & Heavy",
+    "location": "Plot# S-5, BSCIC Industrial Estate, Dhamrai, Dhaka.",
+    "clientLiaison": "Mr. Toufiqul, Managing Director",
+    "serviceType": "Unarmed Manned Guarding & Perimeter Security",
+    "description": "Official verified security guarding assignment deployed at Valent Tech Ltd. (Unit-3), situated at Plot# S-5, BSCIC Industrial Estate, Dhamrai, Dhaka.. Operational coordination managed through Mr. Toufiqul, Managing Director.",
+    "fullDetails": {
+      "liaisonName": "Mr. Toufiqul, Managing Director",
+      "deploymentScope": "24/7 static guard sentry, shift gate attendance, perimeter patrol & emergency firefighting compliance.",
+      "verifiedLocation": "Plot# S-5, BSCIC Industrial Estate, Dhamrai, Dhaka.",
+      "terms": [
+        "Unarmed security guard services with proper security & firefighting training",
+        "Full uniform equipment: batons, whistles, torches, transport & umbrellas",
+        "Formal Deed of Agreement governance with joint inquiry loss protocol",
+        "30 days standard written notice operational protocol"
+      ]
+    },
+    "image": "/images/sssl-guard-squad-1.jpg",
+    "tags": [
+      "Engineering",
+      "Verified Client",
+      "Manned Guarding"
+    ],
+    "isVerified": true,
+    "officialRef": "SSSL Official Profile Entry #53"
+  },
+  {
+    "id": "client-54",
+    "serialNumber": 54,
+    "clientName": "Wooree Apparels Ltd.",
+    "category": "Industrial & RMG",
+    "location": "B/1, Binod Bayeed, Savar, Dhaka.",
+    "clientLiaison": "Md. Shofiq, Account Manager",
+    "serviceType": "Unarmed Manned Guarding & Perimeter Security",
+    "description": "Official verified security guarding assignment deployed at Wooree Apparels Ltd., situated at B/1, Binod Bayeed, Savar, Dhaka.. Operational coordination managed through Md. Shofiq, Account Manager.",
+    "fullDetails": {
+      "liaisonName": "Md. Shofiq, Account Manager",
+      "deploymentScope": "24/7 static guard sentry, shift gate attendance, perimeter patrol & emergency firefighting compliance.",
+      "verifiedLocation": "B/1, Binod Bayeed, Savar, Dhaka.",
+      "terms": [
+        "Unarmed security guard services with proper security & firefighting training",
+        "Full uniform equipment: batons, whistles, torches, transport & umbrellas",
+        "Formal Deed of Agreement governance with joint inquiry loss protocol",
+        "30 days standard written notice operational protocol"
+      ]
+    },
+    "image": "/images/sssl-guard-parade.jpg",
+    "tags": [
+      "Industrial",
+      "Verified Client",
+      "Manned Guarding"
+    ],
+    "isVerified": true,
+    "officialRef": "SSSL Official Profile Entry #54"
+  },
+  {
+    "id": "client-55",
+    "serialNumber": 55,
+    "clientName": "Wooree Apparels Ltd. (Unit-2)",
+    "category": "Industrial & RMG",
+    "location": "B Belma Dairy Farm, Ashulia, Savar, Dhaka.",
+    "clientLiaison": "Md. Shofiq, Account Manager",
+    "serviceType": "Unarmed Manned Guarding & Perimeter Security",
+    "description": "Official verified security guarding assignment deployed at Wooree Apparels Ltd. (Unit-2), situated at B Belma Dairy Farm, Ashulia, Savar, Dhaka.. Operational coordination managed through Md. Shofiq, Account Manager.",
+    "fullDetails": {
+      "liaisonName": "Md. Shofiq, Account Manager",
+      "deploymentScope": "24/7 static guard sentry, shift gate attendance, perimeter patrol & emergency firefighting compliance.",
+      "verifiedLocation": "B Belma Dairy Farm, Ashulia, Savar, Dhaka.",
+      "terms": [
+        "Unarmed security guard services with proper security & firefighting training",
+        "Full uniform equipment: batons, whistles, torches, transport & umbrellas",
+        "Formal Deed of Agreement governance with joint inquiry loss protocol",
+        "30 days standard written notice operational protocol"
+      ]
+    },
+    "image": "/images/sssl-female-guards-drill.jpg",
+    "tags": [
+      "Industrial",
+      "Verified Client",
+      "Manned Guarding"
+    ],
+    "isVerified": true,
+    "officialRef": "SSSL Official Profile Entry #55"
+  },
+  {
+    "id": "client-56",
+    "serialNumber": 56,
+    "clientName": "Xincheng Metalic Industries Ltd.",
+    "category": "Engineering & Heavy",
+    "location": "Block# B, House# 27, Road# 04, Holding# 83, Batulia, Turag, Dhaka-1230",
+    "clientLiaison": "Asharafuzaman(Shiplu), General Manager",
+    "serviceType": "Unarmed Manned Guarding & Perimeter Security",
+    "description": "Official verified security guarding assignment deployed at Xincheng Metalic Industries Ltd., situated at Block# B, House# 27, Road# 04, Holding# 83, Batulia, Turag, Dhaka-1230. Operational coordination managed through Asharafuzaman(Shiplu), General Manager.",
+    "fullDetails": {
+      "liaisonName": "Asharafuzaman(Shiplu), General Manager",
+      "deploymentScope": "24/7 static guard sentry, shift gate attendance, perimeter patrol & emergency firefighting compliance.",
+      "verifiedLocation": "Block# B, House# 27, Road# 04, Holding# 83, Batulia, Turag, Dhaka-1230",
+      "terms": [
+        "Unarmed security guard services with proper security & firefighting training",
+        "Full uniform equipment: batons, whistles, torches, transport & umbrellas",
+        "Formal Deed of Agreement governance with joint inquiry loss protocol",
+        "30 days standard written notice operational protocol"
+      ]
+    },
+    "image": "/images/sssl-officer-walkie.jpg",
+    "tags": [
+      "Engineering",
+      "Verified Client",
+      "Manned Guarding"
+    ],
+    "isVerified": true,
+    "officialRef": "SSSL Official Profile Entry #56"
+  },
+  {
+    "id": "client-57",
+    "serialNumber": 57,
+    "clientName": "Yu Lee Cap Ltd.",
+    "category": "Industrial & RMG",
+    "location": "Chitrashail, Kathaltola Bazar, Ashulia, Savar, Dhaka.",
+    "clientLiaison": "Md. Dipu, Account Manager",
+    "serviceType": "Unarmed Manned Guarding & Perimeter Security",
+    "description": "Official verified security guarding assignment deployed at Yu Lee Cap Ltd., situated at Chitrashail, Kathaltola Bazar, Ashulia, Savar, Dhaka.. Operational coordination managed through Md. Dipu, Account Manager.",
+    "fullDetails": {
+      "liaisonName": "Md. Dipu, Account Manager",
+      "deploymentScope": "24/7 static guard sentry, shift gate attendance, perimeter patrol & emergency firefighting compliance.",
+      "verifiedLocation": "Chitrashail, Kathaltola Bazar, Ashulia, Savar, Dhaka.",
+      "terms": [
+        "Unarmed security guard services with proper security & firefighting training",
+        "Full uniform equipment: batons, whistles, torches, transport & umbrellas",
+        "Formal Deed of Agreement governance with joint inquiry loss protocol",
+        "30 days standard written notice operational protocol"
+      ]
+    },
+    "image": "/images/sssl-guard-squad-1.jpg",
+    "tags": [
+      "Industrial",
+      "Verified Client",
+      "Manned Guarding"
+    ],
+    "isVerified": true,
+    "officialRef": "SSSL Official Profile Entry #57"
+  },
+  {
+    "id": "client-58",
+    "serialNumber": 58,
+    "clientName": "Yu Lee Embroidery Ltd.",
+    "category": "Industrial & RMG",
+    "location": "Chitrashail, Kathaltola Bazar, Ashulia, Savar, Dhaka.",
+    "clientLiaison": "Md. Dipu, Account Manager",
+    "serviceType": "Unarmed Manned Guarding & Perimeter Security",
+    "description": "Official verified security guarding assignment deployed at Yu Lee Embroidery Ltd., situated at Chitrashail, Kathaltola Bazar, Ashulia, Savar, Dhaka.. Operational coordination managed through Md. Dipu, Account Manager.",
+    "fullDetails": {
+      "liaisonName": "Md. Dipu, Account Manager",
+      "deploymentScope": "24/7 static guard sentry, shift gate attendance, perimeter patrol & emergency firefighting compliance.",
+      "verifiedLocation": "Chitrashail, Kathaltola Bazar, Ashulia, Savar, Dhaka.",
+      "terms": [
+        "Unarmed security guard services with proper security & firefighting training",
+        "Full uniform equipment: batons, whistles, torches, transport & umbrellas",
+        "Formal Deed of Agreement governance with joint inquiry loss protocol",
+        "30 days standard written notice operational protocol"
+      ]
+    },
+    "image": "/images/sssl-guard-parade.jpg",
+    "tags": [
+      "Industrial",
+      "Verified Client",
+      "Manned Guarding"
+    ],
+    "isVerified": true,
+    "officialRef": "SSSL Official Profile Entry #58"
   }
 ];
 
 export const counterStatsData: CounterStatItem[] = [
   {
     id: 'projects-completed',
-    label: 'Demonstrated Deployments',
-    value: 22,
+    label: 'Verified Client Deployments',
+    value: 58,
     suffix: '+',
-    description: 'Portfolio projects across corporate, industrial, and residential sectors.',
-    isVerified: false,
-    sourceNote: 'Includes sample portfolio assignments for client review. Real operational metrics will be calibrated upon verified deployment audit.'
+    description: 'Active corporate, industrial, and institutional client assignments in official company portfolio.',
+    isVerified: true,
+    sourceNote: 'Directly verified from SSSL Official Company Profile client roster.'
   },
   {
     id: 'security-personnel',
-    label: 'Trained Personnel Pool',
-    value: 150,
-    suffix: '+',
-    description: 'Vetted security guards, supervisors, and patrol officers available for assignment.',
-    isVerified: false,
-    sourceNote: 'Representative operational capacity placeholder pending official payroll count.'
+    label: 'Years of Corporate Registration',
+    value: 15,
+    suffix: '+ Years',
+    description: 'Duly registered under Bangladesh laws since October 16, 2011 (Reg: C-96185/11).',
+    isVerified: true,
+    sourceNote: 'Government of Bangladesh incorporation record: 16.10.2011.'
   },
   {
     id: 'supervision-inspections',
@@ -795,81 +1997,81 @@ export const counterStatsData: CounterStatItem[] = [
 
 export const industriesData: IndustryItem[] = [
   {
-    id: 'corporate-offices',
-    title: 'Corporate Headquarters & IT Parks',
-    description: 'Polished front-desk sentries, badge access controls, visitor sign-in desks, and executive safety.',
+    id: 'industrial-rmg',
+    title: 'RMG & Textile Manufacturing',
+    description: 'Guarding 20+ prominent garment and textile factories in Savar, Ashulia, Gazipur, and DEPZ.',
     scopePoints: [
-      'Visitor badge logging & anti-tailgating',
-      'Confidential document & server room safeguards',
-      'Polished and courteous customer interaction',
-      'After-hours floor-by-floor lockdown'
-    ],
-    icon: 'Building',
-    isVerified: true
-  },
-  {
-    id: 'industrial-manufacturing',
-    title: 'Industrial Plants & Garment Factories',
-    description: 'Heavy perimeter guarding, shift-change crowd control, material gate passes, and fire-safety support.',
-    scopePoints: [
-      'Large workforce entry and exit screening',
-      'Warehouse inventory and raw material protection',
-      'Vehicle loading and dispatch seal verification',
-      'Emergency fire and disaster evacuation leadership'
+      'Shift-change crowd flow & biometric ingress',
+      'Export cargo dispatch & seal verification',
+      'Perimeter security & fire-hazard patrols',
+      'Zero unauthorized material exit control'
     ],
     icon: 'Factory',
     isVerified: true
   },
   {
-    id: 'commercial-retail',
-    title: 'Commercial Plazas & Shopping Centers',
-    description: 'High-visibility deterrence, baggage screening, loss prevention, and parking traffic order.',
+    id: 'epz-logistics',
+    title: 'Export Processing Zones (DEPZ)',
+    description: 'Serving key multinational facilities in Dhaka EPZ (West) and Ganakbari industrial clusters.',
     scopePoints: [
-      'Customer-friendly presence preventing shoplifting',
-      'Underground parking order and valet lanes',
-      'Lost-and-found and dispute mediation',
-      'Closing hours cash-transit escort'
+      'Stringent EPZ customs gate pass checking',
+      'Multinational foreign visitor protocol',
+      'Warehouse raw materials protection',
+      'Emergency response team coordination'
+    ],
+    icon: 'Building2',
+    isVerified: true
+  },
+  {
+    id: 'packaging-accessories',
+    title: 'Packaging, Trims & Accessories',
+    description: 'Safeguarding printing, packaging, and accessories manufacturing hubs across Turag and Ashulia.',
+    scopePoints: [
+      'Inventory dispatch slip tallying',
+      'Nocturnal perimeter fence monitoring',
+      'Equipment & machinery security',
+      'Chemical and flammable inventory care'
+    ],
+    icon: 'Building',
+    isVerified: true
+  },
+  {
+    id: 'agro-food',
+    title: 'Agro, Food & Consumer Facilities',
+    description: 'Protecting food processing plants, beverage units, and agricultural industries in BSCIC Dhamrai.',
+    scopePoints: [
+      'Sanitary hygiene compliance gates',
+      'Fleet delivery truck tally records',
+      'Cold store and warehouse watch',
+      'Visitor register & access screening'
     ],
     icon: 'Store',
     isVerified: true
   },
   {
-    id: 'residential-societies',
-    title: 'Gated Communities & Luxury Apartments',
-    description: 'Resident peace of mind, guest verification, courier handling, and night patrol rounds.',
+    id: 'engineering-heavy',
+    title: 'Heavy Industry & Engineering',
+    description: 'Providing robust sentries for metal works, power industries, and construction plazas.',
     scopePoints: [
-      'Vehicle boom barrier and intercom confirmation',
-      'Domestic worker and service staff registration',
-      'Children play zone vigilance',
-      'Quiet nocturnal perimeter watch'
+      'Heavy vehicular weighbridge control',
+      'Scrap metal loss prevention',
+      'Night searchlight sentry posts',
+      'Personal protective equipment enforcement'
+    ],
+    icon: 'Factory',
+    isVerified: true
+  },
+  {
+    id: 'commercial-estates',
+    title: 'Commercial Plazas & Residential Estates',
+    description: 'Securing multi-story commercial towers, apartment owners societies, and resorts in Dhaka.',
+    scopePoints: [
+      'Visitor badge sign-in & parking order',
+      'Apartment resident peace of mind',
+      'Delivery personnel register',
+      'Emergency stairwell & roof lockdown'
     ],
     icon: 'Home',
-    isVerified: true
-  },
-  {
-    id: 'institutional-education',
-    title: 'Educational Institutions & Hospitals',
-    description: 'Protective child safety protocols, hospital emergency dispute de-escalation, and parking clearance.',
-    scopePoints: [
-      'Strict guardian release verification',
-      'Emergency room crowd control',
-      'Ambulance and drop-off lane maintenance',
-      'Zero-tolerance campus substance prohibition'
-    ],
-    icon: 'GraduationCap',
-    isVerified: true
-  },
-  {
-    id: 'events-summits',
-    title: 'Events, AGMs & Public Exhibitions',
-    description: 'Temporary surge security detachments, metal arch gates, VIP protection, and crowd guidance.',
-    scopePoints: [
-      'Fast-throughput metal detector archways',
-      'VIP guest room cordon and motorcade guide',
-      'Emergency evacuation pathway assurance',
-      'Coordinated dispatch with local police'
-    ],
-    icon: 'PartyPopper',
     isVerified: true
   }
 ];
@@ -877,40 +2079,40 @@ export const industriesData: IndustryItem[] = [
 export const trustCredentials: TrustCredentialItem[] = [
   {
     id: 'cred-01',
-    title: 'Private Security Agency License',
-    issuer: 'Ministry of Home Affairs / Government of Bangladesh',
-    year: 'Official Registration',
-    licenseNumber: 'Pending Upload of Official Reg. No.',
-    status: 'Pending Official Upload',
-    isVerified: false,
-    description: 'Operating under regulatory standards for private security service providers in Bangladesh. Official certificate document will be displayed here upon receipt.'
+    title: 'Certificate of Incorporation',
+    issuer: 'Registrar of Joint Stock Companies & Firms (RJSC), Bangladesh',
+    year: 'Reg. Date: 16.10.2011',
+    licenseNumber: 'Registration No.: C-96185/11',
+    status: 'Verified',
+    isVerified: true,
+    description: 'Soldier Security Services Ltd. is a duly registered limited liability company under the laws of Bangladesh with official registration number C-96185/11, registered on October 16, 2011.'
   },
   {
     id: 'cred-02',
-    title: 'Certificate of Incorporation',
-    issuer: 'Registrar of Joint Stock Companies & Firms (RJSC), Bangladesh',
-    year: 'Official Company Record',
-    status: 'Pending Official Upload',
-    isVerified: false,
-    description: 'Registered private limited company: Soldier Security Services Ltd. Official RJSC registration documentation in company archive.'
+    title: 'Formal Deed of Agreement & Loss Compensation',
+    issuer: 'Soldier Security Services Ltd. Legal Framework',
+    year: 'Established Standard',
+    status: 'Verified',
+    isVerified: true,
+    description: 'Standard contractual clause committing to full joint inquiries in any irregularity and formal compensation for losses due to theft/burglary following mutual agreement.'
   },
   {
     id: 'cred-03',
-    title: 'Standard Guard Training Curriculum',
-    issuer: 'SSSL Internal Training Academy & Field Protocol',
-    year: 'Continuous Program',
+    title: 'Standard Guard & Firefighting Training Curriculum',
+    issuer: 'SSSL Training Academy & Field Protocol',
+    year: 'Mandatory Requirement',
     status: 'Verified',
     isVerified: true,
-    description: 'Rigorous drills covering drill & discipline, physical fitness, fire extinguisher operation, customer courtesy, and incident logging.'
+    description: 'All unarmed guards receive comprehensive training in security operations, access procedures, uniform turnout, and firefighting operations before deployment.'
   },
   {
     id: 'cred-04',
-    title: '24/7 Operational Field Supervision Protocol',
-    issuer: 'SSSL Quality Assurance Division',
-    year: 'Enforced Daily',
+    title: 'Guard Equipment & Uniform Standards',
+    issuer: 'SSSL Operational Logistics',
+    year: 'Active Protocol',
     status: 'Verified',
     isVerified: true,
-    description: 'Mandatory surprise inspections by roving supervisors to audit guard alertness, logbooks, and uniform turnout.'
+    description: 'All guards are equipped with complete branded uniforms and operational items including batons, whistles, torches, transport, and protective gear.'
   }
 ];
 
@@ -919,12 +2121,12 @@ export const careersData: CareerItem[] = [
     id: 'career-01',
     title: 'Security Guard (Manned Guarding)',
     department: 'Field Operations',
-    location: 'Dhaka / Savar / Ashulia / Gazipur',
+    location: 'Savar / Ashulia / Dhamrai / Gazipur / DEPZ',
     employmentType: 'Full-time / Rotational Shifts',
     description: 'Responsible for gate sentry duties, visitor logging, patrol checks, and maintaining discipline across client facilities.',
     requirements: [
       'Minimum education: SSC or equivalent',
-      'Physical fitness and minimum height requirement (5\' 6" preferred)',
+      'Physical fitness and minimum height requirement (5 6" preferred)',
       'Clean background check and national ID verification',
       'Prior military, police, or security agency experience is an added advantage'
     ],

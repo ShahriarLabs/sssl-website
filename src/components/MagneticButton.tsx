@@ -5,6 +5,7 @@ interface MagneticButtonProps {
   className?: string;
   as?: 'button' | 'a';
   href?: string;
+  download?: string;
   target?: string;
   rel?: string;
   strength?: number;
@@ -19,6 +20,7 @@ export const MagneticButton: React.FC<MagneticButtonProps> = ({
   className = '',
   as = 'button',
   href,
+  download,
   target,
   rel,
   strength = 0.18,
@@ -74,6 +76,7 @@ export const MagneticButton: React.FC<MagneticButtonProps> = ({
       <a
         ref={ref as React.RefObject<HTMLAnchorElement>}
         href={href}
+        download={download}
         target={target}
         rel={rel}
         onMouseMove={handleMouseMove}
