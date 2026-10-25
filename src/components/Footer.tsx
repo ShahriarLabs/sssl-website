@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { 
-  Shield, 
   Phone, 
   MapPin, 
   MessageSquare, 
@@ -45,20 +44,16 @@ export const Footer: React.FC = () => {
           {/* Brand Info (Cols 1-4) */}
           <div className="lg:col-span-4 space-y-4">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-full bg-white p-0.5 border border-amber-500/30 overflow-hidden shrink-0 flex items-center justify-center">
+              <div className="h-12 w-auto px-2 py-1 bg-white rounded-md border border-slate-700/60 shadow-sm overflow-hidden shrink-0 flex items-center justify-center">
                 <img
                   src="/images/sssl-logo.jpg"
                   alt="Soldier Security Services Ltd."
-                  className="w-full h-full object-contain"
-                  onError={(e) => {
-                    (e.target as HTMLElement).style.display = 'none';
-                  }}
+                  className="h-full w-auto object-contain max-w-[150px]"
                 />
-                <Shield className="w-5 h-5 text-brand-blue hidden" />
               </div>
 
               <div>
-                <span className="text-base font-bold text-white tracking-tight block font-display">
+                <span className="text-sm font-bold text-white tracking-tight block font-display">
                   {siteMeta.companyName}
                 </span>
                 <span className="text-[10px] uppercase font-mono tracking-widest text-slate-400">

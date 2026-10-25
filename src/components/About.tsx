@@ -9,6 +9,7 @@ import {
   FileCheck
 } from 'lucide-react';
 import { siteMeta } from '../data/siteConfig';
+import { MagneticButton } from './MagneticButton';
 
 export const About: React.FC = () => {
   // Map icon strings to Lucide components
@@ -122,13 +123,14 @@ export const About: React.FC = () => {
               <FileCheck className="w-4 h-4 text-amber-400 shrink-0" />
               <span>Need a customized site risk evaluation for your facility or office?</span>
             </div>
-            <a
+            <MagneticButton
+              as="a"
               href="#contact"
-              className="inline-flex items-center gap-2 px-4 py-2 text-xs font-bold uppercase tracking-wider text-navy-950 bg-amber-400 hover:bg-amber-300 rounded transition-all shrink-0"
+              className="inline-flex items-center gap-2 px-4 py-2 text-xs font-bold uppercase tracking-wider text-navy-950 bg-amber-400 hover:bg-amber-300 rounded transition-all shrink-0 shadow"
             >
               <span>Request Free Site Audit</span>
               <ArrowRight className="w-3.5 h-3.5" />
-            </a>
+            </MagneticButton>
           </div>
         </div>
 

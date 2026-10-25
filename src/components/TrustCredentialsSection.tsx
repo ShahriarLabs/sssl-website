@@ -7,6 +7,7 @@ import {
   X
 } from 'lucide-react';
 import { trustCredentials } from '../data/siteConfig';
+import { MagneticButton } from './MagneticButton';
 
 export const TrustCredentialsSection: React.FC = () => {
   const [brochureModalOpen, setBrochureModalOpen] = useState(false);
@@ -89,14 +90,14 @@ export const TrustCredentialsSection: React.FC = () => {
           </div>
 
           <div className="flex flex-wrap items-center gap-3">
-            <button
+            <MagneticButton
               type="button"
               onClick={() => setBrochureModalOpen(true)}
               className="inline-flex items-center gap-2 px-5 py-3 text-xs font-bold uppercase tracking-wider text-navy-950 bg-amber-400 hover:bg-amber-300 rounded transition-all shadow focus:outline-none focus:ring-2 focus:ring-amber-500"
             >
               <Download className="w-4 h-4" />
               <span>Download Corporate Profile</span>
-            </button>
+            </MagneticButton>
           </div>
         </div>
 

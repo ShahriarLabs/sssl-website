@@ -13,12 +13,14 @@ import {
 } from 'lucide-react';
 import { projectData } from '../data/siteConfig';
 import type { ProjectItem, ProjectCategory } from '../types';
+import { MagneticButton } from './MagneticButton';
 
 export const ProjectsShowcase: React.FC = () => {
   const [activeCategory, setActiveCategory] = useState<ProjectCategory>('All Projects');
   const [selectedProject, setSelectedProject] = useState<ProjectItem | null>(null);
   const [scrollProgress, setScrollProgress] = useState(0);
   const [viewMode, setViewMode] = useState<'carousel' | 'grid'>('carousel');
+  const [isTouchOrReduced, setIsTouchOrReduced] = useState(false);
   const scrollRef = useRef<HTMLDivElement>(null);
 
   // Drag-to-scroll state
@@ -26,6 +28,15 @@ export const ProjectsShowcase: React.FC = () => {
   const startX = useRef(0);
   const scrollLeftStart = useRef(0);
   const dragDistance = useRef(0);
+
+  useEffect(() => {
+    if (
+      window.matchMedia('(pointer: coarse)').matches ||
+      window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    ) {
+      setIsTouchOrReduced(true);
+    }
+  }, []);
 
   // Available categories with counts
   const categories: ProjectCategory[] = [
@@ -65,12 +76,11 @@ export const ProjectsShowcase: React.FC = () => {
     }
   }, [activeCategory]);
 
-  // Keyboard navigation for carousel
+  // Keyboard navigation for modal
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (selectedProject) {
         if (e.key === 'Escape') setSelectedProject(null);
-        return;
       }
     };
     window.addEventListener('keydown', handleKeyDown);
@@ -100,7 +110,7 @@ export const ProjectsShowcase: React.FC = () => {
     if (!isDragging.current || !scrollRef.current) return;
     e.preventDefault();
     const x = e.pageX - scrollRef.current.offsetLeft;
-    const walk = (x - startX.current) * 1.5; // drag multiplier
+    const walk = (x - startX.current) * 1.5;
     dragDistance.current = Math.abs(walk);
     scrollRef.current.scrollLeft = scrollLeftStart.current - walk;
     handleScroll();
@@ -111,7 +121,6 @@ export const ProjectsShowcase: React.FC = () => {
   };
 
   const onCardClick = (project: ProjectItem) => {
-    // Only open if it wasn't a significant drag
     if (dragDistance.current < 5) {
       setSelectedProject(project);
     }
@@ -230,74 +239,13 @@ export const ProjectsShowcase: React.FC = () => {
               aria-label="Projects horizontal carousel"
             >
               {filteredProjects.map((project) => (
-                <div
+                <ProjectCard
                   key={project.id}
+                  project={project}
                   onClick={() => onCardClick(project)}
-                  className="w-[300px] sm:w-[350px] shrink-0 sssl-card sssl-card-hover overflow-hidden flex flex-col justify-between group"
-                >
-                  {/* Card Image */}
-                  <div className="relative h-48 overflow-hidden bg-navy-900">
-                    <img
-                      src={project.image}
-                      alt={project.title}
-                      loading="lazy"
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/40 to-transparent" />
-                    
-                    <div className="absolute top-3 left-3 flex items-center gap-1.5">
-                      <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-navy-950/90 border border-slate-700 text-amber-300">
-                        {project.category}
-                      </span>
-                      {project.isDemo && (
-                        <span className="text-[9px] font-mono uppercase tracking-wider px-1.5 py-0.5 rounded bg-slate-900/90 border border-slate-700 text-slate-400">
-                          Sample Portfolio
-                        </span>
-                      )}
-                    </div>
-
-                    <div className="absolute top-3 right-3 p-1.5 rounded-full bg-navy-950/80 text-slate-300 group-hover:text-amber-400 transition-colors">
-                      <Maximize2 className="w-3.5 h-3.5" />
-                    </div>
-
-                    <div className="absolute bottom-2.5 left-3 right-3 flex items-center justify-between text-[11px] text-slate-300">
-                      <span className="flex items-center gap-1 truncate">
-                        <MapPin className="w-3 h-3 text-amber-400 shrink-0" />
-                        <span className="truncate">{project.location}</span>
-                      </span>
-                      <span className="flex items-center gap-1 shrink-0 text-slate-400">
-                        <Calendar className="w-3 h-3" />
-                        <span>{project.completionYear}</span>
-                      </span>
-                    </div>
-                  </div>
-
-                  {/* Card Body */}
-                  <div className="p-5 flex-1 flex flex-col justify-between">
-                    <div>
-                      <h3 className="text-sm sm:text-base font-bold text-white mb-2 group-hover:text-amber-400 transition-colors line-clamp-2">
-                        {project.title}
-                      </h3>
-                      <p className="text-xs text-slate-300 leading-relaxed mb-4 line-clamp-3">
-                        {project.description}
-                      </p>
-                    </div>
-
-                    <div className="pt-3 border-t border-slate-800/80 flex items-center justify-between">
-                      <div className="flex flex-wrap gap-1">
-                        {project.tags.slice(0, 2).map((tag, idx) => (
-                          <span key={idx} className="text-[10px] text-slate-400 bg-navy-800 px-1.5 py-0.5 rounded">
-                            {tag}
-                          </span>
-                        ))}
-                      </div>
-                      <span className="text-xs font-semibold text-amber-400 group-hover:underline">
-                        Details →
-                      </span>
-                    </div>
-                  </div>
-
-                </div>
+                  isTouchOrReduced={isTouchOrReduced}
+                  className="w-[300px] sm:w-[350px] shrink-0"
+                />
               ))}
             </div>
 
@@ -317,48 +265,12 @@ export const ProjectsShowcase: React.FC = () => {
           /* Grid View */
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {filteredProjects.map((project) => (
-              <div
+              <ProjectCard
                 key={project.id}
+                project={project}
                 onClick={() => setSelectedProject(project)}
-                className="sssl-card sssl-card-hover overflow-hidden flex flex-col justify-between group cursor-pointer"
-              >
-                <div className="relative h-44 overflow-hidden bg-navy-900">
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    loading="lazy"
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/40 to-transparent" />
-                  <div className="absolute top-3 left-3">
-                    <span className="text-[10px] font-bold uppercase px-2 py-0.5 rounded bg-navy-950/90 border border-slate-700 text-amber-300">
-                      {project.category}
-                    </span>
-                  </div>
-                  <div className="absolute bottom-2 left-3 right-3 flex items-center justify-between text-[11px] text-slate-300">
-                    <span className="flex items-center gap-1 truncate">
-                      <MapPin className="w-3 h-3 text-amber-400 shrink-0" />
-                      <span className="truncate">{project.location}</span>
-                    </span>
-                    <span className="text-slate-400">{project.completionYear}</span>
-                  </div>
-                </div>
-
-                <div className="p-4 flex-1 flex flex-col justify-between">
-                  <div>
-                    <h3 className="text-sm font-bold text-white mb-2 group-hover:text-amber-400 transition-colors">
-                      {project.title}
-                    </h3>
-                    <p className="text-xs text-slate-300 line-clamp-2 mb-3">
-                      {project.description}
-                    </p>
-                  </div>
-                  <div className="pt-2 border-t border-slate-800 flex justify-between text-xs text-amber-400 font-semibold">
-                    <span>View Specifications</span>
-                    <span>→</span>
-                  </div>
-                </div>
-              </div>
+                isTouchOrReduced={isTouchOrReduced}
+              />
             ))}
           </div>
         )}
@@ -496,18 +408,140 @@ export const ProjectsShowcase: React.FC = () => {
               <span className="text-[11px] text-slate-400">
                 Interested in a comparable deployment for your facility?
               </span>
-              <a
+              <MagneticButton
+                as="a"
                 href="#contact"
                 onClick={() => setSelectedProject(null)}
-                className="w-full sm:w-auto py-2 px-5 text-xs font-bold uppercase tracking-wider text-navy-950 bg-amber-400 hover:bg-amber-300 rounded transition-colors text-center"
+                className="w-full sm:w-auto py-2 px-5 text-xs font-bold uppercase tracking-wider text-navy-950 bg-amber-400 hover:bg-amber-300 rounded transition-colors text-center shadow"
               >
                 Inquire With Our Team
-              </a>
+              </MagneticButton>
             </div>
 
           </div>
         </div>
       )}
     </section>
+  );
+};
+
+interface ProjectCardProps {
+  project: ProjectItem;
+  onClick: () => void;
+  isTouchOrReduced: boolean;
+  className?: string;
+}
+
+const ProjectCard: React.FC<ProjectCardProps> = ({
+  project,
+  onClick,
+  isTouchOrReduced,
+  className = '',
+}) => {
+  const cardRef = useRef<HTMLDivElement>(null);
+
+  // Subtle cursor-responsive lighting & micro-perspective (max 1.5deg tilt, no jitter)
+  const handlePointerMove = (e: React.PointerEvent<HTMLDivElement>) => {
+    if (isTouchOrReduced || !cardRef.current) return;
+    const rect = cardRef.current.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+
+    cardRef.current.style.setProperty('--card-x', `${x}px`);
+    cardRef.current.style.setProperty('--card-y', `${y}px`);
+
+    // Extremely subtle micro-tilt (max 1.5 degrees)
+    const centerX = rect.width / 2;
+    const centerY = rect.height / 2;
+    const tiltX = ((y - centerY) / centerY) * -1.5;
+    const tiltY = ((x - centerX) / centerX) * 1.5;
+    cardRef.current.style.transform = `perspective(800px) rotateX(${tiltX}deg) rotateY(${tiltY}deg) translateY(-2px)`;
+  };
+
+  const handlePointerLeave = () => {
+    if (cardRef.current) {
+      cardRef.current.style.transform = 'perspective(800px) rotateX(0deg) rotateY(0deg) translateY(0px)';
+    }
+  };
+
+  return (
+    <div
+      ref={cardRef}
+      onPointerMove={handlePointerMove}
+      onPointerLeave={handlePointerLeave}
+      onClick={onClick}
+      className={`sssl-card overflow-hidden flex flex-col justify-between group relative cursor-pointer transition-all duration-200 ease-out will-change-transform ${className}`}
+    >
+      {/* Subtle cursor-following spotlight glow */}
+      <div 
+        className="pointer-events-none absolute inset-0 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+        style={{
+          background: 'radial-gradient(320px circle at var(--card-x, 50%) var(--card-y, 50%), rgba(217, 119, 6, 0.08), transparent 75%)'
+        }}
+      />
+
+      {/* Card Image */}
+      <div className="relative h-48 overflow-hidden bg-navy-900">
+        <img
+          src={project.image}
+          alt={project.title}
+          loading="lazy"
+          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/40 to-transparent" />
+        
+        <div className="absolute top-3 left-3 flex items-center gap-1.5">
+          <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-navy-950/90 border border-slate-700 text-amber-300">
+            {project.category}
+          </span>
+          {project.isDemo && (
+            <span className="text-[9px] font-mono uppercase tracking-wider px-1.5 py-0.5 rounded bg-slate-900/90 border border-slate-700 text-slate-400">
+              Sample Portfolio
+            </span>
+          )}
+        </div>
+
+        <div className="absolute top-3 right-3 p-1.5 rounded-full bg-navy-950/80 text-slate-300 group-hover:text-amber-400 transition-colors">
+          <Maximize2 className="w-3.5 h-3.5" />
+        </div>
+
+        <div className="absolute bottom-2.5 left-3 right-3 flex items-center justify-between text-[11px] text-slate-300">
+          <span className="flex items-center gap-1 truncate">
+            <MapPin className="w-3 h-3 text-amber-400 shrink-0" />
+            <span className="truncate">{project.location}</span>
+          </span>
+          <span className="flex items-center gap-1 shrink-0 text-slate-400">
+            <Calendar className="w-3 h-3" />
+            <span>{project.completionYear}</span>
+          </span>
+        </div>
+      </div>
+
+      {/* Card Body */}
+      <div className="p-5 flex-1 flex flex-col justify-between relative z-20">
+        <div>
+          <h3 className="text-sm sm:text-base font-bold text-white mb-2 group-hover:text-amber-400 transition-colors line-clamp-2">
+            {project.title}
+          </h3>
+          <p className="text-xs text-slate-300 leading-relaxed mb-4 line-clamp-3">
+            {project.description}
+          </p>
+        </div>
+
+        <div className="pt-3 border-t border-slate-800/80 flex items-center justify-between">
+          <div className="flex flex-wrap gap-1">
+            {project.tags.slice(0, 2).map((tag, idx) => (
+              <span key={idx} className="text-[10px] text-slate-400 bg-navy-800 px-1.5 py-0.5 rounded">
+                {tag}
+              </span>
+            ))}
+          </div>
+          <span className="text-xs font-semibold text-amber-400 group-hover:underline">
+            Details →
+          </span>
+        </div>
+      </div>
+
+    </div>
   );
 };

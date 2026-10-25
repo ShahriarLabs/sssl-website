@@ -11,6 +11,7 @@ import {
   Building
 } from 'lucide-react';
 import { contactDetails, servicesData } from '../data/siteConfig';
+import { MagneticButton } from './MagneticButton';
 
 interface FormState {
   fullName: string;
@@ -412,7 +413,7 @@ export const ContactSection: React.FC = () => {
 
                   {/* Submit CTA */}
                   <div className="pt-2">
-                    <button
+                    <MagneticButton
                       type="submit"
                       disabled={isSubmitting}
                       className="w-full py-3.5 px-6 text-xs sm:text-sm font-bold uppercase tracking-wider text-navy-950 bg-gradient-to-r from-amber-400 to-amber-500 hover:from-amber-300 hover:to-amber-400 rounded transition-all shadow-md shadow-amber-500/10 flex items-center justify-center gap-2 focus:outline-none focus:ring-2 focus:ring-amber-500 disabled:opacity-60"
@@ -428,7 +429,7 @@ export const ContactSection: React.FC = () => {
                           <Send className="w-4 h-4" />
                         </>
                       )}
-                    </button>
+                    </MagneticButton>
                   </div>
 
                 </form>
