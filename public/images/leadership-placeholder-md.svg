@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGradMd" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a101d" />
+      <stop offset="50%" stop-color="#15203b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="goldAccentMd" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e5c07b" />
+      <stop offset="100%" stop-color="#c59b27" />
+    </linearGradient>
+    <radialGradient id="auraMd" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#1e3a8a" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  
+  <rect width="400" height="450" fill="url(#bgGradMd)" />
+  <circle cx="200" cy="180" r="140" fill="url(#auraMd)" />
+  
+  <!-- Subtle decorative grid -->
+  <circle cx="200" cy="170" r="110" fill="none" stroke="#334155" stroke-width="1" stroke-dasharray="4 6" opacity="0.6"/>
+  <circle cx="200" cy="170" r="120" fill="none" stroke="url(#goldAccentMd)" stroke-width="1.5" opacity="0.4"/>
+
+  <!-- Stylized Executive Male Silhouette (Managing Director) -->
+  <g fill="#94a3b8" opacity="0.85">
+    <!-- Head -->
+    <ellipse cx="200" cy="155" rx="39" ry="46" fill="#cbd5e1" />
+    <!-- Short Crop Hair -->
+    <path d="M 160 150 C 160 115, 240 115, 240 150 C 238 135, 225 125, 200 125 C 175 125, 162 135, 160 150 Z" fill="#334155" />
+    <!-- Neck -->
+    <path d="M 188 198 L 212 198 L 216 226 L 184 226 Z" fill="#cbd5e1" />
+    <!-- Formal Executive Suit & Tie -->
+    <path d="M 115 330 C 115 250, 145 228, 184 226 L 200 270 L 216 226 C 255 228, 285 250, 285 330 Z" fill="#1e293b" />
+    <!-- White Shirt Collar -->
+    <path d="M 184 226 L 200 248 L 216 226 L 208 238 L 200 240 L 192 238 Z" fill="#f8fafc" />
+    <!-- Corporate Necktie -->
+    <path d="M 197 245 L 203 245 L 205 320 L 200 328 L 195 320 Z" fill="#b91c1c" />
+    <!-- Suit Lapels -->
+    <path d="M 155 235 L 195 300 L 185 330 L 130 330 Z" fill="#334155" />
+    <path d="M 245 235 L 205 300 L 215 330 L 270 330 Z" fill="#334155" />
+  </g>
+  
+  <!-- Subtle SSSL Golden Pin -->
+  <circle cx="168" cy="270" r="4" fill="url(#goldAccentMd)" />
+  
+  <!-- Text Label -->
+  <rect x="70" y="375" width="260" height="36" rx="18" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+  <text x="200" y="398" fill="#e2e8f0" font-family="Inter, sans-serif" font-size="12" font-weight="600" text-anchor="middle" letter-spacing="1.5">OFFICIAL EXECUTIVE PORTRAIT</text>
+</svg>
