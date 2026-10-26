@@ -49,11 +49,11 @@ export const Navbar: React.FC = () => {
             className="flex items-center shrink-0 focus:outline-none focus:ring-2 focus:ring-amber-500 rounded-md group"
             aria-label="Soldier Security Services Ltd."
           >
-            <div className="h-11 sm:h-13 w-auto px-2 py-1 bg-white rounded-md border border-slate-700/60 shadow-sm flex items-center justify-center group-hover:border-amber-500/60 transition-all">
+            <div className="h-12 sm:h-14 w-auto px-2.5 py-1 bg-white rounded-md border border-slate-200 shadow-md flex items-center justify-center group-hover:border-amber-500 transition-all">
               <img
                 src="/images/sssl-logo.jpg"
                 alt="Soldier Security Services Ltd."
-                className="h-full w-auto object-contain max-w-[160px] sm:max-w-[190px]"
+                className="h-full w-auto object-contain aspect-square"
                 loading="eager"
               />
             </div>

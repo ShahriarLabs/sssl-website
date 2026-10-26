@@ -18,12 +18,12 @@ export const BrandDivider: React.FC<BrandDividerProps> = ({
       <div className="flex-1 h-px bg-gradient-to-r from-transparent via-steel-700/60 to-amber-500/30" />
 
       {/* Center branded insignia badge */}
-      <div className="mx-4 flex items-center gap-2.5 px-3 py-1 rounded-full bg-navy-900/90 border border-steel-700/80 shadow-md">
-        <div className="w-5 h-5 rounded-full overflow-hidden bg-white p-0.5 border border-amber-500/40 flex items-center justify-center shrink-0">
+      <div className="mx-4 flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-navy-900/95 border border-steel-700 shadow-md">
+        <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-md overflow-hidden bg-white p-0.5 border border-amber-400 shadow-sm flex items-center justify-center shrink-0">
           <img
             src="/images/sssl-logo.jpg"
-            alt="SSSL Emblem"
-            className="w-full h-full object-contain"
+            alt="SSSL Official Emblem"
+            className="w-full h-full object-contain aspect-square"
           />
         </div>
         {label ? (

@@ -744,7 +744,7 @@ export const projectData: ProjectItem[] = [
         "30 days standard written notice operational protocol"
       ]
     },
-    "image": "",
+    "image": "/images/clients/global-premium-accessories-logo.webp",
     "tags": [
       "Packaging",
       "Verified Client",
@@ -752,7 +752,8 @@ export const projectData: ProjectItem[] = [
     ],
     "isVerified": true,
     "officialRef": "SSSL Official Profile Entry #16",
-    "hasVerifiedLogo": false
+    "hasVerifiedLogo": true,
+    "logo": "/images/clients/global-premium-accessories-logo.webp"
   },
   {
     "id": "client-17",

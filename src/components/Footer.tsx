@@ -37,12 +37,12 @@ export const Footer: React.FC = () => {
 
   return (
     <footer className="bg-gradient-to-b from-navy-950 via-[#071022] to-[#030712] border-t border-steel-800/80 pt-16 pb-20 md:pb-12 text-slate-400 relative overflow-hidden">
-      {/* Subtle brand watermark */}
-      <div className="absolute right-6 bottom-6 w-96 h-96 opacity-[0.018] pointer-events-none rounded-full overflow-hidden">
+      {/* Clearly visible authentic brand watermark */}
+      <div className="absolute right-6 bottom-6 w-80 h-80 sm:w-96 sm:h-96 opacity-15 pointer-events-none rounded-2xl overflow-hidden select-none">
         <img
           src="/images/sssl-logo.jpg"
-          alt="SSSL Watermark"
-          className="w-full h-full object-contain filter invert"
+          alt="SSSL Brand Watermark"
+          className="w-full h-full object-contain"
         />
       </div>
 
@@ -53,12 +53,12 @@ export const Footer: React.FC = () => {
           
           {/* Brand Info (Cols 1-4) */}
           <div className="lg:col-span-4 space-y-4">
-            <div className="flex items-center gap-3">
-              <div className="h-12 w-auto px-2 py-1 bg-white rounded-md border border-slate-700/60 shadow-sm overflow-hidden shrink-0 flex items-center justify-center">
+            <div className="flex items-center gap-3.5">
+              <div className="h-14 w-14 p-1.5 bg-white rounded-lg border border-amber-400/90 shadow-md overflow-hidden shrink-0 flex items-center justify-center">
                 <img
                   src="/images/sssl-logo.jpg"
                   alt="Soldier Security Services Ltd."
-                  className="h-full w-auto object-contain max-w-[150px]"
+                  className="w-full h-full object-contain aspect-square"
                 />
               </div>
 

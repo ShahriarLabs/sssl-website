@@ -9,12 +9,12 @@ export const CareersSection: React.FC = () => {
 
   return (
     <section id="careers" className="py-20 bg-gradient-to-b from-navy-950/90 via-steel-950/60 to-navy-950/90 relative overflow-hidden">
-      {/* Subtle brand watermark */}
-      <div className="absolute left-10 top-1/2 -translate-y-1/2 w-80 h-80 opacity-[0.02] pointer-events-none rounded-full overflow-hidden">
+      {/* Clearly visible authentic brand watermark */}
+      <div className="absolute left-10 top-1/2 -translate-y-1/2 w-72 h-72 sm:w-88 sm:h-88 opacity-15 pointer-events-none rounded-2xl overflow-hidden select-none">
         <img
           src="/images/sssl-logo.jpg"
-          alt="SSSL Watermark"
-          className="w-full h-full object-contain filter invert"
+          alt="SSSL Official Brand"
+          className="w-full h-full object-contain"
         />
       </div>
 

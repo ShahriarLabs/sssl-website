@@ -154,12 +154,12 @@ export const Hero: React.FC = () => {
           }}
         />
 
-        {/* Subtle watermark of the official logo in the background */}
-        <div className="absolute right-6 top-1/2 -translate-y-1/2 w-[460px] h-[460px] opacity-[0.035] rounded-full overflow-hidden pointer-events-none">
+        {/* Clearly visible authentic brand watermark in the background */}
+        <div className="absolute right-6 top-1/2 -translate-y-1/2 w-80 h-80 sm:w-[440px] sm:h-[440px] opacity-15 rounded-2xl overflow-hidden pointer-events-none select-none">
           <img
             src="/images/sssl-logo.jpg"
-            alt="SSSL Watermark"
-            className="w-full h-full object-contain filter invert"
+            alt="SSSL Official Brand"
+            className="w-full h-full object-contain"
           />
         </div>
       </div>
@@ -168,20 +168,20 @@ export const Hero: React.FC = () => {
         <div className="max-w-3xl">
           
           {/* Official Branded Corporate Crest */}
-          <div className="inline-flex items-center gap-3 p-1.5 pr-4 rounded-full bg-navy-900/90 border border-steel-700/80 backdrop-blur-md mb-6 shadow-lg shadow-black/30">
-            {/* Real Logo Emblem Badge */}
-            <div className="w-8 h-8 rounded-full overflow-hidden bg-white p-0.5 border border-amber-500/50 flex items-center justify-center shrink-0">
+          <div className="inline-flex items-center gap-3 p-1.5 pr-4 rounded-full bg-navy-900/95 border border-steel-700/80 backdrop-blur-md mb-6 shadow-lg shadow-black/30">
+            {/* Real Logo Emblem Badge (Sharp & Fully Opaque) */}
+            <div className="w-10 h-10 rounded-md overflow-hidden bg-white p-1 border border-amber-400 shadow-md flex items-center justify-center shrink-0">
               <img
                 src="/images/sssl-logo.jpg"
-                alt="SSSL Badge"
-                className="w-full h-full object-contain"
+                alt="SSSL Official Logo"
+                className="w-full h-full object-contain aspect-square"
               />
             </div>
             <div className="flex flex-col text-left">
-              <span className="text-[11px] font-bold uppercase tracking-wider text-white">
+              <span className="text-[11px] sm:text-xs font-bold uppercase tracking-wider text-white">
                 Soldier Security Services Ltd.
               </span>
-              <span className="text-[9px] font-mono text-amber-400">
+              <span className="text-[9px] sm:text-[10px] font-mono text-amber-400 font-semibold">
                 Reg. No. C-96185/11 • Established 2011
               </span>
             </div>
