@@ -292,14 +292,15 @@ export const projectData: ProjectItem[] = [
         "30 days standard written notice operational protocol"
       ]
     },
-    "image": "/images/sssl-guard-squad-1.jpg",
+    "image": "",
     "tags": [
       "Commercial",
       "Verified Client",
       "Manned Guarding"
     ],
     "isVerified": true,
-    "officialRef": "SSSL Official Profile Entry #01"
+    "officialRef": "SSSL Official Profile Entry #01",
+    "hasVerifiedLogo": false
   },
   {
     "id": "client-02",
@@ -321,14 +322,16 @@ export const projectData: ProjectItem[] = [
         "30 days standard written notice operational protocol"
       ]
     },
-    "image": "/images/sssl-guard-parade.jpg",
+    "image": "/images/clients/arunima-group-logo.png",
     "tags": [
       "Industrial",
       "Verified Client",
       "Manned Guarding"
     ],
     "isVerified": true,
-    "officialRef": "SSSL Official Profile Entry #02"
+    "officialRef": "SSSL Official Profile Entry #02",
+    "logo": "/images/clients/arunima-group-logo.png",
+    "hasVerifiedLogo": true
   },
   {
     "id": "client-03",
@@ -350,14 +353,15 @@ export const projectData: ProjectItem[] = [
         "30 days standard written notice operational protocol"
       ]
     },
-    "image": "/images/sssl-female-guards-drill.jpg",
+    "image": "",
     "tags": [
       "Commercial",
       "Verified Client",
       "Manned Guarding"
     ],
     "isVerified": true,
-    "officialRef": "SSSL Official Profile Entry #03"
+    "officialRef": "SSSL Official Profile Entry #03",
+    "hasVerifiedLogo": false
   },
   {
     "id": "client-04",
@@ -379,14 +383,16 @@ export const projectData: ProjectItem[] = [
         "30 days standard written notice operational protocol"
       ]
     },
-    "image": "/images/sssl-officer-walkie.jpg",
+    "image": "/images/clients/bscic-logo.svg",
     "tags": [
       "Commercial",
       "Verified Client",
       "Manned Guarding"
     ],
     "isVerified": true,
-    "officialRef": "SSSL Official Profile Entry #04"
+    "officialRef": "SSSL Official Profile Entry #04",
+    "logo": "/images/clients/bscic-logo.svg",
+    "hasVerifiedLogo": true
   },
   {
     "id": "client-05",
@@ -408,14 +414,15 @@ export const projectData: ProjectItem[] = [
         "30 days standard written notice operational protocol"
       ]
     },
-    "image": "/images/sssl-guard-squad-1.jpg",
+    "image": "",
     "tags": [
       "Engineering",
       "Verified Client",
       "Manned Guarding"
     ],
     "isVerified": true,
-    "officialRef": "SSSL Official Profile Entry #05"
+    "officialRef": "SSSL Official Profile Entry #05",
+    "hasVerifiedLogo": false
   },
   {
     "id": "client-06",
@@ -437,14 +444,15 @@ export const projectData: ProjectItem[] = [
         "30 days standard written notice operational protocol"
       ]
     },
-    "image": "/images/sssl-guard-parade.jpg",
+    "image": "",
     "tags": [
       "Industrial",
       "Verified Client",
       "Manned Guarding"
     ],
     "isVerified": true,
-    "officialRef": "SSSL Official Profile Entry #06"
+    "officialRef": "SSSL Official Profile Entry #06",
+    "hasVerifiedLogo": false
   },
   {
     "id": "client-07",
@@ -466,14 +474,15 @@ export const projectData: ProjectItem[] = [
         "30 days standard written notice operational protocol"
       ]
     },
-    "image": "/images/sssl-female-guards-drill.jpg",
+    "image": "",
     "tags": [
       "Packaging",
       "Verified Client",
       "Manned Guarding"
     ],
     "isVerified": true,
-    "officialRef": "SSSL Official Profile Entry #07"
+    "officialRef": "SSSL Official Profile Entry #07",
+    "hasVerifiedLogo": false
   },
   {
     "id": "client-08",
@@ -495,14 +504,15 @@ export const projectData: ProjectItem[] = [
         "30 days standard written notice operational protocol"
       ]
     },
-    "image": "/images/sssl-officer-walkie.jpg",
+    "image": "",
     "tags": [
       "Commercial",
       "Verified Client",
       "Manned Guarding"
     ],
     "isVerified": true,
-    "officialRef": "SSSL Official Profile Entry #08"
+    "officialRef": "SSSL Official Profile Entry #08",
+    "hasVerifiedLogo": false
   },
   {
     "id": "client-09",
@@ -524,14 +534,15 @@ export const projectData: ProjectItem[] = [
         "30 days standard written notice operational protocol"
       ]
     },
-    "image": "/images/sssl-guard-squad-1.jpg",
+    "image": "",
     "tags": [
       "Agro",
       "Verified Client",
       "Manned Guarding"
     ],
     "isVerified": true,
-    "officialRef": "SSSL Official Profile Entry #09"
+    "officialRef": "SSSL Official Profile Entry #09",
+    "hasVerifiedLogo": false
   },
   {
     "id": "client-10",
@@ -553,14 +564,15 @@ export const projectData: ProjectItem[] = [
         "30 days standard written notice operational protocol"
       ]
     },
-    "image": "/images/sssl-guard-parade.jpg",
+    "image": "",
     "tags": [
       "Industrial",
       "Verified Client",
       "Manned Guarding"
     ],
     "isVerified": true,
-    "officialRef": "SSSL Official Profile Entry #10"
+    "officialRef": "SSSL Official Profile Entry #10",
+    "hasVerifiedLogo": false
   },
   {
     "id": "client-11",
@@ -582,14 +594,15 @@ export const projectData: ProjectItem[] = [
         "30 days standard written notice operational protocol"
       ]
     },
-    "image": "/images/sssl-female-guards-drill.jpg",
+    "image": "",
     "tags": [
       "Engineering",
       "Verified Client",
       "Manned Guarding"
     ],
     "isVerified": true,
-    "officialRef": "SSSL Official Profile Entry #11"
+    "officialRef": "SSSL Official Profile Entry #11",
+    "hasVerifiedLogo": false
   },
   {
     "id": "client-12",
@@ -611,14 +624,15 @@ export const projectData: ProjectItem[] = [
         "30 days standard written notice operational protocol"
       ]
     },
-    "image": "/images/sssl-officer-walkie.jpg",
+    "image": "",
     "tags": [
       "Industrial",
       "Verified Client",
       "Manned Guarding"
     ],
     "isVerified": true,
-    "officialRef": "SSSL Official Profile Entry #12"
+    "officialRef": "SSSL Official Profile Entry #12",
+    "hasVerifiedLogo": false
   },
   {
     "id": "client-13",
@@ -640,14 +654,15 @@ export const projectData: ProjectItem[] = [
         "30 days standard written notice operational protocol"
       ]
     },
-    "image": "/images/sssl-guard-squad-1.jpg",
+    "image": "",
     "tags": [
       "Packaging",
       "Verified Client",
       "Manned Guarding"
     ],
     "isVerified": true,
-    "officialRef": "SSSL Official Profile Entry #13"
+    "officialRef": "SSSL Official Profile Entry #13",
+    "hasVerifiedLogo": false
   },
   {
     "id": "client-14",
@@ -669,14 +684,15 @@ export const projectData: ProjectItem[] = [
         "30 days standard written notice operational protocol"
       ]
     },
-    "image": "/images/sssl-guard-parade.jpg",
+    "image": "",
     "tags": [
       "Industrial",
       "Verified Client",
       "Manned Guarding"
     ],
     "isVerified": true,
-    "officialRef": "SSSL Official Profile Entry #14"
+    "officialRef": "SSSL Official Profile Entry #14",
+    "hasVerifiedLogo": false
   },
   {
     "id": "client-15",
@@ -698,14 +714,15 @@ export const projectData: ProjectItem[] = [
         "30 days standard written notice operational protocol"
       ]
     },
-    "image": "/images/sssl-female-guards-drill.jpg",
+    "image": "",
     "tags": [
       "Industrial",
       "Verified Client",
       "Manned Guarding"
     ],
     "isVerified": true,
-    "officialRef": "SSSL Official Profile Entry #15"
+    "officialRef": "SSSL Official Profile Entry #15",
+    "hasVerifiedLogo": false
   },
   {
     "id": "client-16",
@@ -727,14 +744,15 @@ export const projectData: ProjectItem[] = [
         "30 days standard written notice operational protocol"
       ]
     },
-    "image": "/images/sssl-officer-walkie.jpg",
+    "image": "",
     "tags": [
       "Packaging",
       "Verified Client",
       "Manned Guarding"
     ],
     "isVerified": true,
-    "officialRef": "SSSL Official Profile Entry #16"
+    "officialRef": "SSSL Official Profile Entry #16",
+    "hasVerifiedLogo": false
   },
   {
     "id": "client-17",
@@ -756,14 +774,15 @@ export const projectData: ProjectItem[] = [
         "30 days standard written notice operational protocol"
       ]
     },
-    "image": "/images/sssl-guard-squad-1.jpg",
+    "image": "",
     "tags": [
       "Industrial",
       "Verified Client",
       "Manned Guarding"
     ],
     "isVerified": true,
-    "officialRef": "SSSL Official Profile Entry #17"
+    "officialRef": "SSSL Official Profile Entry #17",
+    "hasVerifiedLogo": false
   },
   {
     "id": "client-18",
@@ -785,14 +804,15 @@ export const projectData: ProjectItem[] = [
         "30 days standard written notice operational protocol"
       ]
     },
-    "image": "/images/sssl-guard-parade.jpg",
+    "image": "",
     "tags": [
       "Industrial",
       "Verified Client",
       "Manned Guarding"
     ],
     "isVerified": true,
-    "officialRef": "SSSL Official Profile Entry #18"
+    "officialRef": "SSSL Official Profile Entry #18",
+    "hasVerifiedLogo": false
   },
   {
     "id": "client-19",
@@ -814,14 +834,16 @@ export const projectData: ProjectItem[] = [
         "30 days standard written notice operational protocol"
       ]
     },
-    "image": "/images/sssl-female-guards-drill.jpg",
+    "image": "/images/clients/hopyick-hoplun-logo.png",
     "tags": [
       "EPZ",
       "Verified Client",
       "Manned Guarding"
     ],
     "isVerified": true,
-    "officialRef": "SSSL Official Profile Entry #19"
+    "officialRef": "SSSL Official Profile Entry #19",
+    "logo": "/images/clients/hopyick-hoplun-logo.png",
+    "hasVerifiedLogo": true
   },
   {
     "id": "client-20",
@@ -843,14 +865,15 @@ export const projectData: ProjectItem[] = [
         "30 days standard written notice operational protocol"
       ]
     },
-    "image": "/images/sssl-officer-walkie.jpg",
+    "image": "",
     "tags": [
       "EPZ",
       "Verified Client",
       "Manned Guarding"
     ],
     "isVerified": true,
-    "officialRef": "SSSL Official Profile Entry #20"
+    "officialRef": "SSSL Official Profile Entry #20",
+    "hasVerifiedLogo": false
   },
   {
     "id": "client-21",
@@ -872,14 +895,15 @@ export const projectData: ProjectItem[] = [
         "30 days standard written notice operational protocol"
       ]
     },
-    "image": "/images/sssl-guard-squad-1.jpg",
+    "image": "",
     "tags": [
       "EPZ",
       "Verified Client",
       "Manned Guarding"
     ],
     "isVerified": true,
-    "officialRef": "SSSL Official Profile Entry #21"
+    "officialRef": "SSSL Official Profile Entry #21",
+    "hasVerifiedLogo": false
   },
   {
     "id": "client-22",
@@ -901,14 +925,16 @@ export const projectData: ProjectItem[] = [
         "30 days standard written notice operational protocol"
       ]
     },
-    "image": "/images/sssl-guard-parade.jpg",
+    "image": "/images/clients/imart-engineering-logo.png",
     "tags": [
       "Engineering",
       "Verified Client",
       "Manned Guarding"
     ],
     "isVerified": true,
-    "officialRef": "SSSL Official Profile Entry #22"
+    "officialRef": "SSSL Official Profile Entry #22",
+    "logo": "/images/clients/imart-engineering-logo.png",
+    "hasVerifiedLogo": true
   },
   {
     "id": "client-23",
@@ -930,14 +956,16 @@ export const projectData: ProjectItem[] = [
         "30 days standard written notice operational protocol"
       ]
     },
-    "image": "/images/sssl-female-guards-drill.jpg",
+    "image": "/images/clients/isc-enterprise-logo.jpg",
     "tags": [
       "Engineering",
       "Verified Client",
       "Manned Guarding"
     ],
     "isVerified": true,
-    "officialRef": "SSSL Official Profile Entry #23"
+    "officialRef": "SSSL Official Profile Entry #23",
+    "logo": "/images/clients/isc-enterprise-logo.jpg",
+    "hasVerifiedLogo": true
   },
   {
     "id": "client-24",
@@ -959,14 +987,15 @@ export const projectData: ProjectItem[] = [
         "30 days standard written notice operational protocol"
       ]
     },
-    "image": "/images/sssl-officer-walkie.jpg",
+    "image": "",
     "tags": [
       "Industrial",
       "Verified Client",
       "Manned Guarding"
     ],
     "isVerified": true,
-    "officialRef": "SSSL Official Profile Entry #24"
+    "officialRef": "SSSL Official Profile Entry #24",
+    "hasVerifiedLogo": false
   },
   {
     "id": "client-25",
@@ -988,14 +1017,15 @@ export const projectData: ProjectItem[] = [
         "30 days standard written notice operational protocol"
       ]
     },
-    "image": "/images/sssl-guard-squad-1.jpg",
+    "image": "",
     "tags": [
       "Industrial",
       "Verified Client",
       "Manned Guarding"
     ],
     "isVerified": true,
-    "officialRef": "SSSL Official Profile Entry #25"
+    "officialRef": "SSSL Official Profile Entry #25",
+    "hasVerifiedLogo": false
   },
   {
     "id": "client-26",
@@ -1017,14 +1047,15 @@ export const projectData: ProjectItem[] = [
         "30 days standard written notice operational protocol"
       ]
     },
-    "image": "/images/sssl-guard-parade.jpg",
+    "image": "",
     "tags": [
       "Industrial",
       "Verified Client",
       "Manned Guarding"
     ],
     "isVerified": true,
-    "officialRef": "SSSL Official Profile Entry #26"
+    "officialRef": "SSSL Official Profile Entry #26",
+    "hasVerifiedLogo": false
   },
   {
     "id": "client-27",
@@ -1046,14 +1077,16 @@ export const projectData: ProjectItem[] = [
         "30 days standard written notice operational protocol"
       ]
     },
-    "image": "/images/sssl-female-guards-drill.jpg",
+    "image": "/images/clients/legend-trims-logo.png",
     "tags": [
       "Packaging",
       "Verified Client",
       "Manned Guarding"
     ],
     "isVerified": true,
-    "officialRef": "SSSL Official Profile Entry #27"
+    "officialRef": "SSSL Official Profile Entry #27",
+    "logo": "/images/clients/legend-trims-logo.png",
+    "hasVerifiedLogo": true
   },
   {
     "id": "client-28",
@@ -1075,14 +1108,15 @@ export const projectData: ProjectItem[] = [
         "30 days standard written notice operational protocol"
       ]
     },
-    "image": "/images/sssl-officer-walkie.jpg",
+    "image": "",
     "tags": [
       "Commercial",
       "Verified Client",
       "Manned Guarding"
     ],
     "isVerified": true,
-    "officialRef": "SSSL Official Profile Entry #28"
+    "officialRef": "SSSL Official Profile Entry #28",
+    "hasVerifiedLogo": false
   },
   {
     "id": "client-29",
@@ -1104,14 +1138,15 @@ export const projectData: ProjectItem[] = [
         "30 days standard written notice operational protocol"
       ]
     },
-    "image": "/images/sssl-guard-squad-1.jpg",
+    "image": "",
     "tags": [
       "Industrial",
       "Verified Client",
       "Manned Guarding"
     ],
     "isVerified": true,
-    "officialRef": "SSSL Official Profile Entry #29"
+    "officialRef": "SSSL Official Profile Entry #29",
+    "hasVerifiedLogo": false
   },
   {
     "id": "client-30",
@@ -1133,14 +1168,16 @@ export const projectData: ProjectItem[] = [
         "30 days standard written notice operational protocol"
       ]
     },
-    "image": "/images/sssl-guard-parade.jpg",
+    "image": "/images/clients/mark-packaging-logo.png",
     "tags": [
       "Packaging",
       "Verified Client",
       "Manned Guarding"
     ],
     "isVerified": true,
-    "officialRef": "SSSL Official Profile Entry #30"
+    "officialRef": "SSSL Official Profile Entry #30",
+    "logo": "/images/clients/mark-packaging-logo.png",
+    "hasVerifiedLogo": true
   },
   {
     "id": "client-31",
@@ -1162,14 +1199,16 @@ export const projectData: ProjectItem[] = [
         "30 days standard written notice operational protocol"
       ]
     },
-    "image": "/images/sssl-female-guards-drill.jpg",
+    "image": "/images/clients/mark-logo.png",
     "tags": [
       "Agro",
       "Verified Client",
       "Manned Guarding"
     ],
     "isVerified": true,
-    "officialRef": "SSSL Official Profile Entry #31"
+    "officialRef": "SSSL Official Profile Entry #31",
+    "logo": "/images/clients/mark-logo.png",
+    "hasVerifiedLogo": true
   },
   {
     "id": "client-32",
@@ -1191,14 +1230,15 @@ export const projectData: ProjectItem[] = [
         "30 days standard written notice operational protocol"
       ]
     },
-    "image": "/images/sssl-officer-walkie.jpg",
+    "image": "",
     "tags": [
       "Industrial",
       "Verified Client",
       "Manned Guarding"
     ],
     "isVerified": true,
-    "officialRef": "SSSL Official Profile Entry #32"
+    "officialRef": "SSSL Official Profile Entry #32",
+    "hasVerifiedLogo": false
   },
   {
     "id": "client-33",
@@ -1220,14 +1260,15 @@ export const projectData: ProjectItem[] = [
         "30 days standard written notice operational protocol"
       ]
     },
-    "image": "/images/sssl-guard-squad-1.jpg",
+    "image": "",
     "tags": [
       "Packaging",
       "Verified Client",
       "Manned Guarding"
     ],
     "isVerified": true,
-    "officialRef": "SSSL Official Profile Entry #33"
+    "officialRef": "SSSL Official Profile Entry #33",
+    "hasVerifiedLogo": false
   },
   {
     "id": "client-34",
@@ -1249,14 +1290,15 @@ export const projectData: ProjectItem[] = [
         "30 days standard written notice operational protocol"
       ]
     },
-    "image": "/images/sssl-guard-parade.jpg",
+    "image": "",
     "tags": [
       "Packaging",
       "Verified Client",
       "Manned Guarding"
     ],
     "isVerified": true,
-    "officialRef": "SSSL Official Profile Entry #34"
+    "officialRef": "SSSL Official Profile Entry #34",
+    "hasVerifiedLogo": false
   },
   {
     "id": "client-35",
@@ -1278,14 +1320,15 @@ export const projectData: ProjectItem[] = [
         "30 days standard written notice operational protocol"
       ]
     },
-    "image": "/images/sssl-female-guards-drill.jpg",
+    "image": "",
     "tags": [
       "Industrial",
       "Verified Client",
       "Manned Guarding"
     ],
     "isVerified": true,
-    "officialRef": "SSSL Official Profile Entry #35"
+    "officialRef": "SSSL Official Profile Entry #35",
+    "hasVerifiedLogo": false
   },
   {
     "id": "client-36",
@@ -1307,14 +1350,15 @@ export const projectData: ProjectItem[] = [
         "30 days standard written notice operational protocol"
       ]
     },
-    "image": "/images/sssl-officer-walkie.jpg",
+    "image": "",
     "tags": [
       "Engineering",
       "Verified Client",
       "Manned Guarding"
     ],
     "isVerified": true,
-    "officialRef": "SSSL Official Profile Entry #36"
+    "officialRef": "SSSL Official Profile Entry #36",
+    "hasVerifiedLogo": false
   },
   {
     "id": "client-37",
@@ -1336,14 +1380,15 @@ export const projectData: ProjectItem[] = [
         "30 days standard written notice operational protocol"
       ]
     },
-    "image": "/images/sssl-guard-squad-1.jpg",
+    "image": "",
     "tags": [
       "Agro",
       "Verified Client",
       "Manned Guarding"
     ],
     "isVerified": true,
-    "officialRef": "SSSL Official Profile Entry #37"
+    "officialRef": "SSSL Official Profile Entry #37",
+    "hasVerifiedLogo": false
   },
   {
     "id": "client-38",
@@ -1365,14 +1410,16 @@ export const projectData: ProjectItem[] = [
         "30 days standard written notice operational protocol"
       ]
     },
-    "image": "/images/sssl-guard-parade.jpg",
+    "image": "/images/clients/rapid-accessories-logo.png",
     "tags": [
       "Packaging",
       "Verified Client",
       "Manned Guarding"
     ],
     "isVerified": true,
-    "officialRef": "SSSL Official Profile Entry #38"
+    "officialRef": "SSSL Official Profile Entry #38",
+    "logo": "/images/clients/rapid-accessories-logo.png",
+    "hasVerifiedLogo": true
   },
   {
     "id": "client-39",
@@ -1394,14 +1441,15 @@ export const projectData: ProjectItem[] = [
         "30 days standard written notice operational protocol"
       ]
     },
-    "image": "/images/sssl-female-guards-drill.jpg",
+    "image": "",
     "tags": [
       "Commercial",
       "Verified Client",
       "Manned Guarding"
     ],
     "isVerified": true,
-    "officialRef": "SSSL Official Profile Entry #39"
+    "officialRef": "SSSL Official Profile Entry #39",
+    "hasVerifiedLogo": false
   },
   {
     "id": "client-40",
@@ -1423,14 +1471,15 @@ export const projectData: ProjectItem[] = [
         "30 days standard written notice operational protocol"
       ]
     },
-    "image": "/images/sssl-officer-walkie.jpg",
+    "image": "",
     "tags": [
       "Industrial",
       "Verified Client",
       "Manned Guarding"
     ],
     "isVerified": true,
-    "officialRef": "SSSL Official Profile Entry #40"
+    "officialRef": "SSSL Official Profile Entry #40",
+    "hasVerifiedLogo": false
   },
   {
     "id": "client-41",
@@ -1452,14 +1501,15 @@ export const projectData: ProjectItem[] = [
         "30 days standard written notice operational protocol"
       ]
     },
-    "image": "/images/sssl-guard-squad-1.jpg",
+    "image": "",
     "tags": [
       "Industrial",
       "Verified Client",
       "Manned Guarding"
     ],
     "isVerified": true,
-    "officialRef": "SSSL Official Profile Entry #41"
+    "officialRef": "SSSL Official Profile Entry #41",
+    "hasVerifiedLogo": false
   },
   {
     "id": "client-42",
@@ -1481,14 +1531,16 @@ export const projectData: ProjectItem[] = [
         "30 days standard written notice operational protocol"
       ]
     },
-    "image": "/images/sssl-guard-parade.jpg",
+    "image": "/images/clients/sweet-agro-logo.png",
     "tags": [
       "Agro",
       "Verified Client",
       "Manned Guarding"
     ],
     "isVerified": true,
-    "officialRef": "SSSL Official Profile Entry #42"
+    "officialRef": "SSSL Official Profile Entry #42",
+    "logo": "/images/clients/sweet-agro-logo.png",
+    "hasVerifiedLogo": true
   },
   {
     "id": "client-43",
@@ -1510,14 +1562,16 @@ export const projectData: ProjectItem[] = [
         "30 days standard written notice operational protocol"
       ]
     },
-    "image": "/images/sssl-female-guards-drill.jpg",
+    "image": "/images/clients/sweet-agro-logo.png",
     "tags": [
       "Agro",
       "Verified Client",
       "Manned Guarding"
     ],
     "isVerified": true,
-    "officialRef": "SSSL Official Profile Entry #43"
+    "officialRef": "SSSL Official Profile Entry #43",
+    "logo": "/images/clients/sweet-agro-logo.png",
+    "hasVerifiedLogo": true
   },
   {
     "id": "client-44",
@@ -1539,14 +1593,16 @@ export const projectData: ProjectItem[] = [
         "30 days standard written notice operational protocol"
       ]
     },
-    "image": "/images/sssl-officer-walkie.jpg",
+    "image": "/images/clients/sweet-agro-logo.png",
     "tags": [
       "Agro",
       "Verified Client",
       "Manned Guarding"
     ],
     "isVerified": true,
-    "officialRef": "SSSL Official Profile Entry #44"
+    "officialRef": "SSSL Official Profile Entry #44",
+    "logo": "/images/clients/sweet-agro-logo.png",
+    "hasVerifiedLogo": true
   },
   {
     "id": "client-45",
@@ -1568,14 +1624,16 @@ export const projectData: ProjectItem[] = [
         "30 days standard written notice operational protocol"
       ]
     },
-    "image": "/images/sssl-guard-squad-1.jpg",
+    "image": "/images/clients/sweet-agro-logo.png",
     "tags": [
       "Agro",
       "Verified Client",
       "Manned Guarding"
     ],
     "isVerified": true,
-    "officialRef": "SSSL Official Profile Entry #45"
+    "officialRef": "SSSL Official Profile Entry #45",
+    "logo": "/images/clients/sweet-agro-logo.png",
+    "hasVerifiedLogo": true
   },
   {
     "id": "client-46",
@@ -1597,14 +1655,16 @@ export const projectData: ProjectItem[] = [
         "30 days standard written notice operational protocol"
       ]
     },
-    "image": "/images/sssl-guard-parade.jpg",
+    "image": "/images/clients/snow-village-logo.png",
     "tags": [
       "Agro",
       "Verified Client",
       "Manned Guarding"
     ],
     "isVerified": true,
-    "officialRef": "SSSL Official Profile Entry #46"
+    "officialRef": "SSSL Official Profile Entry #46",
+    "logo": "/images/clients/snow-village-logo.png",
+    "hasVerifiedLogo": true
   },
   {
     "id": "client-47",
@@ -1626,14 +1686,16 @@ export const projectData: ProjectItem[] = [
         "30 days standard written notice operational protocol"
       ]
     },
-    "image": "/images/sssl-female-guards-drill.jpg",
+    "image": "/images/clients/sustainable-silhouettes-logo.png",
     "tags": [
       "Packaging",
       "Verified Client",
       "Manned Guarding"
     ],
     "isVerified": true,
-    "officialRef": "SSSL Official Profile Entry #47"
+    "officialRef": "SSSL Official Profile Entry #47",
+    "logo": "/images/clients/sustainable-silhouettes-logo.png",
+    "hasVerifiedLogo": true
   },
   {
     "id": "client-48",
@@ -1655,14 +1717,15 @@ export const projectData: ProjectItem[] = [
         "30 days standard written notice operational protocol"
       ]
     },
-    "image": "/images/sssl-officer-walkie.jpg",
+    "image": "",
     "tags": [
       "Commercial",
       "Verified Client",
       "Manned Guarding"
     ],
     "isVerified": true,
-    "officialRef": "SSSL Official Profile Entry #48"
+    "officialRef": "SSSL Official Profile Entry #48",
+    "hasVerifiedLogo": false
   },
   {
     "id": "client-49",
@@ -1684,14 +1747,15 @@ export const projectData: ProjectItem[] = [
         "30 days standard written notice operational protocol"
       ]
     },
-    "image": "/images/sssl-guard-squad-1.jpg",
+    "image": "",
     "tags": [
       "Industrial",
       "Verified Client",
       "Manned Guarding"
     ],
     "isVerified": true,
-    "officialRef": "SSSL Official Profile Entry #49"
+    "officialRef": "SSSL Official Profile Entry #49",
+    "hasVerifiedLogo": false
   },
   {
     "id": "client-50",
@@ -1713,14 +1777,15 @@ export const projectData: ProjectItem[] = [
         "30 days standard written notice operational protocol"
       ]
     },
-    "image": "/images/sssl-guard-parade.jpg",
+    "image": "",
     "tags": [
       "Engineering",
       "Verified Client",
       "Manned Guarding"
     ],
     "isVerified": true,
-    "officialRef": "SSSL Official Profile Entry #50"
+    "officialRef": "SSSL Official Profile Entry #50",
+    "hasVerifiedLogo": false
   },
   {
     "id": "client-51",
@@ -1742,14 +1807,15 @@ export const projectData: ProjectItem[] = [
         "30 days standard written notice operational protocol"
       ]
     },
-    "image": "/images/sssl-female-guards-drill.jpg",
+    "image": "",
     "tags": [
       "Engineering",
       "Verified Client",
       "Manned Guarding"
     ],
     "isVerified": true,
-    "officialRef": "SSSL Official Profile Entry #51"
+    "officialRef": "SSSL Official Profile Entry #51",
+    "hasVerifiedLogo": false
   },
   {
     "id": "client-52",
@@ -1771,14 +1837,15 @@ export const projectData: ProjectItem[] = [
         "30 days standard written notice operational protocol"
       ]
     },
-    "image": "/images/sssl-officer-walkie.jpg",
+    "image": "",
     "tags": [
       "Engineering",
       "Verified Client",
       "Manned Guarding"
     ],
     "isVerified": true,
-    "officialRef": "SSSL Official Profile Entry #52"
+    "officialRef": "SSSL Official Profile Entry #52",
+    "hasVerifiedLogo": false
   },
   {
     "id": "client-53",
@@ -1800,14 +1867,15 @@ export const projectData: ProjectItem[] = [
         "30 days standard written notice operational protocol"
       ]
     },
-    "image": "/images/sssl-guard-squad-1.jpg",
+    "image": "",
     "tags": [
       "Engineering",
       "Verified Client",
       "Manned Guarding"
     ],
     "isVerified": true,
-    "officialRef": "SSSL Official Profile Entry #53"
+    "officialRef": "SSSL Official Profile Entry #53",
+    "hasVerifiedLogo": false
   },
   {
     "id": "client-54",
@@ -1829,14 +1897,16 @@ export const projectData: ProjectItem[] = [
         "30 days standard written notice operational protocol"
       ]
     },
-    "image": "/images/sssl-guard-parade.jpg",
+    "image": "/images/clients/wooree-apparels-logo.png",
     "tags": [
       "Industrial",
       "Verified Client",
       "Manned Guarding"
     ],
     "isVerified": true,
-    "officialRef": "SSSL Official Profile Entry #54"
+    "officialRef": "SSSL Official Profile Entry #54",
+    "logo": "/images/clients/wooree-apparels-logo.png",
+    "hasVerifiedLogo": true
   },
   {
     "id": "client-55",
@@ -1858,14 +1928,16 @@ export const projectData: ProjectItem[] = [
         "30 days standard written notice operational protocol"
       ]
     },
-    "image": "/images/sssl-female-guards-drill.jpg",
+    "image": "/images/clients/wooree-apparels-logo.png",
     "tags": [
       "Industrial",
       "Verified Client",
       "Manned Guarding"
     ],
     "isVerified": true,
-    "officialRef": "SSSL Official Profile Entry #55"
+    "officialRef": "SSSL Official Profile Entry #55",
+    "logo": "/images/clients/wooree-apparels-logo.png",
+    "hasVerifiedLogo": true
   },
   {
     "id": "client-56",
@@ -1887,14 +1959,15 @@ export const projectData: ProjectItem[] = [
         "30 days standard written notice operational protocol"
       ]
     },
-    "image": "/images/sssl-officer-walkie.jpg",
+    "image": "",
     "tags": [
       "Engineering",
       "Verified Client",
       "Manned Guarding"
     ],
     "isVerified": true,
-    "officialRef": "SSSL Official Profile Entry #56"
+    "officialRef": "SSSL Official Profile Entry #56",
+    "hasVerifiedLogo": false
   },
   {
     "id": "client-57",
@@ -1916,14 +1989,16 @@ export const projectData: ProjectItem[] = [
         "30 days standard written notice operational protocol"
       ]
     },
-    "image": "/images/sssl-guard-squad-1.jpg",
+    "image": "/images/clients/yulee-cap-logo.png",
     "tags": [
       "Industrial",
       "Verified Client",
       "Manned Guarding"
     ],
     "isVerified": true,
-    "officialRef": "SSSL Official Profile Entry #57"
+    "officialRef": "SSSL Official Profile Entry #57",
+    "logo": "/images/clients/yulee-cap-logo.png",
+    "hasVerifiedLogo": true
   },
   {
     "id": "client-58",
@@ -1945,14 +2020,16 @@ export const projectData: ProjectItem[] = [
         "30 days standard written notice operational protocol"
       ]
     },
-    "image": "/images/sssl-guard-parade.jpg",
+    "image": "/images/clients/yulee-cap-logo.png",
     "tags": [
       "Industrial",
       "Verified Client",
       "Manned Guarding"
     ],
     "isVerified": true,
-    "officialRef": "SSSL Official Profile Entry #58"
+    "officialRef": "SSSL Official Profile Entry #58",
+    "logo": "/images/clients/yulee-cap-logo.png",
+    "hasVerifiedLogo": true
   }
 ];
 

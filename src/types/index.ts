@@ -45,6 +45,8 @@ export interface ProjectItem {
     terms?: string[];
   };
   image: string;
+  logo?: string;
+  hasVerifiedLogo?: boolean;
   tags: string[];
   isVerified: boolean;
   officialRef: string;

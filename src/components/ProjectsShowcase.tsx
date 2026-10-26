@@ -10,7 +10,8 @@ import {
   FileDown,
   UserCheck,
   CheckCircle2,
-  Maximize2
+  Maximize2,
+  Building2
 } from 'lucide-react';
 import { projectData, siteMeta } from '../data/siteConfig';
 import type { ProjectItem, ProjectCategory } from '../types';
@@ -320,16 +321,31 @@ export const ProjectsShowcase: React.FC = () => {
               <X className="w-5 h-5" />
             </button>
 
-            {/* Modal Image Header */}
-            <div className="relative h-56 rounded-md overflow-hidden mb-6 bg-navy-950">
-              <img
-                src={selectedProject.image}
-                alt={selectedProject.clientName}
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-navy-900 via-transparent to-transparent" />
-              
-              <div className="absolute bottom-3 left-3 right-3 flex flex-wrap items-center justify-between gap-2">
+            {/* Modal Logo / Client Header */}
+            <div className="relative h-48 sm:h-56 rounded-md overflow-hidden mb-6 bg-gradient-to-b from-[#0a152d] via-navy-900 to-navy-950 border border-slate-800 flex items-center justify-center p-6">
+              {selectedProject.hasVerifiedLogo && selectedProject.logo ? (
+                <div className="w-full max-w-[260px] sm:max-w-[300px] h-28 bg-white/95 rounded-lg p-4 shadow-lg border border-slate-700/50 flex items-center justify-center">
+                  <img
+                    src={selectedProject.logo}
+                    alt={`${selectedProject.clientName} official logo`}
+                    className="max-h-full max-w-full object-contain"
+                  />
+                </div>
+              ) : (
+                <div className="flex flex-col items-center justify-center text-center p-4">
+                  <div className="w-14 h-14 rounded-full bg-navy-800 border border-amber-500/40 flex items-center justify-center text-amber-400 mb-3 shadow-md">
+                    <Building2 className="w-7 h-7" />
+                  </div>
+                  <span className="text-base sm:text-lg font-bold text-white font-display px-4">
+                    {selectedProject.clientName}
+                  </span>
+                  <span className="text-xs font-mono text-slate-400 mt-1 uppercase tracking-wider">
+                    Official Client Facility — SSSL Deployment Roster
+                  </span>
+                </div>
+              )}
+
+              <div className="absolute bottom-3 left-3 right-3 flex flex-wrap items-center justify-between gap-2 z-20">
                 <span className="text-xs font-bold uppercase tracking-wider px-2.5 py-1 rounded bg-amber-400 text-navy-950">
                   {selectedProject.category}
                 </span>
@@ -470,38 +486,77 @@ const ClientProjectCard: React.FC<ClientProjectCardProps> = ({
         }}
       />
 
-      {/* Card Image */}
-      <div className="relative h-44 overflow-hidden bg-navy-900">
-        <img
-          src={project.image}
-          alt={project.clientName}
-          loading="lazy"
-          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/40 to-transparent" />
-        
-        <div className="absolute top-2.5 left-2.5 flex items-center gap-1.5">
-          <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-navy-950/90 border border-slate-700 text-amber-300">
-            {project.category}
-          </span>
-          <span className="text-[9px] font-mono uppercase px-1.5 py-0.5 rounded bg-emerald-950/90 border border-emerald-700 text-emerald-400">
-            Verified
-          </span>
-        </div>
+      {/* Client Logo or Clean Verified Placeholder */}
+      {project.hasVerifiedLogo && project.logo ? (
+        <div className="relative h-44 overflow-hidden bg-gradient-to-b from-[#0a152d] via-navy-900 to-navy-950 flex items-center justify-center p-5 border-b border-slate-800/80">
+          <div className="w-full max-w-[210px] h-24 bg-white/95 rounded-md p-3 shadow-md border border-slate-700/50 flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
+            <img
+              src={project.logo}
+              alt={`${project.clientName} official logo`}
+              loading="lazy"
+              className="max-h-full max-w-full object-contain"
+            />
+          </div>
+          <div className="absolute inset-0 bg-gradient-to-t from-navy-950 via-transparent to-transparent pointer-events-none opacity-50" />
+          
+          <div className="absolute top-2.5 left-2.5 flex items-center gap-1.5 z-20">
+            <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-navy-950/90 border border-slate-700 text-amber-300">
+              {project.category}
+            </span>
+            <span className="text-[9px] font-mono uppercase px-1.5 py-0.5 rounded bg-emerald-950/90 border border-emerald-700 text-emerald-400">
+              Verified Logo
+            </span>
+          </div>
 
-        <div className="absolute top-2.5 right-2.5 p-1 rounded-full bg-navy-950/80 text-slate-300 group-hover:text-amber-400 transition-colors">
-          <Maximize2 className="w-3.5 h-3.5" />
-        </div>
+          <div className="absolute top-2.5 right-2.5 p-1 rounded-full bg-navy-950/80 text-slate-300 group-hover:text-amber-400 transition-colors z-20">
+            <Maximize2 className="w-3.5 h-3.5" />
+          </div>
 
-        <div className="absolute bottom-2 left-2.5 right-2.5 flex items-center justify-between text-[11px] text-slate-300">
-          <span className="font-mono text-amber-400 text-[10px]">
-            S/L #{String(project.serialNumber).padStart(2, '0')}
-          </span>
-          <span className="text-[10px] text-slate-400 truncate max-w-[170px]">
-            {project.clientLiaison.split(',')[1] || project.clientLiaison}
-          </span>
+          <div className="absolute bottom-2 left-2.5 right-2.5 flex items-center justify-between text-[11px] text-slate-300 z-20">
+            <span className="font-mono text-amber-400 text-[10px]">
+              S/L #{String(project.serialNumber).padStart(2, '0')}
+            </span>
+            <span className="text-[10px] text-slate-400 truncate max-w-[170px]">
+              {project.clientLiaison.split(',')[1] || project.clientLiaison}
+            </span>
+          </div>
         </div>
-      </div>
+      ) : (
+        <div className="relative h-44 overflow-hidden bg-gradient-to-b from-[#0c1833] via-navy-900 to-navy-950 flex flex-col items-center justify-center p-5 text-center border-b border-slate-800/80">
+          {/* Subtle sector badge icon */}
+          <div className="w-10 h-10 rounded-full bg-navy-800/90 border border-amber-500/30 flex items-center justify-center text-amber-400 mb-2 shadow-sm group-hover:border-amber-400/60 transition-colors">
+            <Building2 className="w-5 h-5" />
+          </div>
+          <h4 className="text-xs sm:text-sm font-bold text-white leading-snug px-2 line-clamp-2 font-display group-hover:text-amber-300 transition-colors">
+            {project.clientName}
+          </h4>
+          <span className="text-[9px] font-mono uppercase tracking-widest text-slate-400 mt-1">
+            Official Client Facility
+          </span>
+
+          <div className="absolute top-2.5 left-2.5 flex items-center gap-1.5 z-20">
+            <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-navy-950/90 border border-slate-700 text-amber-300">
+              {project.category}
+            </span>
+            <span className="text-[9px] font-mono uppercase px-1.5 py-0.5 rounded bg-blue-950/90 border border-blue-700 text-blue-300">
+              Official Roster
+            </span>
+          </div>
+
+          <div className="absolute top-2.5 right-2.5 p-1 rounded-full bg-navy-950/80 text-slate-300 group-hover:text-amber-400 transition-colors z-20">
+            <Maximize2 className="w-3.5 h-3.5" />
+          </div>
+
+          <div className="absolute bottom-2 left-2.5 right-2.5 flex items-center justify-between text-[11px] text-slate-300 z-20">
+            <span className="font-mono text-amber-400 text-[10px]">
+              S/L #{String(project.serialNumber).padStart(2, '0')}
+            </span>
+            <span className="text-[10px] text-slate-400 truncate max-w-[170px]">
+              {project.clientLiaison.split(',')[1] || project.clientLiaison}
+            </span>
+          </div>
+        </div>
+      )}
 
       {/* Card Body */}
       <div className="p-4 flex-1 flex flex-col justify-between relative z-20">
