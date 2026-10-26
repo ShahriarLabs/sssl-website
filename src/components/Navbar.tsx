@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Phone, ArrowUpRight, ShieldCheck } from 'lucide-react';
+import { Menu, X, Phone, ArrowUpRight } from 'lucide-react';
 import { contactDetails } from '../data/siteConfig';
 import { MagneticButton } from './MagneticButton';
 
@@ -43,16 +43,21 @@ export const Navbar: React.FC = () => {
         {/* Precise compact single-row flex container (72px desktop / 64px mobile) */}
         <div className="flex items-center justify-between h-[64px] sm:h-[72px]">
           
-          {/* Primary Navbar Branding */}
+          {/* Primary Official Brand Logo (Circular, Transparent, Sharp) */}
           <a
             href="#hero"
-            className="flex items-center gap-2.5 sm:gap-3 shrink-0 focus:outline-none focus:ring-2 focus:ring-amber-500 rounded-lg group py-1"
+            className="flex items-center gap-3 shrink-0 focus:outline-none focus:ring-2 focus:ring-amber-500 rounded-full group py-1"
             aria-label="Soldier Security Services Ltd."
           >
-            <div className="h-10 w-10 sm:h-11 sm:w-11 rounded-full bg-navy-900/90 border border-amber-500/35 shrink-0 flex items-center justify-center text-amber-400 shadow-sm group-hover:border-amber-400 transition-colors">
-              <ShieldCheck className="h-5 w-5 sm:h-5 sm:w-5 text-amber-400 group-hover:scale-105 transition-transform" />
+            <div className="h-12 w-12 sm:h-14 sm:w-14 shrink-0 flex items-center justify-center">
+              <img
+                src="/images/sssl-logo-circular.png"
+                alt="Soldier Security Services Ltd."
+                className="h-full w-full object-contain aspect-square drop-shadow-md group-hover:scale-105 transition-transform duration-200"
+                loading="eager"
+              />
             </div>
-            <div className="flex flex-col text-left">
+            <div className="hidden sm:flex flex-col text-left">
               <span className="text-xs sm:text-sm font-extrabold uppercase tracking-tight text-white font-display leading-tight group-hover:text-amber-300 transition-colors">
                 Soldier Security
               </span>

@@ -22,8 +22,14 @@ export const CinematicShowcase: React.FC = () => {
         
         {/* Section Header with Official Crest */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-navy-900/95 border border-amber-500/40 text-amber-300 text-xs font-semibold tracking-wider uppercase mb-4 shadow-md">
-            <ShieldCheck className="w-4 h-4 text-amber-400" />
+          <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-navy-900/95 border border-amber-500/40 text-amber-300 text-xs font-semibold tracking-wider uppercase mb-4 shadow-md">
+            <div className="w-6 h-6 shrink-0 flex items-center justify-center">
+              <img
+                src="/images/sssl-logo-circular.png"
+                alt="SSSL Circular Emblem"
+                className="w-full h-full object-contain aspect-square drop-shadow"
+              />
+            </div>
             <span>Official Force Command • Established 2011</span>
           </div>
 

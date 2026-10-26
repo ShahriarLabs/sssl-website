@@ -46,8 +46,6 @@ const CINEMATIC_SLIDES = [
 
 export const Hero: React.FC = () => {
   const heroRef = useRef<HTMLElement>(null);
-  const textColumnRef = useRef<HTMLDivElement>(null);
-  const logoRef = useRef<HTMLDivElement>(null);
   const [activeSlide, setActiveSlide] = useState(0);
   const [isReducedMotion, setIsReducedMotion] = useState(false);
 
@@ -64,84 +62,6 @@ export const Hero: React.FC = () => {
     ) {
       setIsReducedMotion(true);
     }
-  }, []);
-
-  // Smooth scroll-driven animation: moves the logo downward along with the text as user scrolls
-  useEffect(() => {
-    let animFrameId: number;
-    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-    const physics = {
-      currentY: 0,
-      targetY: 0,
-      currentRotate: 0,
-      targetRotate: 0,
-      currentScale: 1,
-      targetScale: 1,
-    };
-
-    const calculateTarget = () => {
-      const scrollY = window.scrollY || window.pageYOffset || 0;
-      const textEl = textColumnRef.current;
-      const logoEl = logoRef.current;
-      if (!textEl || !logoEl) return;
-
-      const isDesktop = window.innerWidth >= 1024;
-      const textHeight = textEl.offsetHeight;
-      const logoHeight = logoEl.offsetHeight;
-
-      if (isDesktop) {
-        // Logo moves smoothly downward along the text column as user scrolls down
-        const maxTravel = Math.max(0, textHeight - logoHeight);
-        // Scroll distance of ~600px maps across the text height travel
-        const scrollFactor = Math.min(1, Math.max(0, scrollY / 600));
-
-        physics.targetY = scrollFactor * maxTravel;
-        physics.targetRotate = prefersReducedMotion ? 0 : scrollY * 0.04;
-        physics.targetScale = 1.0 - scrollFactor * 0.06;
-      } else {
-        // Mobile / tablet: Smooth responsive downward translation along text
-        const mobileTravel = Math.min(60, scrollY * 0.22);
-        physics.targetY = mobileTravel;
-        physics.targetRotate = prefersReducedMotion ? 0 : scrollY * 0.03;
-        physics.targetScale = Math.max(0.92, 1.0 - (scrollY / 400) * 0.08);
-      }
-    };
-
-    let startTime = performance.now();
-    const tick = (currentTime: number) => {
-      const elapsed = (currentTime - startTime) * 0.001;
-
-      // Silky lerp easing
-      physics.currentY += (physics.targetY - physics.currentY) * 0.1;
-      physics.currentRotate += (physics.targetRotate - physics.currentRotate) * 0.08;
-      physics.currentScale += (physics.targetScale - physics.currentScale) * 0.08;
-
-      // Micro-float breathing when stationary (1.5px vertical)
-      const microFloat = prefersReducedMotion ? 0 : Math.sin(elapsed * 1.8) * 1.5;
-
-      if (logoRef.current) {
-        const finalY = physics.currentY + microFloat;
-        logoRef.current.style.transform = `translate3d(0, ${finalY.toFixed(2)}px, 0) rotate(${physics.currentRotate.toFixed(2)}deg) scale(${physics.currentScale.toFixed(3)})`;
-      }
-
-      animFrameId = requestAnimationFrame(tick);
-    };
-
-    const onScroll = () => {
-      calculateTarget();
-    };
-
-    window.addEventListener('scroll', onScroll, { passive: true });
-    window.addEventListener('resize', calculateTarget, { passive: true });
-    calculateTarget();
-    animFrameId = requestAnimationFrame(tick);
-
-    return () => {
-      window.removeEventListener('scroll', onScroll);
-      window.removeEventListener('resize', calculateTarget);
-      cancelAnimationFrame(animFrameId);
-    };
   }, []);
 
   // Automatic slow cinematic slide transition (every 7 seconds)
@@ -237,15 +157,19 @@ export const Hero: React.FC = () => {
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full select-text">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           
-          {/* Left Column: Hero Text Content (Connected & Primary) */}
-          <div ref={textColumnRef} className="lg:col-span-7 xl:col-span-8 flex flex-col justify-center">
+          {/* Left Column: Hero Text Content */}
+          <div className="lg:col-span-7 xl:col-span-8 flex flex-col justify-center">
             
             {/* Official Branded Corporate Crest */}
             <div className="inline-flex items-center gap-3 p-1.5 pr-4 rounded-full bg-navy-900/95 border border-steel-700/80 backdrop-blur-md mb-6 shadow-lg shadow-black/30 w-fit">
-              <div className="w-8 h-8 rounded-full bg-amber-500/15 border border-amber-500/30 shrink-0 flex items-center justify-center text-amber-400">
-                <ShieldCheck className="w-4 h-4 text-amber-400" />
+              <div className="w-9 h-9 sm:w-10 sm:h-10 shrink-0 flex items-center justify-center">
+                <img
+                  src="/images/sssl-logo-circular.png"
+                  alt="SSSL Official Logo"
+                  className="w-full h-full object-contain aspect-square drop-shadow-md"
+                />
               </div>
               <div className="flex flex-col text-left">
                 <span className="text-[11px] sm:text-xs font-bold uppercase tracking-wider text-white">
@@ -346,37 +270,8 @@ export const Hero: React.FC = () => {
 
           </div>
 
-          {/* Right Column: Text-Connected Scroll-Driven Animated Brand Logo */}
-          <div className="lg:col-span-5 xl:col-span-4 relative flex justify-center lg:justify-end items-start w-full pt-4 lg:pt-6">
-            <div
-              ref={logoRef}
-              className="will-change-transform select-none pointer-events-none"
-            >
-              <div className="relative flex items-center justify-center">
-                {/* Soft ambient backlight glow */}
-                <div
-                  className="absolute -inset-4 sm:-inset-6 rounded-full opacity-45 blur-xl pointer-events-none"
-                  style={{
-                    background: 'radial-gradient(circle, rgba(217, 119, 6, 0.28) 0%, rgba(39, 59, 130, 0.35) 50%, transparent 75%)',
-                  }}
-                />
-
-                {/* Delicate Precision Orbital Ring (Governmental / Military Seal Aesthetic) */}
-                <div className="absolute -inset-2.5 rounded-full border border-amber-400/30 shadow-inner pointer-events-none" />
-
-                {/* Circular Company Logo Container */}
-                <div className="w-36 h-36 sm:w-48 sm:h-48 md:w-56 md:h-56 lg:w-64 lg:h-64 xl:w-72 xl:h-72 rounded-full flex items-center justify-center p-2 backdrop-blur-[1px]">
-                  <img
-                    src="/images/sssl-logo-circular.png"
-                    alt="Soldier Security Services Ltd. Official Circular Logo"
-                    className="w-full h-full object-contain aspect-square filter drop-shadow-[0_15px_30px_rgba(0,0,0,0.75)] lg:drop-shadow-[0_22px_45px_rgba(0,0,0,0.9)]"
-                    loading="eager"
-                    decoding="sync"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
+          {/* Right Column: Spatial Origin for the Main Animated Logo */}
+          <div className="hidden lg:flex lg:col-span-5 xl:col-span-4 h-full min-h-[360px] pointer-events-none items-center justify-end" aria-hidden="true" />
 
         </div>
       </div>

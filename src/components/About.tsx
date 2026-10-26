@@ -29,8 +29,14 @@ export const About: React.FC = () => {
         
         {/* Section Header */}
         <div className="max-w-3xl mb-16">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-navy-900/90 border border-steel-700 text-amber-300 text-xs font-semibold uppercase tracking-wider mb-3">
-            <span className="w-1.5 h-1.5 rounded-full bg-amber-400" />
+          <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-navy-900/95 border border-steel-700 text-amber-300 text-xs font-semibold uppercase tracking-wider mb-3 shadow-sm">
+            <div className="w-6 h-6 shrink-0 flex items-center justify-center">
+              <img
+                src="/images/sssl-logo-circular.png"
+                alt="SSSL Circular Emblem"
+                className="w-full h-full object-contain aspect-square drop-shadow"
+              />
+            </div>
             <span>Incorporation Record: C-96185/11</span>
           </div>
           <h2 className="text-2xl sm:text-4xl font-extrabold text-white tracking-tight mb-4 font-display">

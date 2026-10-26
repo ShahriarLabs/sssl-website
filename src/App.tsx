@@ -16,6 +16,7 @@ import { Footer } from './components/Footer';
 import { FloatingContactBar } from './components/FloatingContactBar';
 import { CursorGlow } from './components/CursorGlow';
 import { BrandDivider } from './components/BrandDivider';
+import { CurvedScrollLogo } from './components/CurvedScrollLogo';
 
 export const App: React.FC = () => {
   return (
@@ -23,6 +24,9 @@ export const App: React.FC = () => {
       <div className="min-h-screen text-slate-200 selection:bg-amber-500/25 selection:text-amber-200 flex flex-col relative">
         {/* Subtle cursor following aura (desktop only, reduced-motion friendly) */}
         <CursorGlow />
+
+        {/* Dynamic Curved / Zigzag Scroll-Driven Main Brand Logo */}
+        <CurvedScrollLogo />
 
         {/* Sticky Compact Header */}
         <Navbar />

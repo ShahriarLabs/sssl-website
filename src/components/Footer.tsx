@@ -6,8 +6,7 @@ import {
   ArrowUp, 
   X, 
   FileText,
-  FileDown,
-  ShieldCheck
+  FileDown
 } from 'lucide-react';
 import { siteMeta, contactDetails } from '../data/siteConfig';
 
@@ -46,8 +45,12 @@ export const Footer: React.FC = () => {
           {/* Brand Info (Cols 1-4) */}
           <div className="lg:col-span-4 space-y-4">
             <div className="flex items-center gap-3.5">
-              <div className="h-12 w-12 rounded-full bg-gradient-to-br from-amber-500/20 to-navy-900 border border-amber-500/30 shrink-0 flex items-center justify-center text-amber-400 shadow-md">
-                <ShieldCheck className="w-6 h-6 text-amber-400" />
+              <div className="h-14 w-14 shrink-0 flex items-center justify-center">
+                <img
+                  src="/images/sssl-logo-circular.png"
+                  alt="Soldier Security Services Ltd."
+                  className="w-full h-full object-contain aspect-square drop-shadow-md"
+                />
               </div>
 
               <div>
