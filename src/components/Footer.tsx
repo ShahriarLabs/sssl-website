@@ -37,15 +37,6 @@ export const Footer: React.FC = () => {
 
   return (
     <footer className="bg-gradient-to-b from-navy-950 via-[#071022] to-[#030712] border-t border-steel-800/80 pt-16 pb-20 md:pb-12 text-slate-400 relative overflow-hidden">
-      {/* Clearly visible authentic circular brand watermark */}
-      <div className="absolute right-6 bottom-6 w-80 h-80 sm:w-96 sm:h-96 opacity-20 pointer-events-none select-none">
-        <img
-          src="/images/sssl-logo-circular.png"
-          alt="SSSL Circular Brand Watermark"
-          className="w-full h-full object-contain aspect-square"
-        />
-      </div>
-
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Main Footer Grid */}

@@ -25,27 +25,12 @@ export const About: React.FC = () => {
 
   return (
     <section id="about" className="py-20 bg-gradient-to-b from-navy-950/80 via-steel-950/60 to-navy-950/80 relative overflow-hidden">
-      {/* Clearly visible authentic circular brand logo watermark */}
-      <div className="absolute right-8 bottom-8 w-72 h-72 sm:w-96 sm:h-96 opacity-20 pointer-events-none select-none">
-        <img
-          src="/images/sssl-logo-circular.png"
-          alt="SSSL Official Circular Brand"
-          className="w-full h-full object-contain aspect-square"
-        />
-      </div>
-
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
         <div className="max-w-3xl mb-16">
-          <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-navy-900/95 border border-steel-700 text-amber-300 text-xs font-semibold uppercase tracking-wider mb-3 shadow-sm">
-            <div className="w-6 h-6 shrink-0 flex items-center justify-center">
-              <img
-                src="/images/sssl-logo-circular.png"
-                alt="SSSL Circular Emblem"
-                className="w-full h-full object-contain aspect-square drop-shadow"
-              />
-            </div>
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-navy-900/90 border border-steel-700 text-amber-300 text-xs font-semibold uppercase tracking-wider mb-3">
+            <span className="w-1.5 h-1.5 rounded-full bg-amber-400" />
             <span>Incorporation Record: C-96185/11</span>
           </div>
           <h2 className="text-2xl sm:text-4xl font-extrabold text-white tracking-tight mb-4 font-display">

@@ -70,15 +70,6 @@
   }
 }
 
-/* Subtle branded watermark background */
-.sssl-watermark-bg {
-  background-image: radial-gradient(circle at center, rgba(11, 23, 54, 0.8) 0%, rgba(7, 16, 34, 0.95) 100%), url('/images/sssl-logo.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 600px;
-  background-blend-mode: overlay;
-}
-
 /* Reduced motion preference */
 @media (prefers-reduced-motion: reduce) {
   *, ::before, ::after {

@@ -130,15 +130,6 @@ export const ProjectsShowcase: React.FC = () => {
 
   return (
     <section id="projects" className="py-20 bg-gradient-to-b from-navy-950/80 via-steel-950/50 to-navy-950/80 relative overflow-hidden">
-      {/* Clearly visible authentic circular brand watermark */}
-      <div className="absolute right-4 top-1/3 w-72 h-72 sm:w-88 sm:h-88 opacity-20 pointer-events-none select-none">
-        <img
-          src="/images/sssl-logo-circular.png"
-          alt="SSSL Official Circular Brand"
-          className="w-full h-full object-contain aspect-square"
-        />
-      </div>
-
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}

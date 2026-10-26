@@ -36,15 +36,6 @@ export const ServicesSection: React.FC = () => {
 
   return (
     <section id="services" className="py-20 relative bg-gradient-to-b from-navy-950/90 via-steel-950/70 to-navy-950/90 overflow-hidden">
-      {/* Clearly visible authentic circular brand watermark */}
-      <div className="absolute right-6 top-1/2 -translate-y-1/2 w-80 h-80 sm:w-96 sm:h-96 opacity-20 pointer-events-none select-none">
-        <img
-          src="/images/sssl-logo-circular.png"
-          alt="SSSL Official Circular Brand"
-          className="w-full h-full object-contain aspect-square"
-        />
-      </div>
-
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
