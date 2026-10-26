@@ -1,4 +1,5 @@
 import React from 'react';
+import { Shield } from 'lucide-react';
 
 interface BrandDividerProps {
   className?: string;
@@ -19,12 +20,8 @@ export const BrandDivider: React.FC<BrandDividerProps> = ({
 
       {/* Center branded insignia badge */}
       <div className="mx-4 flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-navy-900/95 border border-steel-700 shadow-md">
-        <div className="w-7 h-7 sm:w-8 sm:h-8 shrink-0 flex items-center justify-center">
-          <img
-            src="/images/sssl-logo-circular.png"
-            alt="SSSL Official Circular Emblem"
-            className="w-full h-full object-contain aspect-square drop-shadow"
-          />
+        <div className="w-5 h-5 shrink-0 flex items-center justify-center text-amber-400">
+          <Shield className="w-3.5 h-3.5 text-amber-400" />
         </div>
         {label ? (
           <span className="text-[10px] font-mono tracking-widest uppercase text-slate-300 font-semibold">

@@ -154,14 +154,6 @@ export const Hero: React.FC = () => {
           }}
         />
 
-        {/* Clearly visible authentic circular brand watermark in the background */}
-        <div className="absolute right-6 top-1/2 -translate-y-1/2 w-80 h-80 sm:w-[460px] sm:h-[460px] opacity-20 pointer-events-none select-none">
-          <img
-            src="/images/sssl-logo-circular.png"
-            alt="SSSL Official Circular Brand"
-            className="w-full h-full object-contain aspect-square"
-          />
-        </div>
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full select-text">
@@ -169,13 +161,8 @@ export const Hero: React.FC = () => {
           
           {/* Official Branded Corporate Crest */}
           <div className="inline-flex items-center gap-3 p-1.5 pr-4 rounded-full bg-navy-900/95 border border-steel-700/80 backdrop-blur-md mb-6 shadow-lg shadow-black/30">
-            {/* Circular Logo Emblem (No white box, sharp & transparent) */}
-            <div className="w-10 h-10 shrink-0 flex items-center justify-center">
-              <img
-                src="/images/sssl-logo-circular.png"
-                alt="SSSL Official Logo"
-                className="w-full h-full object-contain aspect-square drop-shadow-md"
-              />
+            <div className="w-8 h-8 rounded-full bg-amber-500/15 border border-amber-500/30 shrink-0 flex items-center justify-center text-amber-400">
+              <ShieldCheck className="w-4 h-4 text-amber-400" />
             </div>
             <div className="flex flex-col text-left">
               <span className="text-[11px] sm:text-xs font-bold uppercase tracking-wider text-white">
