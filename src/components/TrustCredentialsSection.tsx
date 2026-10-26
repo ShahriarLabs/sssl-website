@@ -12,12 +12,12 @@ export const TrustCredentialsSection: React.FC = () => {
 
   return (
     <section id="credentials" className="py-20 bg-gradient-to-b from-navy-950/80 via-steel-950/60 to-navy-950/80 relative overflow-hidden">
-      {/* Clearly visible authentic brand watermark */}
-      <div className="absolute right-8 top-10 w-72 h-72 sm:w-80 sm:h-80 opacity-15 pointer-events-none rounded-2xl overflow-hidden select-none">
+      {/* Clearly visible authentic circular brand watermark */}
+      <div className="absolute right-8 top-10 w-72 h-72 sm:w-80 sm:h-80 opacity-20 pointer-events-none select-none">
         <img
-          src="/images/sssl-logo.jpg"
-          alt="SSSL Official Brand"
-          className="w-full h-full object-contain"
+          src="/images/sssl-logo-circular.png"
+          alt="SSSL Official Circular Brand"
+          className="w-full h-full object-contain aspect-square"
         />
       </div>
 

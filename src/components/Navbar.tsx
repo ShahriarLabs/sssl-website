@@ -43,19 +43,27 @@ export const Navbar: React.FC = () => {
         {/* Precise compact single-row flex container (72px desktop / 64px mobile) */}
         <div className="flex items-center justify-between h-[64px] sm:h-[72px]">
           
-          {/* Primary Official Brand Logo (No duplicate text) */}
+          {/* Primary Official Brand Logo (Circular, Transparent, Sharp) */}
           <a
             href="#hero"
-            className="flex items-center shrink-0 focus:outline-none focus:ring-2 focus:ring-amber-500 rounded-md group"
+            className="flex items-center gap-3 shrink-0 focus:outline-none focus:ring-2 focus:ring-amber-500 rounded-full group py-1"
             aria-label="Soldier Security Services Ltd."
           >
-            <div className="h-12 sm:h-14 w-auto px-2.5 py-1 bg-white rounded-md border border-slate-200 shadow-md flex items-center justify-center group-hover:border-amber-500 transition-all">
+            <div className="h-12 w-12 sm:h-14 sm:w-14 shrink-0 flex items-center justify-center">
               <img
-                src="/images/sssl-logo.jpg"
+                src="/images/sssl-logo-circular.png"
                 alt="Soldier Security Services Ltd."
-                className="h-full w-auto object-contain aspect-square"
+                className="h-full w-full object-contain aspect-square drop-shadow-md group-hover:scale-105 transition-transform duration-200"
                 loading="eager"
               />
+            </div>
+            <div className="hidden sm:flex flex-col text-left">
+              <span className="text-xs sm:text-sm font-extrabold uppercase tracking-tight text-white font-display leading-tight group-hover:text-amber-300 transition-colors">
+                Soldier Security
+              </span>
+              <span className="text-[9px] font-mono tracking-widest text-amber-400 font-semibold uppercase">
+                Services Ltd.
+              </span>
             </div>
           </a>
 

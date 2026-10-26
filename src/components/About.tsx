@@ -25,12 +25,12 @@ export const About: React.FC = () => {
 
   return (
     <section id="about" className="py-20 bg-gradient-to-b from-navy-950/80 via-steel-950/60 to-navy-950/80 relative overflow-hidden">
-      {/* Clearly visible authentic brand logo watermark */}
-      <div className="absolute right-8 bottom-8 w-72 h-72 sm:w-96 sm:h-96 opacity-15 pointer-events-none rounded-2xl overflow-hidden select-none">
+      {/* Clearly visible authentic circular brand logo watermark */}
+      <div className="absolute right-8 bottom-8 w-72 h-72 sm:w-96 sm:h-96 opacity-20 pointer-events-none select-none">
         <img
-          src="/images/sssl-logo.jpg"
-          alt="SSSL Official Brand"
-          className="w-full h-full object-contain"
+          src="/images/sssl-logo-circular.png"
+          alt="SSSL Official Circular Brand"
+          className="w-full h-full object-contain aspect-square"
         />
       </div>
 
@@ -38,12 +38,12 @@ export const About: React.FC = () => {
         
         {/* Section Header */}
         <div className="max-w-3xl mb-16">
-          <div className="inline-flex items-center gap-2.5 px-3 py-1.5 rounded-full bg-navy-900/95 border border-steel-700 text-amber-300 text-xs font-semibold uppercase tracking-wider mb-3 shadow-sm">
-            <div className="w-5 h-5 rounded overflow-hidden bg-white p-0.5 border border-amber-400 flex items-center justify-center shrink-0">
+          <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-navy-900/95 border border-steel-700 text-amber-300 text-xs font-semibold uppercase tracking-wider mb-3 shadow-sm">
+            <div className="w-6 h-6 shrink-0 flex items-center justify-center">
               <img
-                src="/images/sssl-logo.jpg"
-                alt="SSSL Emblem"
-                className="w-full h-full object-contain aspect-square"
+                src="/images/sssl-logo-circular.png"
+                alt="SSSL Circular Emblem"
+                className="w-full h-full object-contain aspect-square drop-shadow"
               />
             </div>
             <span>Incorporation Record: C-96185/11</span>
