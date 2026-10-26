@@ -35,8 +35,17 @@ export const ServicesSection: React.FC = () => {
   };
 
   return (
-    <section id="services" className="py-20 relative bg-navy-950">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="services" className="py-20 relative bg-gradient-to-b from-navy-950/90 via-steel-950/70 to-navy-950/90 overflow-hidden">
+      {/* Subtle brand watermark */}
+      <div className="absolute right-6 top-1/2 -translate-y-1/2 w-96 h-96 opacity-[0.02] pointer-events-none rounded-full overflow-hidden">
+        <img
+          src="/images/sssl-logo.jpg"
+          alt="SSSL Watermark"
+          className="w-full h-full object-contain filter invert"
+        />
+      </div>
+
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">

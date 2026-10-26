@@ -128,8 +128,17 @@ export const ProjectsShowcase: React.FC = () => {
   };
 
   return (
-    <section id="projects" className="py-20 bg-navy-950 border-t border-slate-800 relative">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="projects" className="py-20 bg-gradient-to-b from-navy-950/80 via-steel-950/50 to-navy-950/80 relative overflow-hidden">
+      {/* Subtle brand watermark */}
+      <div className="absolute right-4 top-1/3 w-80 h-80 opacity-[0.02] pointer-events-none rounded-full overflow-hidden">
+        <img
+          src="/images/sssl-logo.jpg"
+          alt="SSSL Watermark"
+          className="w-full h-full object-contain filter invert"
+        />
+      </div>
+
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
         <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-8 gap-6">

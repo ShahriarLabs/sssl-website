@@ -8,8 +8,17 @@ export const CareersSection: React.FC = () => {
   const [applicationModalOpen, setApplicationModalOpen] = useState(false);
 
   return (
-    <section id="careers" className="py-20 bg-navy-950 border-t border-slate-800 relative">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="careers" className="py-20 bg-gradient-to-b from-navy-950/90 via-steel-950/60 to-navy-950/90 relative overflow-hidden">
+      {/* Subtle brand watermark */}
+      <div className="absolute left-10 top-1/2 -translate-y-1/2 w-80 h-80 opacity-[0.02] pointer-events-none rounded-full overflow-hidden">
+        <img
+          src="/images/sssl-logo.jpg"
+          alt="SSSL Watermark"
+          className="w-full h-full object-contain filter invert"
+        />
+      </div>
+
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
         <div className="max-w-3xl mb-16">

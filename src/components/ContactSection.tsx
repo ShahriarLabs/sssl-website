@@ -132,8 +132,17 @@ export const ContactSection: React.FC = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-navy-900/60 border-t border-slate-800 relative">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="contact" className="py-20 bg-gradient-to-b from-navy-950/90 via-steel-950/80 to-navy-950/95 relative overflow-hidden">
+      {/* Subtle brand watermark */}
+      <div className="absolute right-10 bottom-10 w-96 h-96 opacity-[0.025] pointer-events-none rounded-full overflow-hidden">
+        <img
+          src="/images/sssl-logo.jpg"
+          alt="SSSL Watermark"
+          className="w-full h-full object-contain filter invert"
+        />
+      </div>
+
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
         <div className="max-w-3xl mb-14">

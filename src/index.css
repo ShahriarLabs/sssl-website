@@ -10,11 +10,19 @@
   }
   
   body {
-    @apply bg-navy-950 text-slate-300 antialiased overflow-x-hidden;
+    background-color: #071022;
+    background-image: 
+      radial-gradient(at 15% 15%, rgba(27, 59, 126, 0.22) 0px, transparent 45%),
+      radial-gradient(at 85% 10%, rgba(197, 155, 39, 0.09) 0px, transparent 38%),
+      radial-gradient(at 50% 50%, rgba(17, 34, 72, 0.2) 0px, transparent 60%),
+      radial-gradient(at 80% 85%, rgba(27, 59, 126, 0.16) 0px, transparent 50%);
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    @apply text-slate-200 antialiased overflow-x-hidden;
   }
 
   ::selection {
-    @apply bg-gold-500/25 text-amber-200;
+    @apply bg-gold-500/30 text-amber-200;
   }
 
   /* Custom subtle scrollbar */
@@ -23,33 +31,34 @@
     height: 8px;
   }
   ::-webkit-scrollbar-track {
-    background: #090d18;
+    background: #071022;
   }
   ::-webkit-scrollbar-thumb {
-    background: #1e293b;
+    background: #1d3159;
     border-radius: 4px;
+    border: 2px solid #071022;
   }
   ::-webkit-scrollbar-thumb:hover {
-    background: #334155;
+    background: #2a4478;
   }
 }
 
 @layer utilities {
-  /* Subtle glass card with minimal opacity (corporate security grade) */
+  /* High-end corporate security card */
   .sssl-card {
-    @apply bg-navy-900/80 backdrop-blur-md border border-slate-800/80 rounded-md transition-all duration-300;
+    @apply bg-gradient-to-b from-navy-900/90 to-navy-950/90 backdrop-blur-md border border-steel-800/80 rounded-md transition-all duration-300;
   }
   
   .sssl-card-hover {
-    @apply hover:border-slate-700 hover:shadow-xl hover:shadow-navy-950/50 hover:-translate-y-0.5;
+    @apply hover:border-steel-600 hover:shadow-xl hover:shadow-navy-950/60 hover:-translate-y-0.5;
   }
 
   .sssl-gold-badge {
-    @apply inline-flex items-center gap-1.5 px-2.5 py-1 text-xs font-semibold uppercase tracking-wider text-amber-300 bg-amber-500/10 border border-amber-500/30 rounded-full;
+    @apply inline-flex items-center gap-1.5 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-amber-300 bg-amber-500/10 border border-amber-500/30 rounded-full shadow-sm;
   }
   
   .sssl-section-heading {
-    @apply text-xs font-bold tracking-widest uppercase text-amber-400 mb-2;
+    @apply text-xs font-bold tracking-widest uppercase text-amber-400 mb-2 flex items-center gap-2;
   }
 
   .hide-scrollbar {
@@ -59,6 +68,15 @@
   .hide-scrollbar::-webkit-scrollbar {
     display: none;
   }
+}
+
+/* Subtle branded watermark background */
+.sssl-watermark-bg {
+  background-image: radial-gradient(circle at center, rgba(11, 23, 54, 0.8) 0%, rgba(7, 16, 34, 0.95) 100%), url('/images/sssl-logo.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 600px;
+  background-blend-mode: overlay;
 }
 
 /* Reduced motion preference */

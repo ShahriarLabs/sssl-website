@@ -36,8 +36,17 @@ export const Footer: React.FC = () => {
   ];
 
   return (
-    <footer className="bg-navy-950 border-t border-slate-800/80 pt-16 pb-20 md:pb-12 text-slate-400">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <footer className="bg-gradient-to-b from-navy-950 via-[#071022] to-[#030712] border-t border-steel-800/80 pt-16 pb-20 md:pb-12 text-slate-400 relative overflow-hidden">
+      {/* Subtle brand watermark */}
+      <div className="absolute right-6 bottom-6 w-96 h-96 opacity-[0.018] pointer-events-none rounded-full overflow-hidden">
+        <img
+          src="/images/sssl-logo.jpg"
+          alt="SSSL Watermark"
+          className="w-full h-full object-contain filter invert"
+        />
+      </div>
+
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Main Footer Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 mb-12">

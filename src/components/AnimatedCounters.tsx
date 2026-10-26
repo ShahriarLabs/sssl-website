@@ -26,7 +26,7 @@ export const AnimatedCounters: React.FC = () => {
   }, []);
 
   return (
-    <section ref={containerRef} className="py-16 bg-navy-900 border-t border-b border-slate-800 relative">
+    <section ref={containerRef} className="py-16 bg-gradient-to-r from-navy-950 via-steel-950/90 to-navy-950 border-t border-b border-steel-800/80 relative shadow-inner">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Metric Cards Grid */}
